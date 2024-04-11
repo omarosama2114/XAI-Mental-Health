@@ -1,0 +1,142 @@
+[
+    {
+        "id": 9,
+        "type": "FeatureImportance",
+        "feature_1": "account",
+        "feature_2": "stuff"
+    },
+    {
+        "id": 2,
+        "type": "Counterfactual",
+        "feature_1": "whose",
+        "feature_2": "special",
+        "percentage_feature_1": -82,
+        "percentage_feature_2": -30
+    },
+    {
+        "id": 50,
+        "type": "FeatureImportance",
+        "feature_1": "them",
+        "feature_2": "material"
+    },
+    {
+        "id": 86,
+        "type": "Counterfactual",
+        "feature_1": "your",
+        "feature_2": "develop",
+        "percentage_feature_1": -91,
+        "percentage_feature_2": 73
+    },
+    {
+        "id": 69,
+        "type": "FeatureImportance",
+        "feature_1": "day",
+        "feature_2": "thank"
+    },
+    {
+        "id": 26,
+        "type": "Counterfactual",
+        "feature_1": "school",
+        "feature_2": "improve",
+        "percentage_feature_1": -6,
+        "percentage_feature_2": 41
+    },
+    {
+        "id": 99,
+        "type": "FeatureImportance",
+        "feature_1": "appear",
+        "feature_2": "bring"
+    },
+    {
+        "id": 59,
+        "type": "Counterfactual",
+        "feature_1": "more",
+        "feature_2": "every",
+        "percentage_feature_1": -88,
+        "percentage_feature_2": 11
+    },
+    {
+        "id": 16,
+        "type": "FeatureImportance",
+        "feature_1": "that",
+        "feature_2": "open"
+    },
+    {
+        "id": 3,
+        "type": "Counterfactual",
+        "feature_1": "phone",
+        "feature_2": "event",
+        "percentage_feature_1": -64,
+        "percentage_feature_2": -36
+    },
+    {
+        "id": 57,
+        "type": "FeatureImportance",
+        "feature_1": "citizen",
+        "feature_2": "admit"
+    },
+    {
+        "id": 44,
+        "type": "Counterfactual",
+        "feature_1": "yeah",
+        "feature_2": "catch",
+        "percentage_feature_1": -66,
+        "percentage_feature_2": 52
+    },
+    {
+        "id": 20,
+        "type": "FeatureImportance",
+        "feature_1": "choose",
+        "feature_2": "could"
+    },
+    {
+        "id": 27,
+        "type": "Counterfactual",
+        "feature_1": "decade",
+        "feature_2": "character",
+        "percentage_feature_1": 17,
+        "percentage_feature_2": -34
+    },
+    {
+        "id": 91,
+        "type": "FeatureImportance",
+        "feature_1": "yard",
+        "feature_2": "play"
+    },
+    {
+        "id": 15,
+        "type": "Counterfactual",
+        "feature_1": "per",
+        "feature_2": "example",
+        "percentage_feature_1": -51,
+        "percentage_feature_2": 69
+    },
+    {
+        "id": 78,
+        "type": "FeatureImportance",
+        "feature_1": "democratic",
+        "feature_2": "list"
+    },
+    {
+        "id": 54,
+        "type": "Counterfactual",
+        "feature_1": "nice",
+        "feature_2": "world",
+        "percentage_feature_1": -72,
+        "percentage_feature_2": -70
+    },
+    {
+        "id": 58,
+        "type": "FeatureImportance",
+        "feature_1": "understand",
+        "feature_2": "recognize"
+    },
+    {
+        "id": 66,
+        "type": "Counterfactual",
+        "feature_1": "major",
+        "feature_2": "keep",
+        "percentage_feature_1": -56,
+        "percentage_feature_2": -76
+    }
+]
