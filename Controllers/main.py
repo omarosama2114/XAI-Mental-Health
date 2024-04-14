@@ -12,12 +12,12 @@ def load_explanations_data():
 explanations_data = load_explanations_data()
 
 @app.get("/explanations/{explanation_id}")
-def get_explanation(explanation_id: int) -> Union[dict, None]:
+def get_explanation(explanation_id: str) -> Union[dict, None]:
     """
     API endpoint to fetch an explanation by its ID.
     """
     for explanation in explanations_data:
-        if explanation["id"] == explanation_id:
+        if explanation["id"] == str(explanation_id):
             return explanation
     raise HTTPException(status_code=404, detail="Explanation not found")
 

@@ -1,18 +1,21 @@
 from pydantic import BaseModel, validator
 from typing import Literal
+from uuid import UUID
 
-
+# Define possible values for ExplanationType and HealthStatus
 ExplanationType = Literal["FeatureImportance", "Counterfactual"]
+HealthStatus = Literal["healthy", "depression"]
 
-class FeatureImportanceExplanation(BaseModel):
-    id: int
-    type: ExplanationType = "FeatureImportance"
+class Explanation(BaseModel):
+    id: str
+    type: ExplanationType
+    prediction: HealthStatus  # Prediction about health status
+
+class FeatureImportanceExplanation(Explanation):
     feature_1: str
     feature_2: str
 
-class CounterfactualExplanation(BaseModel):
-    id: int
-    type: ExplanationType = "Counterfactual"
+class CounterfactualExplanation(Explanation):
     feature_1: str
     feature_2: str
     percentage_feature_1: int
@@ -31,6 +34,3 @@ class CounterfactualExplanation(BaseModel):
         if v < -100:
             raise ValueError('percentage_feature_2 must be larger than -100')
         return v
-
-
-
