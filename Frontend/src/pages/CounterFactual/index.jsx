@@ -2,7 +2,46 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { Text, Heading } from "../../components";
 
-export default function SurveyScreenDepressionFIPage() {
+export default function SurveyScreenDepressionCFPage({ explanation }) {
+  const formatCounterfactualText = () => {
+    const entries = [];
+    if (explanation.feature_1 && explanation.percentages_feature_1 !== undefined)
+      entries.push(
+        <span key="feature1" style={{ color: "#15b1e2", fontWeight: "bold" }}>
+          {explanation.feature_1.replace(/_/g, ' ')} {explanation.percentages_feature_1 >= 0 ? '+' : ''}{Math.round(explanation.percentages_feature_1)}%
+        </span>
+      );
+    if (explanation.feature_2 && explanation.percentages_feature_2 !== undefined)
+      entries.push(
+        <span key="feature2" style={{ color: "#15b1e2", fontWeight: "bold" }}>
+          {explanation.feature_2.replace(/_/g, ' ')} {explanation.percentages_feature_2 >= 0 ? '+' : ''}{Math.round(explanation.percentages_feature_2)}%
+        </span>
+      );
+    if (explanation.feature_3 && explanation.percentages_feature_3 !== undefined)
+      entries.push(
+        <span key="feature3" style={{ color: "#15b1e2", fontWeight: "bold" }}>
+          {explanation.feature_3.replace(/_/g, ' ')} {explanation.percentages_feature_3 >= 0 ? '+' : ''}{Math.round(explanation.percentages_feature_3)}%
+        </span>
+      );
+
+    return entries.length > 0 ? (
+      <Text as="p" className="text-center text-base md:text-xl mx-2 my-4" style={{ fontSize: '1.5em' }}>
+        {explanation.prediction === "depression" ? 
+          "Die folgenden Veränderungen hätten zur Vorhersage eines niedrigen Depressionsrisikos geführt:" : 
+          "Die folgenden Veränderungen hätten zur Vorhersage eines erhöhten Depressionsrisikos geführt:"}
+        {entries.map((entry, index) => (
+          <React.Fragment key={index}>
+            <br />
+            <br />
+
+            {entry}
+          </React.Fragment>
+        ))}
+      </Text>
+    ) : null;
+  };
+
+
   return (
     <>
       <Helmet>
@@ -17,17 +56,11 @@ export default function SurveyScreenDepressionFIPage() {
           <Text className="text-center text-xl md:text-2xl font-semibold mt-4">
             Die KI prognostiziert auf Basis<br />deiner Smartphone-Daten
           </Text>
-          <Heading as="h2" style={{ color: '#15b1e2' }} className="text-3xl md:text-5xl text-center">
-            Anzeichen einer <br />Depression
+          <Heading as="h2" className={`${explanation.prediction === "depression" ? "text-red-A700" : "text-green-600"} text-3xl md:text-5xl text-center`}>
+            {explanation.prediction === "depression" ? "Erhöhtes Depressionsrisiko" : "Niedriges Depressionsrisiko"}
           </Heading>
         </div>
-        <Text as="p" className="text-center text-base md:text-lg mx-2 my-4">
-          <span className="text-gray-900">Wenn du 15% mehr </span>
-          <span style={{ color: "#15b1e2", fontWeight: "bold" }}>Sport</span>
-          <span className="text-gray-900"> machen und deine </span>
-          <span style={{ color: "#15b1e2", fontWeight: "bold" }}>tägliche Schrittzahl</span>
-          <span className="text-gray-900">  <br />um 10% erhöhen würdest, wären dir keine Anzeichen einer Depression prognostiziert worden.</span>
-        </Text>
+        {formatCounterfactualText()}
         <Text as="p" className="text-blue_gray-400 text-sm md:text-base text-center mt-auto">
           Alle angezeigten Ergebnisse sind lediglich Vorhersagen einer KI. Als solche können sie nur Hinweise auf
           den Gesundheitszustand geben. Sie können keine medizinische Diagnose stellen und ersetzen keinesfalls

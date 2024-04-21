@@ -1,36 +1,24 @@
-from pydantic import BaseModel, validator
-from typing import Literal
+from pydantic import BaseModel, validator, Field
+from typing import Literal, Optional, Union
 from uuid import UUID
 
-# Define possible values for ExplanationType and HealthStatus
 ExplanationType = Literal["FeatureImportance", "Counterfactual"]
 HealthStatus = Literal["healthy", "depression"]
 
 class Explanation(BaseModel):
     id: str
     type: ExplanationType
-    prediction: HealthStatus  # Prediction about health status
+    prediction: HealthStatus
 
 class FeatureImportanceExplanation(Explanation):
     feature_1: str
-    feature_2: str
+    feature_2: Optional[str] = None
+    feature_3: Optional[str] = None
 
 class CounterfactualExplanation(Explanation):
     feature_1: str
-    feature_2: str
-    percentage_feature_1: int
-    percentage_feature_2: int
-
-    # Validator for percentage_feature_1
-    @validator('percentage_feature_1')
-    def check_percentage_feature_1(cls, v):
-        if v < -100:
-            raise ValueError('percentage_feature_1 must be larger than -100')
-        return v
-
-    # Validator for percentage_feature_2
-    @validator('percentage_feature_2')
-    def check_percentage_feature_2(cls, v):
-        if v < -100:
-            raise ValueError('percentage_feature_2 must be larger than -100')
-        return v
+    feature_2: Optional[str] = None
+    feature_3: Optional[str] = None
+    percentage_feature_1: Optional[Union[int, float]] = None
+    percentage_feature_2: Optional[Union[int, float]] = None
+    percentage_feature_3: Optional[Union[int, float]] = None
