@@ -12,7 +12,7 @@
 
 ## Running in dev environment
 
-1. `cd YOUR_APPLICATION`
+1. `cd Frontend`
 2. `npm install`
 3. `npm start`
 
