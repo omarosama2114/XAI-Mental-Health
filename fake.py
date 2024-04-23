@@ -1,18 +1,22 @@
 import json
+import uuid
 
-# Path to your existing text file containing the JSON string combined_explanations(1)
-input_file_path = 'frontend/src/combined_explanations (1).txt'
+filename = 'Frontend/src/combined_explanations_corrected.json'
 
-# Path for the new JSON file
-output_file_path = 'output_data.json'
+with open(filename, 'r') as file:
+    data = json.load(file)
 
-# Read the JSON string from the file
-with open(input_file_path, 'r') as file:
-    json_string = file.read()
+for item in data:
+    item["id"] = str(uuid.uuid4())
 
-# Convert the string to a Python object
-data_object = json.loads(json_string)
-
-# Write the data to a new JSON file
-with open(output_file_path, 'w') as json_file:
-    json.dump(data_object, json_file, indent=4)
+with open('Frontend/src/combined_explanations_corrected_with_uuid.json', 'w') as file:
+    file.write('[\n')
+    last_index = len(data) - 1
+    for index, item in enumerate(data):
+        json_str = json.dumps(item, indent=4)
+        file.write(json_str)
+        if index != last_index:
+            file.write(',\n')
+        else:
+            file.write('\n')
+    file.write(']')

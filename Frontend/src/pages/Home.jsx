@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet";
-import explanationsData from '../combined_explanations_corrected.json'; // The path should be relative to the current file
+import explanationsData from '../final_combined_explanations.json'; // The path should be relative to the current file
 
 import FeatureImportancePage from './FeatureImportance/index.jsx'; // adjust the path as needed
 import CounterfactualPage from './CounterFactual/index.jsx'; // adjust the path as needed
+import NoExplanationPage from './NoExplanation/index.jsx'; // adjust the path as needed
 
 
 
@@ -25,6 +26,8 @@ export default function ExplanationPage() {
         return <FeatureImportancePage explanation={explanation} />;
       case "Counterfactual":
         return <CounterfactualPage explanation={explanation} />;
+      case "simple":
+        return <NoExplanationPage explanation={explanation} />;
       default:
         return <div>Unknown explanation type</div>;
     }

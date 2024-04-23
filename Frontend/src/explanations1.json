@@ -4,12 +4,15 @@
         "type": "FeatureImportance",
         "prediction": "depression",
         "feature_1": "despite",
-        "feature_2": "staff"},{
+        "feature_2": "staff"
+    },
+    {
         "id": "fd9640d1-958d-4745-92a1-346071e1ac30",
         "type": "Counterfactual",
         "prediction": "depression",
         "feature_1": "about",
-        "percentage_feature_1": 69},
+        "percentage_feature_1": 69
+    },
     {"id": "41bc677e-6ed2-4c7b-ab61-36598cee1a3f","type": "FeatureImportance",
         "prediction": "depression",
         "feature_1": "another",

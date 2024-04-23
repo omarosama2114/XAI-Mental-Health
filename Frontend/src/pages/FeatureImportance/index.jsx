@@ -4,14 +4,26 @@ import { Text, Heading } from "../../components";
 
 // Assume 'explanation' is passed as a prop to this component
 export default function SurveyScreenDepressionFIPage({ explanation }) {
+
+  const replaceUmlauts = (text) => {
+    return text
+      .replace(/ae/g, 'ä')
+      .replace(/oe/g, 'ö')
+      .replace(/ue/g, 'ü')
+      .replace(/Ae/g, 'Ä') // for uppercase
+      .replace(/Oe/g, 'Ö') // for uppercase
+      .replace(/Ue/g, 'Ü') // for uppercase
+      .replace(/_/g, ' ');
+  };
+
   // Helper function to format features text with style
   const formatFeaturesText = () => {
     const features = [];
     const textStyle = { color: "#15b1e2", fontWeight: "bold" }; // Increased font size for feature text
-    if (explanation.feature_1) features.push(<span style={textStyle}>{explanation.feature_1.replace(/_/g, ' ')}</span>);
-    if (explanation.feature_2) features.push(<span style={textStyle}>{explanation.feature_2.replace(/_/g, ' ')}</span>);
-    if (explanation.feature_3) features.push(<span style={textStyle}>{explanation.feature_3.replace(/_/g, ' ')}</span>);
-
+    if (explanation.feature_1) features.push(<span style={textStyle}>{replaceUmlauts(explanation.feature_1)}</span>);
+    if (explanation.feature_2) features.push(<span style={textStyle}>{replaceUmlauts(explanation.feature_2)}</span>);
+    if (explanation.feature_3) features.push(<span style={textStyle}>{replaceUmlauts(explanation.feature_3)}</span>);
+    
     if (features.length === 0) return "";
     if (features.length === 1) return <Text style={{ fontSize: "1.5em" }}>{features[0]} hatte einen besonders großen Einfluss auf diese Vorhersage Deines Depressionsrisikos durch die KI.</Text>;
     if (features.length === 2) return <Text style={{ fontSize: "1.5em" }}>{features[0]} und {features[1]} hatten einen besonders großen Einfluss auf diese Vorhersage Deines Depressionsrisikos durch die KI.</Text>;

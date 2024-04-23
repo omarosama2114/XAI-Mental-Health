@@ -3,24 +3,35 @@ import { Helmet } from "react-helmet";
 import { Text, Heading } from "../../components";
 
 export default function SurveyScreenDepressionCFPage({ explanation }) {
+  const replaceUmlauts = (text) => {
+    return text
+      .replace(/ae/g, 'ä')
+      .replace(/oe/g, 'ö')
+      .replace(/ue/g, 'ü')
+      .replace(/Ae/g, 'Ä') // for uppercase
+      .replace(/Oe/g, 'Ö') // for uppercase
+      .replace(/Ue/g, 'Ü') // for uppercase
+      .replace(/_/g, ' ');
+  };
+
   const formatCounterfactualText = () => {
     const entries = [];
     if (explanation.feature_1 && explanation.percentages_feature_1 !== undefined)
       entries.push(
         <span key="feature1" style={{ color: "#15b1e2", fontWeight: "bold" }}>
-          {explanation.feature_1.replace(/_/g, ' ')} {explanation.percentages_feature_1 >= 0 ? '+' : ''}{Math.round(explanation.percentages_feature_1)}%
+          {replaceUmlauts(explanation.feature_1)} {explanation.percentages_feature_1 >= 0 ? '+' : ''}{Math.round(explanation.percentages_feature_1)}%
         </span>
       );
     if (explanation.feature_2 && explanation.percentages_feature_2 !== undefined)
       entries.push(
         <span key="feature2" style={{ color: "#15b1e2", fontWeight: "bold" }}>
-          {explanation.feature_2.replace(/_/g, ' ')} {explanation.percentages_feature_2 >= 0 ? '+' : ''}{Math.round(explanation.percentages_feature_2)}%
+          {replaceUmlauts(explanation.feature_2)} {explanation.percentages_feature_2 >= 0 ? '+' : ''}{Math.round(explanation.percentages_feature_2)}%
         </span>
       );
     if (explanation.feature_3 && explanation.percentages_feature_3 !== undefined)
       entries.push(
         <span key="feature3" style={{ color: "#15b1e2", fontWeight: "bold" }}>
-          {explanation.feature_3.replace(/_/g, ' ')} {explanation.percentages_feature_3 >= 0 ? '+' : ''}{Math.round(explanation.percentages_feature_3)}%
+          {replaceUmlauts(explanation.feature_3)} {explanation.percentages_feature_3 >= 0 ? '+' : ''}{Math.round(explanation.percentages_feature_3)}%
         </span>
       );
 

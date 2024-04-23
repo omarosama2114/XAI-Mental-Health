@@ -1,0 +1,2467 @@
+[
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 57.13927778,
+    "percentages_feature_1": 13.9013386739,
+    "feature_2": "Laenge_deiner_Telefonate",
+    "original_value_2": 5.088019753,
+    "percentages_feature_2": -49.4932220441,
+    "id": "6efa97b2-da66-498a-a32e-faf1474da06e"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 57.13927778,
+    "feature_2": "Laenge_deiner_Telefonate",
+    "original_value_2": 5.088019753,
+    "id": "cdeca06b-3620-4537-9b4f-a996e21382e3"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 3.416189057,
+    "percentages_feature_1": 16.3229361343,
+    "id": "04f38694-fbec-4cdc-9e9b-5a4833c23828"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 62.49311111,
+    "id": "51632fa2-9b79-4151-a435-65308002cb0b"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 64.73033333,
+    "percentages_feature_1": -14.2644616287,
+    "id": "07255ec4-e283-4547-912d-19abe70ffff8"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 64.73033333,
+    "id": "4f7c3bc1-1a57-4f9d-b3e5-a4d31ac304e8"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 6.747305556,
+    "percentages_feature_1": -43.9440800241,
+    "id": "28cf4bb1-ce36-44bf-bfe6-defec1644bb5"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 6.747305556,
+    "id": "c6c75c18-8e8e-458e-802a-c7a3f156eff4"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 15.16408333,
+    "percentages_feature_1": -86.5561193141,
+    "feature_2": "Deine_Mobilitaet",
+    "original_value_2": 0.251149198,
+    "percentages_feature_2": 396.7828939673,
+    "id": "66645925-1c5c-445b-8508-d61cc52a81d7"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 15.16408333,
+    "feature_2": "Anzahl_deiner_sozialen_Kontakt",
+    "original_value_2": 61.06666667,
+    "id": "555c1a92-82a1-42a3-ac6f-91ffd71b59ff"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Deine_Schlafqualitaet",
+    "original_value_1": 52.805,
+    "percentages_feature_1": -5.3072159265,
+    "id": "112fe094-29d4-40d6-84b3-6b67f712b57a"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 60.7005,
+    "id": "a5503622-8303-4fd1-a168-2c1b2e62be26"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Deine_Schlafqualitaet",
+    "original_value_1": 38.73333333,
+    "percentages_feature_1": 39.2512908984,
+    "feature_2": "Qualitaet_deiner_Ernaehrung",
+    "original_value_2": 52.89805556,
+    "percentages_feature_2": 12.8809607421,
+    "id": "40bec67f-bd97-4c0b-a4e7-9e354dcaddfe"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 52.89805556,
+    "feature_2": "Deine_Schlafqualitaet",
+    "original_value_2": 38.73333333,
+    "id": "23d65104-ebcd-4c7c-a506-91d967632aae"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Zeit_am_Handy",
+    "original_value_1": 409.2590122,
+    "percentages_feature_1": -46.2064131425,
+    "feature_2": "Laenge_deiner_Telefonate",
+    "original_value_2": 8.248526014,
+    "percentages_feature_2": -86.6515993993,
+    "id": "53e599dd-73b8-4ae6-bd13-d3aeae5dbd28"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 8.248526014,
+    "feature_2": "Anzahl_deiner_sozialen_Kontakt",
+    "original_value_2": 67.7,
+    "id": "d3f1da21-330b-4525-9e45-9f0f090f03cb"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 0.700744781,
+    "percentages_feature_1": 608.9471457655,
+    "id": "76231ddc-bf3c-41d8-99a0-8f339120b9bd"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 68.86666667,
+    "id": "ee49c6cd-951b-4a45-a86f-146af29e503a"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_sozialen_Kontakte",
+    "original_value_1": 55.95833333,
+    "percentages_feature_1": 46.0562372507,
+    "feature_2": "Qualitaet_deiner_Ernaehrung",
+    "original_value_2": 46.575,
+    "percentages_feature_2": 71.8853971444,
+    "id": "c46cd828-1b51-4247-b197-706dc165f6e1"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 46.575,
+    "feature_2": "Laenge_deiner_Telefonate",
+    "original_value_2": 3.610748575,
+    "id": "1f99c13a-94bc-413f-82ab-677fb418731f"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 58.00688889,
+    "percentages_feature_1": 3.1256090004,
+    "id": "c4df00f5-8140-4683-a9b4-1359154fabcc"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 2.310355159,
+    "id": "d486be06-a2ea-4c39-a178-24bafa359d58"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Deine_Schlafqualitaet",
+    "original_value_1": 56.2,
+    "percentages_feature_1": -15.5608853381,
+    "id": "95f95404-5b20-4497-b8f4-7e96523d5662"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 59.66161111,
+    "id": "05ad128f-041d-47b0-b1c6-7534b272df79"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 61.5545,
+    "percentages_feature_1": -6.4485762861,
+    "id": "b72b6e59-ad26-475a-8968-6999e8dfe4c9"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 61.5545,
+    "id": "2cdb05db-6ee2-4bce-9efb-82f5bb0ae6cc"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 51.66411111,
+    "percentages_feature_1": 22.2517014481,
+    "feature_2": "Deine_sportliche_Aktivitaet",
+    "original_value_2": 18.16444444,
+    "percentages_feature_2": 123.8647997979,
+    "id": "5accddb8-1eee-429e-a9ab-53bb6834b2f8"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 51.66411111,
+    "feature_2": "Laenge_deiner_Telefonate",
+    "original_value_2": 2.731481481,
+    "id": "ecd80aa1-eacb-4388-b78c-d632bffee41f"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 6.024111111,
+    "percentages_feature_1": -45.4418931949,
+    "id": "1d080efa-885f-4e87-9d4f-bb791ca380a1"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 6.024111111,
+    "id": "99654ad0-d742-44a4-9703-496fc5c23f8b"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Deine_Schlafqualitaet",
+    "original_value_1": 79.734,
+    "percentages_feature_1": -50.8895535656,
+    "id": "d6fc843b-527a-41c7-a0e8-e3ab477aa0a1"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 77.59061111,
+    "id": "9d8f3db3-8afe-4fcf-ad08-9a752453519e"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 15.93220899,
+    "percentages_feature_1": -77.5357520841,
+    "feature_2": "Deine_Mobilitaet",
+    "original_value_2": 0.617586473,
+    "percentages_feature_2": -27.7367159886,
+    "id": "573febe9-b172-4717-9dff-557091b49423"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 15.93220899,
+    "feature_2": "Anzahl_deiner_sozialen_Kontakt",
+    "original_value_2": 9.11333333,
+    "id": "e2bc7cfb-a95e-48eb-9647-58df35ce3651"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 56.88888889,
+    "percentages_feature_1": 10.2037327908,
+    "feature_2": "Laenge_deiner_Telefonate",
+    "original_value_2": 5.815964535,
+    "percentages_feature_2": -52.697401842,
+    "id": "1c30ae5d-9515-4952-a09a-95f8a70f439c"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 56.88888889,
+    "feature_2": "Deine_Schlafqualitaet",
+    "original_value_2": 50.81111111,
+    "id": "e5083a2a-437b-4ffe-8a7f-e7e936cf35da"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 53.68638889,
+    "percentages_feature_1": 10.1504938638,
+    "id": "628527a7-d383-4501-b7b1-9d82337d1cdb"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 53.68638889,
+    "id": "7ba10513-90bd-4c0c-995c-1459f83a3272"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 58.74672222,
+    "percentages_feature_1": -1.57551345,
+    "id": "a8fcbe35-0535-42f6-9f12-88c9c21a0681"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 58.74672222,
+    "id": "7a6d5a7e-f2bc-4bb1-a929-eaca7d741e6b"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 2.377877037,
+    "percentages_feature_1": 72.0686481822,
+    "id": "62f8efd8-63d6-4617-97ba-064a12861bc1"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 62.18,
+    "id": "b1a58177-2d7c-4703-a35f-1a1ad03c0221"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 51.43777778,
+    "percentages_feature_1": 18.0602436787,
+    "id": "c1aebe3f-c27e-4fdf-901e-5581bce208e9"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 51.43777778,
+    "id": "1046f8bb-a15f-42c5-9a2a-9194e66fce37"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 60.24194444,
+    "percentages_feature_1": -4.6842712436,
+    "id": "c2679e1d-0b30-45f0-87a7-760f667cfe85"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 60.24194444,
+    "id": "a6f554b0-4021-4c85-b662-bc437f894808"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 3.700128439,
+    "percentages_feature_1": 18.3941885591,
+    "id": "d527b713-6b39-4e65-b14d-31f91b6f254a"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 59.91277778,
+    "id": "975581da-4c05-4eed-a82c-d51628c707b3"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 2.361277778,
+    "percentages_feature_1": 68.0354073531,
+    "id": "824e3375-80ce-4258-926f-772879879c28"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 76.21777778,
+    "id": "4a70a00b-2735-4024-9b14-cf5f3d2fb053"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 49.15111111,
+    "percentages_feature_1": 29.1145221071,
+    "id": "3112ca08-4412-4f57-adbb-2d7ebe3daee7"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 49.15111111,
+    "id": "25839b3f-988e-4703-abc5-aa3be3eecdc8"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 0.338344444,
+    "percentages_feature_1": 1428.8455822848,
+    "id": "96c60ecb-e3ce-495f-9cec-b4abcd0e1533"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 66.4,
+    "id": "1be93eec-494a-4d62-b3b2-99af48adec6e"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Deine_Schlafqualitaet",
+    "original_value_1": 88.85666667,
+    "percentages_feature_1": -48.2312338242,
+    "id": "652987dd-1a1d-4768-8318-3ca94c09d1da"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 60.66883333,
+    "id": "24ecba84-2fe3-4ee7-8537-54c30940e848"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 2.392894444,
+    "percentages_feature_1": 121.1486491713,
+    "id": "84b36abb-1cfb-4005-9d33-66aba3a021cc"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 78.33333333,
+    "id": "22970bbc-8480-4473-97bb-0305757cf9b7"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Dein_Stresslevel",
+    "original_value_1": 3.27777778,
+    "percentages_feature_1": 91.2372879042,
+    "feature_2": "Zeit_am_Handy",
+    "original_value_2": 91.94177,
+    "percentages_feature_2": 82.4985796989,
+    "feature_3": "Laenge_deiner_Telefonate",
+    "original_value_3": 7.436408862,
+    "percentages_feature_3": -87.8714013479,
+    "id": "26c9b5b9-8ffc-4ee7-880f-4501ffd4fab7"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 7.436408862,
+    "feature_2": "Deine_sportliche_Aktivitaet",
+    "original_value_2": 21.30833333,
+    "feature_3": "Deine_Mobilitaet",
+    "original_value_3": 3.066411727,
+    "id": "e99d2ac2-0d34-4144-87e0-b6ab503998c7"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 59.56588889,
+    "percentages_feature_1": -2.5384505263,
+    "id": "76c52b16-c9f0-477a-8f15-f04d211e1fa7"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 59.56588889,
+    "id": "5362f558-1215-4148-a428-20195c3e9129"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 59.74794444,
+    "percentages_feature_1": -2.7985350721,
+    "id": "96eb741b-e7e7-4bb3-badd-be092b38181f"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 59.74794444,
+    "id": "df86e01f-13b1-4867-9eb1-dfd0990e477b"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Deine_Schlafqualitaet",
+    "original_value_1": 53.0,
+    "percentages_feature_1": -6.5393943774,
+    "id": "91c1a5eb-acc7-43e7-b40e-d9f97a66bf9f"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 0.266331481,
+    "id": "d1fab6d8-3472-4b6f-a61c-2155b5e6fc41"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 58.51516667,
+    "percentages_feature_1": -0.6271742539,
+    "id": "c24afa7d-43b9-40d5-a446-0328fd95a213"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 58.51516667,
+    "id": "e654a05d-9a1e-4ede-9c31-ed168e652dce"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 43.10544444,
+    "percentages_feature_1": 36.5301882502,
+    "feature_2": "Deine_sportliche_Aktivitaet",
+    "original_value_2": 27.38805556,
+    "percentages_feature_2": -35.9655973328,
+    "feature_3": "Zeit_am_Handy",
+    "original_value_3": 152.63805,
+    "percentages_feature_3": -10.0378720771,
+    "id": "299f0f74-a4ac-4cd1-a1c5-4d092be9084b"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 43.10544444,
+    "feature_2": "Anzahl_deiner_sozialen_Kontakt",
+    "original_value_2": 80.5,
+    "feature_3": "Zeit_am_Handy",
+    "original_value_3": 152.63805,
+    "id": "ffc4d75a-64ac-4d3f-862b-aac2934cc1e2"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 57.1155,
+    "percentages_feature_1": 4.6003497124,
+    "id": "62a6ff49-7d85-4670-a4eb-07dac90f1f4b"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 57.1155,
+    "id": "ba1ba90f-657f-487f-b0c4-069276a7ca5a"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 1.456472222,
+    "percentages_feature_1": 222.1073816676,
+    "id": "3e6840ca-01f0-4a1e-bb55-897df3851d15"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 60.19777778,
+    "id": "4160e14a-cc64-4dd2-a2aa-f95773408941"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 0.942640955,
+    "percentages_feature_1": 359.579894871,
+    "id": "c75fdddc-db4d-480b-b6f9-f5a5874aea97"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 73.91538889,
+    "id": "f0449005-7f8d-4a26-9bf8-f8803df728e2"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 57.44888889,
+    "percentages_feature_1": 7.7280654435,
+    "feature_2": "Laenge_deiner_Telefonate",
+    "original_value_2": 3.909741751,
+    "percentages_feature_2": -10.2249135483,
+    "feature_3": "Deine_Mobilitaet",
+    "original_value_3": 3.210328638,
+    "percentages_feature_3": -63.6026630056,
+    "id": "2e968946-e8ed-4e2f-bf9b-08f49ec86c35"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 57.44888889,
+    "feature_2": "Laenge_deiner_Telefonate",
+    "original_value_2": 3.909741751,
+    "feature_3": "Deine_Schlafqualitaet",
+    "original_value_3": 51.83333333,
+    "id": "4057f820-a193-47f0-861e-5620244303d4"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 52.52938889,
+    "percentages_feature_1": 12.6030137032,
+    "id": "068b1e5a-e409-4b6c-b4ea-1957d580be10"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 52.52938889,
+    "id": "e5402638-bede-4c2a-90fe-66af7c76ec05"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 6.716075838,
+    "percentages_feature_1": -42.1374282284,
+    "id": "307f9809-cdad-4649-9530-d1d21db15463"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 6.716075838,
+    "id": "f9446996-0a9f-4520-a651-bcc0943fb139"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 59.43694444,
+    "percentages_feature_1": -2.1645475926,
+    "id": "303ee2d1-7a5b-484a-856f-99e7a2e8a10e"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 59.43694444,
+    "id": "e506fd4e-7bf3-417a-a371-38a17c08b1fc"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 45.15,
+    "percentages_feature_1": 28.864279557,
+    "id": "5ab249ad-30a2-4b59-a2dd-bf867853f0de"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 45.15,
+    "id": "1a64dfbf-9d4b-4e26-89e0-b71911a7cf0b"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Anzahl_deiner_sozialen_Kontakt",
+    "original_value_1": 99.56666667,
+    "percentages_feature_1": -7.8328623834,
+    "feature_2": "Deine_Mobilitaet",
+    "original_value_2": 0.164601444,
+    "percentages_feature_2": -45.138272906,
+    "id": "85b9202a-2aa3-4cf4-933f-766cee41e13a"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 0.441601852,
+    "feature_2": "Deine_Schlafqualitaet",
+    "original_value_2": 72.53333333,
+    "id": "91f61a10-e54d-420d-96aa-c876e83e5088"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 10.68290918,
+    "percentages_feature_1": -63.9012337555,
+    "id": "3a45f014-f328-45cd-b4b3-6f2bbc29676a"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 10.68290918,
+    "id": "c672c165-d36a-4aed-a8c7-fa0e164605f1"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 53.78016667,
+    "percentages_feature_1": 8.6013521274,
+    "id": "9c43a161-3a7b-4414-8595-2df9bf116859"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 53.78016667,
+    "id": "3efeefb6-373c-42c1-a3ab-ad6507c08e44"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 56.71883333,
+    "percentages_feature_1": 3.2702068627,
+    "id": "b3c3126d-ddd5-4a4f-a7e3-b672f2ef7686"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 56.71883333,
+    "id": "b82e6134-464a-4ea5-b4e6-27ce02d2842c"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 58.79611111,
+    "percentages_feature_1": -1.2054545898,
+    "id": "dadb5c14-1018-4f13-97eb-4637fc63b45b"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 58.79611111,
+    "id": "ef190964-396a-4643-907a-2affcc0a0a3b"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 53.90238889,
+    "percentages_feature_1": 13.6177256911,
+    "id": "5142caf9-38eb-418d-9c5a-ac702e9756c2"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 53.90238889,
+    "id": "3b4d97d6-9696-4200-b4d8-cac8d7aeacd2"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 1.736882336,
+    "percentages_feature_1": 807.6640139773,
+    "feature_2": "Deine_Mobilitaet",
+    "original_value_2": 1.277539696,
+    "percentages_feature_2": 713.671384345,
+    "id": "3385f25b-472e-4cc8-82d1-3d89ec6e6021"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 74.73394444,
+    "feature_2": "Deine_Schlafqualitaet",
+    "original_value_2": 77.55611111,
+    "id": "5c862e64-893b-44e9-98f4-756fc141ade1"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 49.95566667,
+    "percentages_feature_1": 16.538997897,
+    "id": "2c874da4-5fc4-440a-a1b3-4acb31129b22"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 49.95566667,
+    "id": "b4034a9f-ec38-4d03-9504-98406a2962ed"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 1.667216049,
+    "percentages_feature_1": 156.9107673579,
+    "id": "b6e9a2c2-f8b0-4e8b-86bf-bb07c11c6983"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 61.83666667,
+    "id": "32b127e2-f7ca-47bf-8909-d3b2f0346e82"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 60.83444444,
+    "percentages_feature_1": -4.4662880626,
+    "id": "dedd0d10-4985-444e-a4b5-07edcd275c7a"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 60.83444444,
+    "id": "0a589607-f5ea-45be-910c-ee1d85595790"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 2.478266942,
+    "percentages_feature_1": 68.2264081542,
+    "id": "e9e63ab0-322b-47ad-bc48-7414932a96e8"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 63.46122222,
+    "id": "d3396003-d0f1-4896-9893-8e3ef575ee62"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Dein_Stresslevel",
+    "original_value_1": 47.8,
+    "percentages_feature_1": -35.8670385774,
+    "feature_2": "Deine_Schlafqualitaet",
+    "original_value_2": 32.93333333,
+    "percentages_feature_2": 147.3684210878,
+    "feature_3": "Qualitaet_deiner_Ernaehrung",
+    "original_value_3": 35.60944444,
+    "percentages_feature_3": 65.581921783,
+    "id": "111c4994-8c3a-409c-acd5-dd19709c7f32"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 35.60944444,
+    "feature_2": "Deine_Schlafqualitaet",
+    "original_value_2": 32.93333333,
+    "feature_3": "Laenge_deiner_Telefonate",
+    "original_value_3": 1.824192328,
+    "id": "fa833b9c-2b6f-4baf-b4e4-15d2084b2002"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 2.134689815,
+    "percentages_feature_1": 86.9092826023,
+    "id": "0afc394b-7161-4eca-8484-10fda59c60b9"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 83.55166667,
+    "id": "ce429572-9e2a-4fa7-8350-6aed75bd8668"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 4.330930664,
+    "percentages_feature_1": -29.308876532,
+    "id": "e6ffebeb-5291-4c3f-b6aa-914eb13553ad"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 4.330930664,
+    "id": "8fc952b2-6585-4dd7-92a4-3376c819ad67"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 5.51888955,
+    "percentages_feature_1": -36.1796137051,
+    "id": "ac8667cf-9691-4b54-984a-fbd6c4645548"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 5.51888955,
+    "id": "7ebd60dd-7464-4eb2-ad0e-4566c4f61e7e"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 50.75311111,
+    "percentages_feature_1": 14.8464426617,
+    "id": "67fcb6bd-68a2-40ba-b0e7-abad63fb05d2"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 50.75311111,
+    "id": "0d5791ba-e50c-4dbd-bf85-e4a7e22622a5"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 50.49827778,
+    "percentages_feature_1": 15.8755689153,
+    "id": "fbe8d2b1-c4be-44d1-a4b5-d7b8dc9d225c"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 50.49827778,
+    "id": "2aba32e8-a303-461c-af1f-8be40b99cebf"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 0.136440123,
+    "percentages_feature_1": 2769.0497940991,
+    "id": "20277637-affe-4381-8c8a-0fb762825367"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 62.81483333,
+    "id": "e2caccfb-ce07-45c1-aa5a-a288c2ee38bb"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 2.220770004,
+    "percentages_feature_1": 122.5165848377,
+    "id": "b1b87fdd-061e-498b-9381-f4e4f4aa2dd1"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 64.97777778,
+    "id": "41cc2157-9be2-4ec9-be4d-cfa5e1a13cbd"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 2.815522358,
+    "percentages_feature_1": 40.8775110853,
+    "id": "19685343-d27f-4c2f-ad37-e304790d9af1"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 61.61561111,
+    "id": "115cac26-1074-441f-8b37-9cd7e2a2a507"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 58.85194444,
+    "percentages_feature_1": -14.3884198399,
+    "id": "3c1f41f6-77dc-43ff-8a44-43f7b3435d66"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 58.85194444,
+    "id": "aee75a6a-c2f0-437a-bb64-3503bcaa4362"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 61.14011111,
+    "percentages_feature_1": -11.2542171826,
+    "id": "912bfe0d-14e8-4de4-83bd-c907dc988d4d"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 61.14011111,
+    "id": "bf9c2517-f868-4315-90f7-01f665cf24e8"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 67.49711111,
+    "percentages_feature_1": -19.9074363614,
+    "id": "69ee6cfc-8f76-4ccd-a372-099b5cce7ae9"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 67.49711111,
+    "id": "ecbb2ccf-a0de-445f-9d82-30c808454001"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 1.363902186,
+    "percentages_feature_1": 308.0709163113,
+    "id": "e4e5e1aa-2e94-4c65-8396-7108d37cf468"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 74.92983333,
+    "id": "a6318cae-42fb-4c94-b761-c4e07151aaaa"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 56.96105556,
+    "percentages_feature_1": 2.7013224472,
+    "id": "b6628db0-4fad-4655-86c0-8458cf6c401f"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 56.96105556,
+    "id": "9ef88308-3742-47b2-887f-43706fb306e7"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Deine_Schlafqualitaet",
+    "original_value_1": 47.53333333,
+    "percentages_feature_1": 8.3749688295,
+    "id": "2ed5252f-44cd-449c-b260-4666658c192b"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Deine_Schlafqualitaet",
+    "original_value_1": 47.53333333,
+    "id": "ea461867-cc96-42b7-8277-d81e33186844"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 2.640485383,
+    "percentages_feature_1": 50.2071710578,
+    "id": "9b7438e8-6e3d-406d-9b33-123671781aed"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 65.73777778,
+    "id": "408ce597-95f5-477b-b34b-d138588173c9"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 54.06016667,
+    "percentages_feature_1": 9.8358497162,
+    "id": "fab32098-4dcb-4d9c-8cc8-bb04ff803927"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 54.06016667,
+    "id": "28d6b541-fa98-41fc-994f-49cf5737d971"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 1.594516226,
+    "percentages_feature_1": 261.9014358026,
+    "id": "d562198e-6545-47c1-bf69-ff2e0a3481ec"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 77.25555556,
+    "id": "e4ea7040-e936-4690-b335-73319a5438c7"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Deine_Schlafqualitaet",
+    "original_value_1": 34.4,
+    "percentages_feature_1": 56.7926356686,
+    "feature_2": "Qualitaet_deiner_Ernaehrung",
+    "original_value_2": 36.19733333,
+    "percentages_feature_2": 64.9619677384,
+    "feature_3": "Deine_sportliche_Aktivitaet",
+    "original_value_3": 21.83388889,
+    "percentages_feature_3": -16.0581155637,
+    "id": "c472ab22-c47a-4a79-8b87-7fa9a66c0b27"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 36.19733333,
+    "feature_2": "Deine_Schlafqualitaet",
+    "original_value_2": 34.4,
+    "feature_3": "Anzahl_deiner_sozialen_Kontakt",
+    "original_value_3": 20.46666667,
+    "id": "847df6f3-035c-4089-8e83-b43487119e6e"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 57.25138889,
+    "percentages_feature_1": 2.7845656689,
+    "id": "de218be7-5d24-49c4-87c5-b18f65a8c8ce"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 57.25138889,
+    "id": "9337c9a7-9e86-4214-953b-fb1e547f4634"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Deine_Schlafqualitaet",
+    "original_value_1": 81.5,
+    "percentages_feature_1": -46.6528248344,
+    "id": "ddba3fc9-00a7-4370-b096-416488df1ff1"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 64.58444444,
+    "id": "0b016757-3274-4925-8e97-6bedbd755560"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 3.659213179,
+    "percentages_feature_1": 19.2518647736,
+    "id": "d8caacc7-292a-4274-8a54-ffaf4d1a2615"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 64.13333333,
+    "id": "99a46ee5-8933-49ce-a2d5-9fe065964014"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 56.45972222,
+    "percentages_feature_1": 5.1326119861,
+    "feature_2": "Laenge_deiner_Telefonate",
+    "original_value_2": 1.048616318,
+    "percentages_feature_2": 158.7862421573,
+    "id": "184447f9-fb89-4c2c-a5ed-3c1fe1bcc378"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 56.45972222,
+    "feature_2": "Anzahl_deiner_sozialen_Kontakt",
+    "original_value_2": 70.09333333,
+    "id": "9c511e4c-886b-4932-b753-43fc3bf96f9b"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 43.70233333,
+    "percentages_feature_1": 36.4490356607,
+    "feature_2": "Deine_sportliche_Aktivitaet",
+    "original_value_2": 23.82222222,
+    "percentages_feature_2": 5.0887062038,
+    "feature_3": "Zeit_am_Handy",
+    "original_value_3": 95.83856,
+    "percentages_feature_3": 417.8439898304,
+    "id": "18bb400f-e776-467f-944b-4a247509e994"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 43.70233333,
+    "feature_2": "Anzahl_deiner_sozialen_Kontakt",
+    "original_value_2": 69.08333333,
+    "feature_3": "Zeit_am_Handy",
+    "original_value_3": 95.83856,
+    "id": "0d92bf18-08dc-4c93-8df2-dc03e883d686"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 48.99722222,
+    "percentages_feature_1": 20.6588808944,
+    "feature_2": "Deine_sportliche_Aktivitaet",
+    "original_value_2": 2.13833333,
+    "percentages_feature_2": 28.1510006674,
+    "id": "81430034-c105-4f99-8765-e618d19e99d4"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 48.99722222,
+    "feature_2": "Deine_sportliche_Aktivitaet",
+    "original_value_2": 2.13833333,
+    "id": "4b353678-a307-43ff-8efc-eec13057ee7e"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 61.22461111,
+    "percentages_feature_1": -6.6942511446,
+    "id": "441e7293-12e3-483b-aba2-62196c344e5f"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 61.22461111,
+    "id": "9dee28b9-7083-4764-8738-d05b852a4424"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Deine_Schlafqualitaet",
+    "original_value_1": 46.03333333,
+    "percentages_feature_1": 12.5060100661,
+    "feature_2": "Qualitaet_deiner_Ernaehrung",
+    "original_value_2": 51.14444444,
+    "percentages_feature_2": 14.1620841311,
+    "id": "7391b4c1-da89-4b76-ac8b-27905048f23a"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 51.14444444,
+    "feature_2": "Deine_Schlafqualitaet",
+    "original_value_2": 46.03333333,
+    "id": "67c84a9f-e1b7-4964-80e2-7783ca6de461"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 1.578827182,
+    "percentages_feature_1": 156.0540224472,
+    "id": "5cc35c00-cd5e-498a-839b-75603c79c175"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 66.59555556,
+    "id": "3b260302-7a33-434e-a81d-0ffb15e989ec"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Deine_Schlafqualitaet",
+    "original_value_1": 91.43333333,
+    "percentages_feature_1": 0.084270875,
+    "feature_2": "Zeit_am_Handy",
+    "original_value_2": 203.6914122,
+    "percentages_feature_2": 2.1486874939,
+    "feature_3": "Laenge_deiner_Telefonate",
+    "original_value_3": 22.00165556,
+    "percentages_feature_3": -93.8311761026,
+    "id": "3e7a69af-a8e7-4509-a0dc-360370215775"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 22.00165556,
+    "feature_2": "Deine_sportliche_Aktivitaet",
+    "original_value_2": 10.0,
+    "feature_3": "Dein_Stresslevel",
+    "original_value_3": 40.33333333,
+    "id": "79a3c1e3-86e6-485a-80ee-27e35b8fdebe"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 2.722324735,
+    "percentages_feature_1": 103.3132472346,
+    "id": "8f8b8010-5b9d-49bf-a7a1-0bb2daa8fe13"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 62.03022222,
+    "id": "849c9d7c-adb7-4692-9d86-47696e7eb8f0"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Deine_Schlafqualitaet",
+    "original_value_1": 88.38333333,
+    "percentages_feature_1": -52.4797284538,
+    "id": "f40bc677-1f4e-4b58-a391-4c8a670722a7"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Deine_Schlafqualitaet",
+    "original_value_1": 88.38333333,
+    "id": "fba4e251-0829-467c-94f4-a3c0fec1f0e2"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Deine_Schlafqualitaet",
+    "original_value_1": 74.16666667,
+    "percentages_feature_1": -6.3970037525,
+    "feature_2": "Qualitaet_deiner_Ernaehrung",
+    "original_value_2": 40.27222222,
+    "percentages_feature_2": 44.560767002,
+    "id": "7543ece1-cb03-4d04-b1e5-2e6058679de0"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 40.27222222,
+    "feature_2": "Anzahl_deiner_sozialen_Kontakt",
+    "original_value_2": 68.06666667,
+    "id": "ee6660a7-1c69-41c2-af82-99d0b9f411ab"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 0.723547222,
+    "percentages_feature_1": 529.7661817296,
+    "id": "f085d789-72d8-4591-a8ce-a829d3962748"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 71.84444444,
+    "id": "0e487baa-2306-4a01-92f1-c1b4f9c43581"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 27.1232668,
+    "percentages_feature_1": -96.9292001545,
+    "id": "e037ab68-4297-464c-b663-0cdd241a672f"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 27.1232668,
+    "id": "93a4ee00-d071-4d19-96d0-fb9fe2ef421a"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 58.18222222,
+    "percentages_feature_1": -0.4417141185,
+    "id": "f71cace9-10cf-463d-91a2-44accaea9e0c"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 58.18222222,
+    "id": "2b7d87c9-e0c2-4253-8187-04be3f497f7e"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 63.80988889,
+    "percentages_feature_1": -10.7331848545,
+    "feature_2": "Deine_sportliche_Aktivitaet",
+    "original_value_2": 11.46722222,
+    "percentages_feature_2": 41.2213556109,
+    "id": "35760301-6050-4f5e-b280-3b81aa09c453"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 63.80988889,
+    "feature_2": "Deine_Schlafqualitaet",
+    "original_value_2": 81.24,
+    "id": "55bd469e-8b7d-47b0-954e-4bcad3630bb1"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 44.86111111,
+    "percentages_feature_1": 31.8741795649,
+    "id": "5db282cb-3570-4db4-bc62-1790a1cb590b"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 44.86111111,
+    "id": "28dfc63a-7930-437f-91ed-b3ae8e73ca95"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Deine_Schlafqualitaet",
+    "original_value_1": 43.86666667,
+    "percentages_feature_1": 32.5506866009,
+    "feature_2": "Qualitaet_deiner_Ernaehrung",
+    "original_value_2": 55.33488889,
+    "percentages_feature_2": 11.3955343301,
+    "id": "7c0fdeaa-3917-4fe2-a70e-9a9b2af30159"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 55.33488889,
+    "feature_2": "Deine_Schlafqualitaet",
+    "original_value_2": 43.86666667,
+    "id": "bfae2132-9a35-4ad4-8718-e09f936e4ac0"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 1.958606173,
+    "percentages_feature_1": 110.3096402321,
+    "id": "45a9cc48-854f-4a94-8baa-5247aba023fa"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 61.43916667,
+    "id": "1ae1ab24-f95f-46cd-8a0b-4c10de910c8d"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Dein_Stresslevel",
+    "original_value_1": 24.01111111,
+    "percentages_feature_1": -14.8511955305,
+    "feature_2": "Anzahl_deiner_sozialen_Kontakt",
+    "original_value_2": 97.73333333,
+    "percentages_feature_2": -9.7076978312,
+    "id": "9dd06c2c-ce21-4cb7-a0f8-c070c266cd12"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 0.830525,
+    "feature_2": "Deine_Schlafqualitaet",
+    "original_value_2": 66.73333333,
+    "id": "4b352c17-ac89-453e-8628-bda93321af20"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 56.12838889,
+    "percentages_feature_1": 3.7576393724,
+    "id": "9dae0530-ae7e-4d96-a416-2109dbf79f6d"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 56.12838889,
+    "id": "cbfaebd6-0a01-4621-91be-22dcc32ba2b6"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Anzahl_deiner_sozialen_Kontakt",
+    "original_value_1": 99.66222222,
+    "percentages_feature_1": -11.2494394167,
+    "feature_2": "Laenge_deiner_Telefonate",
+    "original_value_2": 2.093631944,
+    "percentages_feature_2": 53.0641928818,
+    "id": "c1988042-4058-4352-973a-3104eaf1c382"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Deine_Schlafqualitaet",
+    "original_value_1": 79.60666667,
+    "feature_2": "Anzahl_deiner_sozialen_Kontakt",
+    "original_value_2": 99.66222222,
+    "id": "04a03b62-c715-4943-86b6-8c82056e0c7e"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 62.40072222,
+    "percentages_feature_1": -8.9364046306,
+    "id": "8e54679d-fb8c-4d40-9607-c95a366fd75d"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 62.40072222,
+    "id": "d900698c-5725-4cb0-bf32-bd52de728c97"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 0.877165862,
+    "percentages_feature_1": 631.281010341,
+    "id": "6984c849-51fd-41f5-9f93-1ccfafcfd2cd"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 59.16022222,
+    "id": "c7958888-b371-4f11-968a-e736c3ddaa36"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 0.338392196,
+    "percentages_feature_1": 1258.223174272,
+    "id": "c11b8b99-040b-41b9-81a2-9e86093fb7c0"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 74.05555556,
+    "id": "4c026d2a-17f3-4947-bc54-103c5854f7cd"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 0.895123737,
+    "percentages_feature_1": 464.019490302,
+    "id": "f38d04b0-bdbe-48c6-a8cc-08b629a4c856"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 65.88205556,
+    "id": "25ca11b3-15b7-40f5-b90d-7f893be6cc73"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Dein_Stresslevel",
+    "original_value_1": 54.73333333,
+    "percentages_feature_1": 7.771578819,
+    "feature_2": "Deine_Schlafqualitaet",
+    "original_value_2": 44.8,
+    "percentages_feature_2": 20.3943452455,
+    "feature_3": "Laenge_deiner_Telefonate",
+    "original_value_3": 5.770577116,
+    "percentages_feature_3": -36.5884363827,
+    "id": "3ac7be41-b53c-4fb6-8e13-46fe61e19949"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 5.770577116,
+    "feature_2": "Deine_Schlafqualitaet",
+    "original_value_2": 44.8,
+    "feature_3": "Anzahl_deiner_sozialen_Kontakt",
+    "original_value_3": 25.93333333,
+    "id": "c898d95c-b8a5-45f0-b21e-ec4b32c1427e"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Deine_Schlafqualitaet",
+    "original_value_1": 50.62833333,
+    "percentages_feature_1": -1.150935043,
+    "id": "3e2a35e3-dd0d-4163-b13c-2c26cbf3224a"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 64.07861111,
+    "id": "30997f92-cc1e-4522-9b08-11159ab8561e"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 59.1195,
+    "percentages_feature_1": -1.6466216561,
+    "id": "6d6c6c42-d3e8-4853-905c-bf8558385ead"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 59.1195,
+    "id": "7bb4520d-d323-4604-83d1-e16602674836"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 57.58511111,
+    "percentages_feature_1": 1.4204964517,
+    "id": "6f5f9384-c609-4890-a152-4d00abc7abb2"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 57.58511111,
+    "id": "53b700e9-ff8b-4b0b-be82-93720e000794"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Deine_Schlafqualitaet",
+    "original_value_1": 55.35,
+    "percentages_feature_1": -2.2466735501,
+    "feature_2": "Qualitaet_deiner_Ernaehrung",
+    "original_value_2": 53.01077778,
+    "percentages_feature_2": 9.9554267849,
+    "id": "74d81de0-958a-4994-85c7-0405a702c2dc"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 53.01077778,
+    "feature_2": "Dein_Stresslevel",
+    "original_value_2": 46.82611111,
+    "id": "5b5ed034-6574-47b5-a583-0f2c32153eb3"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Dein_Stresslevel",
+    "original_value_1": 57.12138889,
+    "percentages_feature_1": 1.483514243,
+    "feature_2": "Qualitaet_deiner_Ernaehrung",
+    "original_value_2": 50.23116667,
+    "percentages_feature_2": 29.3574927433,
+    "id": "d6633fe7-b255-4c26-b179-588514a37438"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 50.23116667,
+    "feature_2": "Anzahl_deiner_sozialen_Kontakt",
+    "original_value_2": 50.85333333,
+    "id": "fc231de4-4cb8-43a3-a792-6613c561f14e"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 54.84422222,
+    "percentages_feature_1": 40.8636177756,
+    "feature_2": "Laenge_deiner_Telefonate",
+    "original_value_2": 8.241067019,
+    "percentages_feature_2": -62.4982743633,
+    "id": "704f1fd3-7adc-4c55-95cd-aa63426c3020"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 54.84422222,
+    "feature_2": "Laenge_deiner_Telefonate",
+    "original_value_2": 8.241067019,
+    "id": "27bf9bd6-d4eb-4c14-83e8-521e5fb9f672"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 1.062117284,
+    "percentages_feature_1": 278.4830955637,
+    "id": "8ff87222-3528-46ac-80ac-f8b7b1064c79"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 61.75311111,
+    "id": "386151dc-66fd-43c3-8cea-6ba62a499932"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 55.96233333,
+    "percentages_feature_1": 4.8000840032,
+    "id": "6245f14e-8c12-4bf3-9d8b-dfa44236763c"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 55.96233333,
+    "id": "12f43f17-d549-45ef-8c96-b47062f9e0e3"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 51.20522222,
+    "percentages_feature_1": 22.7411745426,
+    "feature_2": "Laenge_deiner_Telefonate",
+    "original_value_2": 1.055259259,
+    "percentages_feature_2": 40.0310857637,
+    "feature_3": "Deine_Mobilitaet",
+    "original_value_3": 0.086121259,
+    "percentages_feature_3": -24.6873539087,
+    "id": "c35d6233-8251-42ed-b1aa-ea9bc30fe6b9"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 51.20522222,
+    "feature_2": "Anzahl_deiner_sozialen_Kontakt",
+    "original_value_2": 53.03166667,
+    "feature_3": "Deine_Mobilitaet",
+    "original_value_3": 0.086121259,
+    "id": "8fdd0f8f-59c5-4bcb-9b96-5d3d2c584379"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 62.78283333,
+    "percentages_feature_1": -8.8384271555,
+    "id": "f93981fc-e0ec-4689-ac88-f1c85de31196"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 62.78283333,
+    "id": "4d5a753f-8ddb-4387-a1ae-78613b1e5a38"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 0.793462963,
+    "percentages_feature_1": 2870.6378179116,
+    "id": "46a6a94b-1b98-4a29-ba66-c1111e1614f2"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 58.62888889,
+    "id": "ebd9a8d3-40fb-4284-a591-ff2145294a0e"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 1.623211538,
+    "percentages_feature_1": 227.5437556063,
+    "id": "4f41f79f-6550-4f04-b30d-e75fec96b6f1"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 61.13794444,
+    "id": "2aab85e9-78d1-4955-b856-311da645ad1f"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 0.332994839,
+    "percentages_feature_1": 1966.7535126573,
+    "id": "781473a7-40ad-48a8-b569-0d1190e521b8"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 65.44444444,
+    "id": "f715b127-97fd-4f84-b55f-dd58d8d2c547"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Dein_Stresslevel",
+    "original_value_1": 24.35944444,
+    "percentages_feature_1": -3.4369512082,
+    "feature_2": "Deine_Schlafqualitaet",
+    "original_value_2": 38.01666667,
+    "percentages_feature_2": 48.57932146,
+    "id": "7ddafffa-1b5d-4f84-9922-4fe99f6b6017"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Deine_Schlafqualitaet",
+    "original_value_1": 38.01666667,
+    "feature_2": "Anzahl_deiner_sozialen_Kontakt",
+    "original_value_2": 38.57,
+    "id": "7d0268d2-1ead-4dfd-8d3e-5f432f783dd6"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 6.248411111,
+    "percentages_feature_1": -42.7206234926,
+    "id": "29db975a-3421-4a4b-a617-735dffa1f1c5"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 6.248411111,
+    "id": "7096df9e-5474-4836-9fee-c1433bb85667"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 59.84094444,
+    "percentages_feature_1": -3.0878505801,
+    "id": "bce626a5-45d7-4da8-8aa3-8dc4817f245d"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 59.84094444,
+    "id": "c9d3fde2-690e-4856-be4f-98295bc91d1d"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 69.68888889,
+    "percentages_feature_1": -35.6265943904,
+    "feature_2": "Deine_sportliche_Aktivitaet",
+    "original_value_2": 44.66666667,
+    "percentages_feature_2": -76.6063432779,
+    "feature_3": "Zeit_am_Handy",
+    "original_value_3": 209.0340611,
+    "percentages_feature_3": 100.3736185844,
+    "id": "399f8206-d4c5-4221-8627-16e0969f3f55"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 69.68888889,
+    "feature_2": "Laenge_deiner_Telefonate",
+    "original_value_2": 0.564586111,
+    "feature_3": "Deine_Schlafqualitaet",
+    "original_value_3": 85.4,
+    "id": "ea7f17c4-f444-453e-b3dc-13fcb17ca82e"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 40.11866667,
+    "percentages_feature_1": 68.9687015713,
+    "feature_2": "Deine_sportliche_Aktivitaet",
+    "original_value_2": 25.07,
+    "percentages_feature_2": -14.3204639011,
+    "id": "68b949bb-3ff4-409e-a2b0-e1c486be3c94"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 40.11866667,
+    "feature_2": "Anzahl_deiner_sozialen_Kontakt",
+    "original_value_2": 71.07666667,
+    "id": "4abbdba1-6547-46ab-b6eb-0c6e4320bc40"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 1.271781481,
+    "percentages_feature_1": 225.3353708804,
+    "id": "83104832-3bc8-4918-9cd8-75812a592300"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 61.78383333,
+    "id": "84ba9493-81d7-4479-abd1-a288a09d675d"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 6.25712963,
+    "percentages_feature_1": -42.1385451463,
+    "id": "b8cb1007-e519-4a50-8c96-03efc497c926"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 6.25712963,
+    "id": "39903faf-34d7-4c6f-b7fa-6a4d3a05362b"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Deine_Schlafqualitaet",
+    "original_value_1": 53.93666667,
+    "percentages_feature_1": -8.0510106911,
+    "id": "8230ce20-4395-40b0-95c5-3b0a11e3255b"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 59.71183333,
+    "id": "e98af2b0-1042-4cbd-99d9-9db3a3c5d710"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 50.04688889,
+    "percentages_feature_1": 47.3353651654,
+    "id": "615c33f4-267a-4e2b-b067-382e784f7558"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 50.04688889,
+    "id": "4116f45e-4a4f-4984-8110-43ac99e8f43e"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 49.90516667,
+    "percentages_feature_1": 19.6506039642,
+    "feature_2": "Deine_sportliche_Aktivitaet",
+    "original_value_2": 29.82583333,
+    "percentages_feature_2": -39.4022608856,
+    "id": "17e42b02-d84d-4c7e-96f6-5d416dc50e38"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 49.90516667,
+    "feature_2": "Deine_Schlafqualitaet",
+    "original_value_2": 51.8,
+    "id": "07a1c968-33a3-4c33-9cd3-e6c617645fc9"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 3.943178704,
+    "percentages_feature_1": -1.9933927397,
+    "id": "e27bcc0c-fc56-4d0d-8f03-a3f34d86b95c"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 3.943178704,
+    "id": "8bb107a7-9ec2-4960-a29d-78ee925e85d5"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 2.751102333,
+    "percentages_feature_1": 55.113265574,
+    "id": "86d0c65f-6ead-461e-8fb3-1b2b9c6532d4"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 64.85988889,
+    "id": "80b21684-8071-4724-b3e7-d22bb859033e"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Zeit_am_Handy",
+    "original_value_1": 189.2877633,
+    "percentages_feature_1": -2.2558956403,
+    "feature_2": "Laenge_deiner_Telefonate",
+    "original_value_2": 8.094971058,
+    "percentages_feature_2": -80.4961973219,
+    "id": "f9b76e6f-7805-4aca-aa06-1bc677a0ea0a"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 8.094971058,
+    "feature_2": "Anzahl_deiner_sozialen_Kontakt",
+    "original_value_2": 54.46666667,
+    "id": "5d59dac8-8012-48c6-9bef-78e26cf86063"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 52.28066667,
+    "percentages_feature_1": 11.715448119,
+    "id": "ad84dad0-7f7e-421c-b79c-9d409cf330f3"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 52.28066667,
+    "id": "cb17706e-8ddb-4626-aa9b-3425beadaead"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 1.357243386,
+    "percentages_feature_1": 195.1530198873,
+    "id": "73a3f4e3-7e31-4abd-b0d0-8afee1334d28"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 65.01344444,
+    "id": "490dff85-dd0f-428a-966e-cf94e50af679"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Deine_Schlafqualitaet",
+    "original_value_1": 70.6,
+    "percentages_feature_1": -7.9853684703,
+    "feature_2": "Qualitaet_deiner_Ernaehrung",
+    "original_value_2": 53.029,
+    "percentages_feature_2": 21.4071860491,
+    "id": "346fed2d-df63-4db1-b1a1-23d4f3e339bf"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 53.029,
+    "feature_2": "Dein_Stresslevel",
+    "original_value_2": 47.28888889,
+    "id": "f6eb70ac-a3bc-49d6-823e-63b655c21ebf"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 0.626016667,
+    "percentages_feature_1": 1144.5490188522,
+    "id": "398b719d-7ffc-4a07-915a-ef2b6e00577a"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 82.78444444,
+    "id": "ae81ce1f-0cb9-480e-a720-448e88699d42"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 65.13333333,
+    "percentages_feature_1": -10.9163988644,
+    "id": "8ca5c8b4-abde-4a8f-8829-a599d6ffde0c"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 65.13333333,
+    "id": "b4ac631b-7c68-43ce-8c21-1242a4582721"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 49.33333333,
+    "percentages_feature_1": 21.0375000014,
+    "id": "90a8ad9c-c0b8-40b9-874f-dd47a4886398"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 49.33333333,
+    "id": "68bfa90c-7076-446a-a15a-81e89a372f36"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 55.5,
+    "percentages_feature_1": 4.8095064685,
+    "id": "1b5b51f6-c1a6-43b3-9984-92a32c8dba37"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 55.5,
+    "id": "fc81413b-1d87-4e2c-ae20-f668f2d76296"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 4.155194444,
+    "percentages_feature_1": -14.0726841278,
+    "id": "ec760154-9c47-4a66-bb67-91133f655733"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 4.155194444,
+    "id": "d3c7fb12-845a-4d22-81f7-bb0f863996f6"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 58.21783333,
+    "percentages_feature_1": -6.231824636,
+    "feature_2": "Zeit_am_Handy",
+    "original_value_2": 220.1551022,
+    "percentages_feature_2": -24.6053333121,
+    "id": "7c46ccd8-2b26-4411-80bc-bcb2edd8d134"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 58.21783333,
+    "feature_2": "Deine_Schlafqualitaet",
+    "original_value_2": 81.44833333,
+    "id": "aa37bc90-8744-412f-bb69-db5d0c6049d1"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Dein_Stresslevel",
+    "original_value_1": 35.63333333,
+    "percentages_feature_1": 0.8852177737,
+    "feature_2": "Anzahl_deiner_sozialen_Kontakt",
+    "original_value_2": 97.8,
+    "percentages_feature_2": -14.3524836605,
+    "id": "d2d91b20-b8f3-4e5c-ac80-25d72368249b"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Deine_Schlafqualitaet",
+    "original_value_1": 91.53333333,
+    "feature_2": "Anzahl_deiner_sozialen_Kontakt",
+    "original_value_2": 97.8,
+    "id": "509653df-e1e2-44b6-b5b9-2e7ef73aeab2"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 3.579050926,
+    "percentages_feature_1": 130.6678950564,
+    "id": "1a30a980-043f-4c60-ae1b-f2b038354616"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 67.24777778,
+    "id": "da8cb5d0-41d6-4281-9024-63a764990b35"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 53.5845,
+    "percentages_feature_1": 9.1144815945,
+    "id": "5d1828a3-1038-4736-9957-77e160e9d24d"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 53.5845,
+    "id": "f3fefbe6-2c3c-41d1-a1b6-98d124463e78"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 64.62222222,
+    "percentages_feature_1": -11.724153085,
+    "id": "c23191ce-1c7a-4fec-b83a-ccbd97ef0bb6"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 64.62222222,
+    "id": "c91718dd-bb28-41db-b77d-3474e2f4dce0"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 63.50666667,
+    "percentages_feature_1": -8.7936384994,
+    "id": "efd9d6ca-a276-47ef-ac82-0af99ea88f1a"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 63.50666667,
+    "id": "2c3e3549-45d6-4434-b129-c7966de383b6"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 55.6275,
+    "percentages_feature_1": 4.5479062874,
+    "id": "0526ae59-de5c-4c15-8009-06bbc905fc30"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 55.6275,
+    "id": "89cbe798-93de-4e97-9e3f-9f028f9acb68"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 53.22133333,
+    "percentages_feature_1": 28.7726107594,
+    "id": "4e30660d-81cc-487a-aadf-8161212fba6b"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Deine_Schlafqualitaet",
+    "original_value_1": 71.03333333,
+    "id": "21298fa5-c42c-4112-94e6-40b1399511fe"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Zeit_am_Handy",
+    "original_value_1": 155.7886633,
+    "percentages_feature_1": -48.3379660656,
+    "feature_2": "Laenge_deiner_Telefonate",
+    "original_value_2": 6.115808442,
+    "percentages_feature_2": -54.9973620315,
+    "id": "8bc8cd27-e9d8-4246-b359-d8265f80c0bc"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 6.115808442,
+    "feature_2": "Anzahl_deiner_sozialen_Kontakt",
+    "original_value_2": 61.26666667,
+    "id": "c180efd2-d216-4593-b290-ef3843ea1be3"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "depression",
+    "feature_1": "Deine_Schlafqualitaet",
+    "original_value_1": 38.22111111,
+    "percentages_feature_1": 76.3423355381,
+    "id": "39af5e69-b53f-4bde-bb17-00d564248627"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "depression",
+    "feature_1": "Deine_Schlafqualitaet",
+    "original_value_1": 38.22111111,
+    "id": "ca4b7a47-a87b-499c-8bd8-0bb6ea47c52d"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 61.34966667,
+    "percentages_feature_1": -5.9351505683,
+    "id": "c505e7b6-3606-484a-82db-f719f801d5ed"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 61.34966667,
+    "id": "e914a507-5c0b-4f2c-8fc9-cdfbd58c0f13"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Laenge_deiner_Telefonate",
+    "original_value_1": 3.856398413,
+    "percentages_feature_1": 10.4532914867,
+    "id": "22161867-a721-4c0c-982a-0bf6299be3e0"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 61.30444444,
+    "id": "bae6a0d2-e95e-4ebf-a6d0-2442ade01d52"
+},
+{
+    "type": "Counterfactual",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 65.12222222,
+    "percentages_feature_1": -15.7826309509,
+    "id": "a7a9b2b6-01df-42bd-8d22-d6281c36e310"
+},
+{
+    "type": "FeatureImportance",
+    "prediction": "healthy",
+    "feature_1": "Qualitaet_deiner_Ernaehrung",
+    "original_value_1": 65.12222222,
+    "id": "e8682634-b7aa-4de8-821c-c658b64f5d11"
+}
+]

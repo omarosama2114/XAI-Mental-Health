@@ -13,7 +13,7 @@ export default function SurveyScreenDepressionPage() {
         <Text as="p" className="text-center text-2xl md:text-4xl mb-8">
           Deine KI-Vorhersage
         </Text>
-        <div className="bg-blue_gray-100 px-20 py-6 rounded-lg max-w-md mx-auto">
+        <div className="bg-blue_gray-100 rounded-lg mx-auto px-20 py-6">
           <Text className="text-center text-xl md:text-2xl font-semibold mt-4">
             Die KI prognostiziert auf Basis<br /> deiner Smartphone-Daten
           </Text>
