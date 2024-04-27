@@ -1,21 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
-import explanationsData from '../final_combined_explanations.json'; // The path should be relative to the current file
+import { useLocation } from "react-router-dom";
 
-import FeatureImportancePage from './FeatureImportance/index.jsx'; // adjust the path as needed
-import CounterfactualPage from './CounterFactual/index.jsx'; // adjust the path as needed
-import NoExplanationPage from './NoExplanation/index.jsx'; // adjust the path as needed
+import FeatureImportancePage from './FeatureImportance/index.jsx'; // Adjust the path as needed
+import CounterfactualPage from './CounterFactual/index.jsx'; // Adjust the path as needed
+import NoExplanationPage from './NoExplanation/index.jsx'; // Adjust the path as needed
 
-
-
-export default function ExplanationPage() {
+export default function Home() {
   const [explanation, setExplanation] = useState(null);
 
-  // Effect to select a random explanation on component mount
-  useEffect(() => {
-    const randomIndex = Math.floor(Math.random() * explanationsData.length);
-    setExplanation(explanationsData[randomIndex]);
-  }, []);
+// Effect to set the explanation from sessionStorage
+useEffect(() => {
+  // Attempt to load a saved explanation from sessionStorage
+  const savedExplanation = sessionStorage.getItem('selectedExplanation');
+  if (savedExplanation) {
+    setExplanation(JSON.parse(savedExplanation));
+  }
+}, []);
 
   // Component to render based on the type of explanation
   const renderExplanationComponent = () => {
@@ -26,7 +27,7 @@ export default function ExplanationPage() {
         return <FeatureImportancePage explanation={explanation} />;
       case "Counterfactual":
         return <CounterfactualPage explanation={explanation} />;
-      case "simple":
+      case "Simple":
         return <NoExplanationPage explanation={explanation} />;
       default:
         return <div>Unknown explanation type</div>;
@@ -40,9 +41,7 @@ export default function ExplanationPage() {
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
       <div className="flex flex-col h-screen bg-white-A700 justify-between p-5">
-        {/* Render the correct explanation component */}
         {renderExplanationComponent()}
-        {/* ...other code */}
       </div>
     </>
   );

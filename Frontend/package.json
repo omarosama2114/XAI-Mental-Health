@@ -5,11 +5,14 @@
   "dependencies": {
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "^5.15.15",
     "@mui/material": "^5.15.15",
     "@tailwindcss/forms": "^0.5.7",
     "@testing-library/jest-dom": "^5.15.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "axios": "^1.6.8",
+    "formik": "^2.4.6",
     "react": "^18.2.0",
     "react-datepicker": "^4.5.0",
     "react-dom": "^18.2.0",
@@ -17,6 +20,9 @@
     "react-router-dom": "6.0.2",
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.0",
+    "survey-core": "^1.10.1",
+    "survey-react": "^1.10.1",
+    "survey-react-ui": "^1.10.1",
     "web-vitals": "^2.1.0"
   },
   "scripts": {

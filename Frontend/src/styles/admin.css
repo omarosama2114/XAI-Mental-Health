@@ -1,0 +1,18 @@
+/* Target the underline of the standard variant */
+.MuiInput-underline:before {
+  border-bottom: 1px solid #e0e0e0; /* default state */
+}
+
+.MuiInput-underline:hover:not(.Mui-disabled):before {
+  border-bottom: 2px solid #15b1e2; /* hover state */
+}
+
+/* Style the underline when the input is focused */
+.MuiInput-underline:after {
+  border-bottom: 2px solid #15b1e2; /* focused state */
+}
+
+/* Remove the outline that appears on focus for accessibility - not recommended for production */
+*:focus {
+  outline: none;
+}

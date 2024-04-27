@@ -1,0 +1,12 @@
+.sv-action__content {
+  background-color: #19b394 !important;  
+  color: white !important;
+  font-Weight: 'bold' !important;
+}
+
+.sv_complete_btn:hover {
+  background-color: #0056b3 !important; /* Darker shade on hover */
+  
+}
+
+

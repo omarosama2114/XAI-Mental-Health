@@ -1,6 +1,9 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { Text, Heading } from "../../components";
+import Button from "@mui/material/Button";
+import { useNavigate } from "react-router-dom";
+
 
 // Assume 'explanation' is passed as a prop to this component
 export default function SurveyScreenDepressionFIPage({ explanation }) {
@@ -16,6 +19,12 @@ export default function SurveyScreenDepressionFIPage({ explanation }) {
       .replace(/_/g, ' ');
   };
 
+  let navigate = useNavigate();
+
+  const handleProceed = () => {
+    navigate("/persona");
+  };
+
   // Helper function to format features text with style
   const formatFeaturesText = () => {
     const features = [];
@@ -25,9 +34,9 @@ export default function SurveyScreenDepressionFIPage({ explanation }) {
     if (explanation.feature_3) features.push(<span style={textStyle}>{replaceUmlauts(explanation.feature_3)}</span>);
     
     if (features.length === 0) return "";
-    if (features.length === 1) return <Text style={{ fontSize: "1.5em" }}>{features[0]} hatte einen besonders großen Einfluss auf diese Vorhersage Deines Depressionsrisikos durch die KI.</Text>;
-    if (features.length === 2) return <Text style={{ fontSize: "1.5em" }}>{features[0]} und {features[1]} hatten einen besonders großen Einfluss auf diese Vorhersage Deines Depressionsrisikos durch die KI.</Text>;
-    return <Text style={{ fontSize: "1.5em" }}>{features[0]}, {features[1]} und {features[2]} hatten einen besonders großen Einfluss auf diese Vorhersage Deines Depressionsrisikos durch die KI.</Text>;
+    if (features.length === 1) return <Text style={{ fontSize: "1.8em" }}>{features[0]} hatte einen besonders großen Einfluss auf diese Vorhersage Deines Depressionsrisikos durch die KI.</Text>;
+    if (features.length === 2) return <Text style={{ fontSize: "1.8em" }}>{features[0]} und {features[1]} hatten einen besonders großen Einfluss auf diese Vorhersage Deines Depressionsrisikos durch die KI.</Text>;
+    return <Text style={{ fontSize: "1.8em" }}>{features[0]}, {features[1]} und {features[2]} hatten einen besonders großen Einfluss auf diese Vorhersage Deines Depressionsrisikos durch die KI.</Text>;
   };
 
 
@@ -42,16 +51,23 @@ export default function SurveyScreenDepressionFIPage({ explanation }) {
           Deine KI-Vorhersage
         </Text>
         <div className="bg-blue-50 rounded-lg mx-auto px-20 py-6">
-          <Text className="text-center text-xl md:text-2xl font-semibold mt-4">
-            Die KI prognostiziert auf Basis<br />deiner Smartphone-Daten
+          <Text className="text-center text-xl md:text-2xl font-semibold mt-4" style={{ fontSize: '2.0em' }}>
+            Die KI prognostiziert auf Basis<br />deiner Smartphone-Daten<br /><br />
           </Text>
-          <Heading as="h2" className={`${explanation.prediction === "depression" ? "text-red-A700" : "text-green-600"} text-3xl md:text-5xl text-center`}>
+          <Heading as="h2" className={`${explanation.prediction === "depression" ? "text-red-A700" : "text-green-600"} text-3xl md:text-5xl text-center`} style={{ fontSize: '2.5em' }}>
             {explanation.prediction === "depression" ? "Erhöhtes Depressionsrisiko" : "Niedriges Depressionsrisiko"}
           </Heading>
         </div>
-        <Text as="p" className="text-center text-base md:text-lg mx-2 my-4">
+        <Text as="p" className="text-center text-base md:text-xl mx-2 my-4">
           {formatFeaturesText()}
         </Text>
+        <Button
+          variant="contained"
+          onClick={handleProceed}
+          style={{ color: 'white', backgroundColor: '#19b394', fontWeight: 'bold', fontSize: '16px', padding: '10px 20px', width: '10%', marginLeft: '45%'}}
+        > 
+          Weiter &#x279C;
+        </Button>
         <Text as="p" className="text-blue_gray-400 text-sm md:text-base text-center mt-auto">
           Alle angezeigten Ergebnisse sind lediglich Vorhersagen einer KI. Als solche können sie nur Hinweise auf
           den Gesundheitszustand geben. Sie können keine medizinische Diagnose stellen und ersetzen keinesfalls
