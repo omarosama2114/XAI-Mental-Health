@@ -5,21 +5,29 @@ import { useNavigate } from "react-router-dom";
 import styles from '../styles/PersonaPage.module.css';
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
+import axios from 'axios';    
 
 export default function PersonaPage() {
   const [explanation, setExplanation] = useState(null);
   const navigate = useNavigate();
 
   useEffect(() => {
-    const savedExplanation = sessionStorage.getItem('selectedExplanation');
+    // Get userData from sessionStorage
+    let userData = JSON.parse(sessionStorage.getItem('userData')) || {};
+
+    // Select explanation and add to userData
+    let savedExplanation = sessionStorage.getItem('selectedExplanation');
     if (savedExplanation) {
-      setExplanation(JSON.parse(savedExplanation));
+      savedExplanation = JSON.parse(savedExplanation);
+      userData.explanation_id = savedExplanation.obj_id; 
     } else {
       const randomIndex = Math.floor(Math.random() * explanationsData.length);
-      const newExplanation = explanationsData[randomIndex];
-      sessionStorage.setItem('selectedExplanation', JSON.stringify(newExplanation));
-      setExplanation(newExplanation);
+      savedExplanation = explanationsData[randomIndex];
+      userData.explanation_id = savedExplanation.obj_id;
+      sessionStorage.setItem('selectedExplanation', JSON.stringify(savedExplanation));
     }
+    setExplanation(savedExplanation);
+    sessionStorage.setItem('userData', JSON.stringify(userData));
   }, []);
 
   const handleProceed = () => {
@@ -42,6 +50,19 @@ export default function PersonaPage() {
   if (!explanation) {
     return <div>Loading...</div>;
   }
+
+  const onComplete = () => {
+    // Assuming survey.data is your final data from the survey
+    let userData = JSON.parse(sessionStorage.getItem('userData')) || {};
+
+    console.log('userData:', userData);
+  
+    axios.post('http://localhost:8000/submit-survey', userData)
+    .then(() => navigate('/quiz', { state: { explanation } }))
+    .catch(error => console.error('Error posting survey data:', error));
+    window.scrollTo(0, 0);
+
+  };
 
   return (
     <>
@@ -96,7 +117,7 @@ export default function PersonaPage() {
         <br/>
         <Button
           variant="contained"
-          onClick={handleProceed}
+          onClick={onComplete}
           style={{ color: 'white', backgroundColor: '#19b394', fontWeight: 'bold', fontSize: '16px', padding: '10px 20px'}}
         >
           Weiter &#x279C;

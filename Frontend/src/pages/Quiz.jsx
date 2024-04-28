@@ -56,6 +56,7 @@ export default function QuizPage() {
     } else {
       navigate('/wrong');
     }
+    window.scrollTo(0, 0);
   };
 
   return (

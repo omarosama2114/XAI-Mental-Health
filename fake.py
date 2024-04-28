@@ -1,22 +1,16 @@
-import json
-import uuid
+from pymongo import MongoClient
+import pandas as pd
 
-filename = 'Frontend/src/combined_explanations_corrected.json'
+# Connect to MongoDB
+client = MongoClient('mongodb+srv://omar2114:omar2114@cluster0.anngims.mongodb.net/Mental-Health')
+db = client.yourDatabaseName
+collection = db.yourCollectionName
 
-with open(filename, 'r') as file:
-    data = json.load(file)
+# Query the data you want to export
+data = collection.find()
 
-for item in data:
-    item["id"] = str(uuid.uuid4())
+# Convert to Pandas DataFrame
+df = pd.DataFrame(list(data))
 
-with open('Frontend/src/combined_explanations_corrected_with_uuid.json', 'w') as file:
-    file.write('[\n')
-    last_index = len(data) - 1
-    for index, item in enumerate(data):
-        json_str = json.dumps(item, indent=4)
-        file.write(json_str)
-        if index != last_index:
-            file.write(',\n')
-        else:
-            file.write('\n')
-    file.write(']')
+# Export to CSV
+df.to_csv('output.csv', index=False)

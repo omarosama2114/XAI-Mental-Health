@@ -9,6 +9,7 @@ export default function WrongPage() {
   
     const handleProceed = () => {
         navigate("/persona");
+        window.scrollTo(0, 0);
     };
 
     return (

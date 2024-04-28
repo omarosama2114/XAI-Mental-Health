@@ -90,3 +90,7 @@
     background-color: #139bcf;
   }
   
+  /* PersonaPage.module.css */
+.radio {
+  margin-right: 10px; /* Adjust the value as needed */
+}

@@ -29,9 +29,43 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 // Model
 const SurveySchema = new mongoose.Schema({
-  age: Number,
-  gender: String,
-  education: String
+  PROLIFIC_PID: String,
+  SESSION_ID: String,
+  STUDY_ID: String,
+  explanation_id: String,
+  quality_check_intention_to_act: String,
+  intention_to_use_item_1:  Number,
+  intention_to_use_item_2:  Number,
+  intention_to_use_item_3:  Number,
+  attention_check_1: Boolean,
+  performance_expectancy_item_1: Number,
+  performance_expectancy_item_2: Number,
+  performance_expectancy_item_3: Number,
+  effort_expectancy_item_1: Number,
+  effort_expectancy_item_2: Number,
+  effort_expectancy_item_3: Number,
+  trust_item_1: Number,
+  trust_item_2: Number,
+  trust_item_3: Number,
+  attention_check_2: Boolean,
+  psychological_openness_item_1: Number,
+  psychological_openness_item_2: Number,
+  psychological_openness_item_3: Number,
+  indifference_to_stigma_item_1: Number,
+  indifference_to_stigma_item_2: Number,
+  indifference_to_stigma_item_3: Number,
+  helpSeeking_propensity_item_1: Number,
+  helpSeeking_propensity_item_2: Number,
+  helpSeeking_propensity_item_3: Number,
+  erfahrung_mit_app_typen_item_1: Number,
+  erfahrung_mit_app_typen_item_2: Number,
+  erfahrung_mit_app_typen_item_3: Number,
+  gesundheitswohlbefinden_item_1: Number,
+  gesundheitswohlbefinden_item_2: Number,
+  gesundheitswohlbefinden_item_3: Number,
+  gesundheitswohlbefinden_item_4: Number,
+  gesundheitswohlbefinden_item_5: Number,
+  gesundheitswohlbefinden_sum: Number  
 });
 
 const Survey = mongoose.model('Survey', SurveySchema);

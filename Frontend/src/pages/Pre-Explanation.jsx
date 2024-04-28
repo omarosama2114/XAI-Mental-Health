@@ -9,7 +9,9 @@ export default function PreExplanationPage() {
   
     const handleProceed = () => {
         navigate("/home");
+        window.scrollTo(0, 0);
     };
+    
 
     return (
         <>

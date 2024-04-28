@@ -4,17 +4,30 @@ import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet"; // To control the page head elements such as title
 import styles from '../styles/introductory.module.css';
 import { useState } from "react";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import queryString from "query-string";
+
 
 
 export default function IntroductoryPage() {
   let navigate = useNavigate();
+  let location = useLocation();
 
   const [isChecked, setIsChecked] = useState(false);
+
+  useEffect(() => { 
+    // Parse the URL parameters on component mount
+    const params = queryString.parse(location.search);
+    // Save the initial data to sessionStorage
+    sessionStorage.setItem('userData', JSON.stringify(params));
+  }, [location]);
 
   const handleProceed = () => {
     if (isChecked) {
       navigate("/persona");
     }
+    window.scrollTo(0, 0);
   };
   
 

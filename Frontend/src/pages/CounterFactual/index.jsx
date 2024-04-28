@@ -21,8 +21,13 @@ export default function SurveyScreenDepressionCFPage({ explanation }) {
   let navigate = useNavigate();
 
   const handleProceed = () => {
-    navigate("/persona");
-};
+    // Navigate based on the prediction value
+    if (explanation.prediction === "depression") {
+      navigate("/6a");
+    } else {
+      navigate("/6b");
+    }
+  };
 
   const formatCounterfactualText = () => {
     const entries = [];
