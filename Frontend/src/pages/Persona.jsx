@@ -90,15 +90,16 @@ export default function PersonaPage({ showProceedButton = true }) {
               fullWidth
               Read only
               margin="normal"
+              padding="normal"
               
               InputLabelProps={{
-              style: { color: '#19b394', fontSize: '20px'},
-              shrink: true // Color for the label
+                style: { color: '#19b394', fontSize: '20px'},
+                shrink: true
               }}
 
               inputProps={{
-              spellCheck: 'false',
-              style:{boxShadow: 'none', color: 'black', cursor: 'default', marginTop: '10px', marginBottom: '10px'} 
+                spellCheck: 'false',
+                style:{ boxShadow: 'none', color: 'black', cursor: 'default', marginTop: '10px', marginBottom: '10px' } 
               }}
 
               sx={{
