@@ -30,11 +30,16 @@ export default function A18Page() {
     }));
   };
 
+  const [showWarning, setShowWarning] = useState(false);
+  
+  // Check if all questions are answered to enable the button
+  const isEveryQuestionAnswered = Object.values(answers).every(answer => answer !== '');
+
   let navigate = useNavigate();
 
   const handleProceed = () => {
+    if(isEveryQuestionAnswered) {
     const userData = JSON.parse(sessionStorage.getItem('userData')) || {};
-    
   
     // Convert answer labels to numerical values and save them under specific keys
     userData.gesundheitswohlbefinden_item_1 = likertScale[answers.question1];
@@ -43,15 +48,33 @@ export default function A18Page() {
     userData.gesundheitswohlbefinden_item_4 = likertScale[answers.question4];
     userData.gesundheitswohlbefinden_item_5 = likertScale[answers.question5]; 
     userData.gesundheitswohlbefinden_sum =  likertScale[answers.question1] + likertScale[answers.question2] + likertScale[answers.question3] + likertScale[answers.question4] + likertScale[answers.question5];
-  
+    
+    console.log('Updated userData:', userData);
     axios.post('http://localhost:8000/submit-survey', userData)
     .then(() => navigate('/19'))
-    .catch(error => console.error('Error posting survey data:', error));
+    .catch(error => {
+      if (error.response) {
+        // The request was made and the server responded with a status code
+        // that falls out of the range of 2xx
+        console.error('Error data:', error.response.data);
+        console.error('Error status:', error.response.status);
+        console.error('Error headers:', error.response.headers);
+      } else if (error.request) {
+        // The request was made but no response was received
+        console.error('Error request:', error.request);
+      } else {
+        // Something happened in setting up the request that triggered an Error
+        console.error('Error message:', error.message);
+      }
+      console.error('Error config:', error.config); 
+    });
     window.scrollTo(0, 0);
+    }
+    else {
+      setShowWarning(true);
+    }
   };
 
-  // Check if all questions are answered to enable the button
-  const isEveryQuestionAnswered = Object.values(answers).every(answer => answer !== '');
 
   return (
     <div className={styles.container}>
@@ -129,6 +152,7 @@ export default function A18Page() {
                 value={option}
                 checked={answers.question4 === option}
                 onChange={handleOptionChange}
+                className={styles.radio}
               />
               {option}
               <br /><br />
@@ -147,6 +171,7 @@ export default function A18Page() {
                 value={option}
                 checked={answers.question5 === option}
                 onChange={handleOptionChange}
+                className={styles.radio}
               />
               {option}
               <br /><br />
@@ -155,12 +180,17 @@ export default function A18Page() {
         </div>
         <br />
         
-        {/* ... Add more questions if needed */}
+        <br />
+        
+        {showWarning && (
+        <p style={{ color: 'red', fontSize: '16px' }}>Bitte beantworten Sie alle Fragen, bevor Sie fortfahren.</p> // Warning message
+        )}
+
+        <br />
         
         <Button
           variant="contained"
           onClick={handleProceed}
-          disabled={!isEveryQuestionAnswered} // Button is disabled unless the checkbox is checked
           style={{ color: 'white', backgroundColor: '#19b394', fontWeight: 'bold', fontSize: '16px', padding: '10px 20px'}}
         > 
           Weiter &#x279C;

@@ -93,4 +93,6 @@
   /* PersonaPage.module.css */
 .radio {
   margin-right: 10px; /* Adjust the value as needed */
+  color: #19b394 !important;
+  --tw-shadow: none !important;
 }

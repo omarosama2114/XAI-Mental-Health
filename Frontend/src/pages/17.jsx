@@ -26,9 +26,15 @@ export default function A17Page() {
     }));
   };
 
+  const [showWarning, setShowWarning] = useState(false);
+
+  // Check if all questions are answered to enable the button
+  const isEveryQuestionAnswered = Object.values(answers).every(answer => answer !== '');  
+
   let navigate = useNavigate();
 
   const handleProceed = () => {
+    if(isEveryQuestionAnswered) {
     const userData = JSON.parse(sessionStorage.getItem('userData')) || {};
   
     // Convert answer labels to numerical values and save them under specific keys
@@ -43,10 +49,13 @@ export default function A17Page() {
     // Navigate to the next page
     navigate('/18');
     window.scrollTo(0, 0);
+    }
+    else {
+      setShowWarning(true);
+    }
   };
 
-  // Check if all questions are answered to enable the button
-  const isEveryQuestionAnswered = Object.values(answers).every(answer => answer !== '');
+
 
   return (
     <div className={styles.container}>
@@ -95,7 +104,7 @@ export default function A17Page() {
         <br />  
         
         <div className={styles.question}>
-          <h2 style={{fontSize: '16px', fontWeight:'bold', color: '#19b394'}} >Ich nutze regelmäßig Apps für mentale Gesundheit ausprobiert</h2>
+          <h2 style={{fontSize: '16px', fontWeight:'bold', color: '#19b394'}} >Ich nutze regelmäßig Apps für mentale Gesundheit</h2>
           <br />
           {['Ich stimme überhaupt nicht zu', 'Ich stimme eher nicht zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher zu', 'Ich stimme voll und ganz zu'].map(option => (
             <label key={option}>
@@ -114,12 +123,17 @@ export default function A17Page() {
         </div>
         <br />
         
-        {/* ... Add more questions if needed */}
+        <br />
+        
+        {showWarning && (
+        <p style={{ color: 'red', fontSize: '16px' }}>Bitte beantworten Sie alle Fragen, bevor Sie fortfahren.</p> // Warning message
+        )}
+
+        <br />
         
         <Button
           variant="contained"
           onClick={handleProceed}
-          disabled={!isEveryQuestionAnswered} // Button is disabled unless the checkbox is checked
           style={{ color: 'white', backgroundColor: '#19b394', fontWeight: 'bold', fontSize: '16px', padding: '10px 20px'}}
         > 
           Weiter &#x279C;

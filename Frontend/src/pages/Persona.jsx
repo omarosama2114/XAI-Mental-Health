@@ -7,7 +7,7 @@ import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import axios from 'axios';    
 
-export default function PersonaPage() {
+export default function PersonaPage({ showProceedButton = true }) {
   const [explanation, setExplanation] = useState(null);
   const navigate = useNavigate();
 
@@ -52,16 +52,8 @@ export default function PersonaPage() {
   }
 
   const onComplete = () => {
-    // Assuming survey.data is your final data from the survey
-    let userData = JSON.parse(sessionStorage.getItem('userData')) || {};
-
-    console.log('userData:', userData);
-  
-    axios.post('http://localhost:8000/submit-survey', userData)
-    .then(() => navigate('/quiz', { state: { explanation } }))
-    .catch(error => console.error('Error posting survey data:', error));
+    navigate('/quiz', { state: { explanation } })
     window.scrollTo(0, 0);
-
   };
 
   return (
@@ -82,24 +74,24 @@ export default function PersonaPage() {
           {[
             { label: 'Stresslevel', value: explanation.Dein_Stresslevel },
             { label: 'Schlafqualität', value: explanation.Deine_Schlafqualitaet },
-            { label: 'Anzahl sozialer Kontakte', value: explanation.Anzahl_deiner_sozialen_Kontakte },
-            { label: 'Qualität der sozialen Kontakte', value: explanation.Qualitaet_deiner_sozialen_Kontakte },
-            { label: 'Qualität der Ernährung', value: explanation.Qualitaet_deiner_Ernaehrung },
-            { label: 'Sportliche Aktivität', value: explanation.Deine_sportliche_Aktivitaet },
+            { label: 'Anzahl sozialer Kontakte'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0', value: explanation.Anzahl_deiner_sozialen_Kontakte },
+            { label: 'Qualität der sozialen Kontakte' + '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0', value: explanation.Qualitaet_deiner_sozialen_Kontakte },
+            { label: 'Qualität der Ernährung'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0', value: explanation.Qualitaet_deiner_Ernaehrung },
+            { label: 'Sportliche Aktivität'+ '\u00A0'+ '\u00A0', value: explanation.Deine_sportliche_Aktivitaet },
             { label: 'Zeit am Handy', value: explanation.Zeit_am_Handy },
-            { label: 'Länge von Telefonaten', value: explanation.Laenge_deiner_Telefonate },
-            { label: 'Intensität der Mobilität', value: explanation.Deine_Mobilitaet }
+            { label: 'Länge von Telefonaten'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0', value: explanation.Laenge_deiner_Telefonate },
+            { label: 'Intensität der Mobilität'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0', value: explanation.Deine_Mobilitaet }
           ].map((item, index) => (
             <TextField 
               key={index}
-              label={item.label}
+              label={item.label + '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0'}
               value={item.value || ''}
               variant="outlined"
               fullWidth
               Read only
               margin="normal"
               InputLabelProps={{
-              style: { color: '#19b394', fontSize: '16px' },
+              style: { color: '#19b394', fontSize: '20px'},
               shrink: true // Color for the label
               }}
               inputProps={{
@@ -110,18 +102,19 @@ export default function PersonaPage() {
               sx={{
                 pointerEvents: 'none' // This will make the TextField not clickable
               }}
-                
             />
           ))}
         </ul>
         <br/>
-        <Button
+        {showProceedButton&& (
+          <Button
           variant="contained"
           onClick={onComplete}
           style={{ color: 'white', backgroundColor: '#19b394', fontWeight: 'bold', fontSize: '16px', padding: '10px 20px'}}
         >
           Weiter &#x279C;
         </Button>
+        )}
       </div>
     </>
   );

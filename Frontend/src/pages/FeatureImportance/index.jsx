@@ -70,7 +70,7 @@ export default function SurveyScreenDepressionFIPage({ explanation }) {
         <Button
           variant="contained"
           onClick={handleProceed}
-          style={{ color: 'white', backgroundColor: '#19b394', fontWeight: 'bold', fontSize: '16px', padding: '10px 20px', width: '10%', marginLeft: '45%'}}
+          style={{ color: 'white', backgroundColor: '#19b394', fontWeight: 'bold', fontSize: '16px', padding: '10px 20px', marginTop: '100px', width: '10%', marginLeft: '45%'}}
         > 
           Weiter &#x279C;
         </Button>

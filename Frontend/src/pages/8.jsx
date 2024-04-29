@@ -29,9 +29,16 @@ export default function A8Page() {
     }));
   };
 
+  
+  const [showWarning, setShowWarning] = useState(false);
+  
+  // Check if all questions are answered to enable the button
+  const isEveryQuestionAnswered = Object.values(answers).every(answer => answer !== '');
+
   let navigate = useNavigate();
 
   const handleProceed = () => {
+    if(isEveryQuestionAnswered) {
     const userData = JSON.parse(sessionStorage.getItem('userData')) || {};
 
     // Save attention check based on the first question's answer
@@ -43,10 +50,12 @@ export default function A8Page() {
     // Navigate to the next page
     navigate('/9');
     window.scrollTo(0, 0);
+    }
+    else {
+      setShowWarning(true);
+    }
   };
 
-  // Check if all questions are answered to enable the button
-  const isEveryQuestionAnswered = Object.values(answers).every(answer => answer !== '');
 
   return (
     <div className={styles.container} style={{marginTop: '200px'}}>
@@ -71,12 +80,15 @@ export default function A8Page() {
         </div>
         <br />
         
-        {/* ... Add more questions if needed */}
+        <br />
+
+        {showWarning && (
+        <p style={{ color: 'red', fontSize: '16px' }}>Bitte beantworten Sie alle Fragen, bevor Sie fortfahren.</p> // Warning message
+        )}
         
         <Button
           variant="contained"
           onClick={handleProceed}
-          disabled={!isEveryQuestionAnswered} // Button is disabled unless the checkbox is checked
           style={{ color: 'white', backgroundColor: '#19b394', fontWeight: 'bold', fontSize: '16px', padding: '10px 20px'}}
         > 
           Weiter &#x279C;

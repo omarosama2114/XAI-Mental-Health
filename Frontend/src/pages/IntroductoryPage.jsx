@@ -34,7 +34,7 @@ export default function IntroductoryPage() {
   return (
     <>
       <Helmet>
-        <title>Welcome - Omar's Application</title>
+        <title>Welcome</title>
         <meta name="description" content="Introductory page of the experiment" />
       </Helmet>
       <div className={styles.container}>
