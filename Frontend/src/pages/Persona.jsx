@@ -90,7 +90,7 @@ export default function PersonaPage({ showProceedButton = true }) {
               fullWidth
               Read only
               margin="normal"
-              padding="normal"
+              padding="30px"
               
               InputLabelProps={{
                 style: { color: '#19b394', fontSize: '20px'},
