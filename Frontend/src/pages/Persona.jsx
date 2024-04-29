@@ -99,7 +99,7 @@ export default function PersonaPage({ showProceedButton = true }) {
 
               inputProps={{
                 spellCheck: 'false',
-                style:{ boxShadow: 'none', color: 'black', cursor: 'default', marginTop: '10px', marginBottom: '10px', marginLeft: '20px'} 
+                style:{ boxShadow: 'none', color: 'black', cursor: 'default', marginTop: '15px', marginBottom: '15px', marginLeft: '10px'} 
               }}
 
               sx={{
