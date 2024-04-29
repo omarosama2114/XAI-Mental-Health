@@ -84,7 +84,7 @@ export default function PersonaPage({ showProceedButton = true }) {
           ].map((item, index) => (
             <TextField 
               key={index}
-              label={item.label + '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0' }
+              label={ '\u00A0'+ item.label + '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0' }
               value={item.value || ''}
               variant="outlined"
               fullWidth
@@ -99,7 +99,7 @@ export default function PersonaPage({ showProceedButton = true }) {
 
               inputProps={{
                 spellCheck: 'false',
-                style:{ boxShadow: 'none', color: 'black', cursor: 'default', paddingLeft: '10px'} 
+                style:{ boxShadow: 'none', color: 'black', cursor: 'default', marginTop: '10px', marginBottom: '10px' } 
               }}
 
               sx={{
