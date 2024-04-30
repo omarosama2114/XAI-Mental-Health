@@ -76,7 +76,7 @@ export default function WrongPage() {
 
               inputProps={{
                 spellCheck: 'false',
-                style:{ boxShadow: 'none', color: 'black', marginTop: '10px', marginBottom: '15px', marginLeft: '10px', fontSize: '16px'} 
+                style:{ boxShadow: 'none', color: 'black', marginTop: '20px', marginBottom: '15px', marginLeft: '10px', fontSize: '16px'} 
               }}
             />
 
