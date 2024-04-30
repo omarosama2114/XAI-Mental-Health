@@ -14,6 +14,9 @@ export default function PersonaPage({ showProceedButton = true }) {
     // Get userData from sessionStorage
     let userData = JSON.parse(sessionStorage.getItem('userData')) || {};
 
+    // Filter explanationsData to only include entries where prediction is "healthy"
+    const healthyExplanations = explanationsData.filter(exp => exp.prediction === "healthy");
+
     // Select explanation and add to userData
     let savedExplanation = sessionStorage.getItem('selectedExplanation');
     
@@ -23,7 +26,7 @@ export default function PersonaPage({ showProceedButton = true }) {
       userData.explanation_id = savedExplanation.obj_id; 
     } else {
       const randomIndex = Math.floor(Math.random() * explanationsData.length);
-      savedExplanation = explanationsData[randomIndex];
+      savedExplanation = healthyExplanations[randomIndex];
       userData.explanation_id = savedExplanation.obj_id;
       sessionStorage.setItem('selectedExplanation', JSON.stringify(savedExplanation));
     }
@@ -69,10 +72,12 @@ export default function PersonaPage({ showProceedButton = true }) {
         Wir möchten Sie nun also bitten, sich in eine Person und deren Situation hineinzuversetzen. Bitte lesen Sie dazu die folgende Personenbeschreibung sorgfältig durch und nehmen Sie die Perspektive der Person ein. 
         <br/> <br/>
         Die Person, um die es jetzt geht, heißt Flo. Flo nutzt eine Smart-Sensing-App für mentale Gesundheit – also eine App, die Smartphone-Daten nutzt, um Informationen zur mentalen Gesundheit von Flo zu liefern.
-        <br/> <br/>
-        Die App hat folgende Informationen über Flo gesammelt:
+        <br/> <br/> <br/>
         </h1>
         )}
+        <h1 className={styles.subTitle}>
+        Die App hat folgende Informationen über Flo gesammelt:
+        </h1>
         <br/>
         <ul className={styles.list}>
           {[
