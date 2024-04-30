@@ -61,20 +61,21 @@ export default function WrongPage() {
           <div className={styles.container}>
 
             <h1 className={styles.title}> Bitte geben Sie Ihre Prolific-ID ein  </h1>
-            <TextField
-              label="Prolific ID"
-              variant="outlined"
+            <TextField 
+              label={'Prolific ID' + '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0'}
               value={prolificId}
+              variant="outlined"
               fullWidth
-              onChange={(e) => setProlificId(e.target.value)}
-              style={{ marginBottom: '20px' }}
-              inputProps={{
-                spellCheck: 'false',
-                style:{ boxShadow: 'none', color: 'black', fontSize: '16px' } 
+              margin="normal"
+              padding="30px"
+              
+              InputLabelProps={{
+                style: { color: '#19b394', fontSize: '20px', fontWeight: 'bold'}
               }}
 
-              InputLabelProps={{
-                style: { color: '#19b394'}
+              inputProps={{
+                spellCheck: 'false',
+                style:{ boxShadow: 'none', color: 'black', marginTop: '15px', marginBottom: '15px', marginLeft: '10px', fontSize: '16px'} 
               }}
             />
 
@@ -82,7 +83,7 @@ export default function WrongPage() {
 
             {showWarning && (
             <p style={{ color: 'red', fontSize: '16px' }}>
-Bitte geben Sie Ihre Prolific-ID ein</p> // Warning message
+                Bitte geben Sie Ihre Prolific-ID ein</p> // Warning message
             )}
             <br />    
 
