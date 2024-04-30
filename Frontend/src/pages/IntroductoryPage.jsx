@@ -8,28 +8,40 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import queryString from "query-string";
 
-
-
 export default function IntroductoryPage() {
   let navigate = useNavigate();
   let location = useLocation();
 
   const [isChecked, setIsChecked] = useState(false);
+  const [showWarning, setShowWarning] = useState(false);
 
-  useEffect(() => { 
-    // Parse the URL parameters on component mount
+  useEffect(() => {
     const params = queryString.parse(location.search);
-    // Save the initial data to sessionStorage
     sessionStorage.setItem('userData', JSON.stringify(params));
+
+    const handleBeforeUnload = (event) => {
+      // Most modern browsers have limited support for custom messages in the beforeunload event
+      const message = "All progress will be lost and you will have to start over.";
+      event.preventDefault();
+      event.returnValue = message; // For older browsers and some modern ones
+      return message;
+    };
+
+    window.addEventListener('beforeunload', handleBeforeUnload);
+
+    return () => {
+      window.removeEventListener('beforeunload', handleBeforeUnload);
+    };
   }, [location]);
 
   const handleProceed = () => {
     if (isChecked) {
       navigate("/persona");
+    } else {
+      setShowWarning(true);
     }
-    window.scrollTo(0, 0);
   };
-  
+
 
   return (
     <>
@@ -38,31 +50,34 @@ export default function IntroductoryPage() {
         <meta name="description" content="Introductory page of the experiment" />
       </Helmet>
       <div className={styles.container}>
-        <h1 className="text-2xl md:text-4xl font-bold mb-4" style={{ fontSize: '2.0em' }}>Smart-Sensing-Apps für mentale Gesundheit <br/> <br/> </h1>
-        <p className="mb-4 text text-xl md:text-2xl">
-        <span style={{fontWeight: 'bold', color: '#19b394', fontSize: '22px'}}>Herzlich Willkommen <br/></span>
-        Diesem wissenschaftlichen Forschungsprojekt zum Thema Mental Health! Es wird durchgeführt vom Institut für Business Analytics der Universität Ulm.
+        <h1 className={styles.title}>Smart-Sensing-Apps für mentale Gesundheit <br/> <br/> </h1>
+        <p className={styles.list}>
+        <span className={styles.subTitle}>Herzlich Willkommen <br/></span>
+        zu diesem wissenschaftlichen Forschungsprojekt zum Thema Mental Health! Es wird durchgeführt vom Institut für Business Analytics der Universität Ulm.
         <br/>
         <br/>
 
-        <span style={{fontWeight: 'bold', color: '#19b394', fontSize: '22px'}}>Worum geht es? <br/></span>
-        So genannte Smart-Sensing-Apps nutzen Künstliche Intelligenz (KI), um auf Basis von Sensordaten von Smartphones, Smart Watches und anderen Geräten ihren Usern Informationen und Ratschläge zu liefern. Zu den Daten gehören u.a. die Schlafdauer und -qualität, die sportliche Aktivität, die Zeit am Bildschirm oder wieviel man unterwegs ist (Mobilität). In unserem Fall geht es um eine App, mit deren Hilfe User erfahren, ob ihre Daten darauf hindeuten, dass sie ein Risiko haben, an einer Depression zu erkranken. 
+        <span className={styles.subTitle}>Worum geht es? <br/></span>
+        So genannte Smart-Sensing-Apps nutzen Künstliche Intelligenz (KI), um auf Basis von Sensordaten von Smartphones, Smart Watches und anderen Geräten ihren Usern Informationen und Ratschläge zu liefern. Zu den Daten gehören u.a. die Schlafdauer und Schlafqualität, die sportliche Aktivität, die Zeit am Bildschirm oder wieviel man unterwegs ist (Mobilität). In unserem Fall geht es um eine App, mit deren Hilfe User erfahren, ob ihre Daten darauf hindeuten, dass sie ein Risiko haben, an einer Depression zu erkranken. 
         <br/>
         <br/>
 
 
-        <span style={{fontWeight: 'bold', color: '#19b394', fontSize: '22px'}}>Was muss ich tun? <br/></span>
+        <span className={styles.subTitle}>Was muss ich tun? <br/></span>
         Sie werden gleich gebeten, sich in ein hypothetisches Szenario hineinzuversetzen. Dazu wird Ihnen zunächst eine Person präsentiert, die die App nutzt. Dann sehen Sie ein Beispiel, was die App für diese Person anzeigt. Schauen Sie sich die Präsentation der Person und das Beispiel bitte genau an. Anschließend bitten wir Sie, dazu Fragen zu beantworten.
         <br/>
         <br/>
+        <br/>
+        <br/>
 
-        <span style={{fontWeight: 'bold', color: '#19b394', fontSize: '22px'}}>Hinweis:</span> Im Laufe der Befragung werden Sie zu verschiedenen emotionalen Zuständen, einschließlich negativer Gefühle und Gedanken befragt. Falls Sie während der Beantwortung der Fragen eine Belastung empfinden, haben Sie jederzeit die Möglichkeit, Ihre Teilnahme an der Studie ohne Angabe von Gründen abzubrechen. Zusätzlich stehen Ihnen bei akuten psychischen Belastungen oder Suizidgedanken rund um die Uhr folgende Hilfsangebote zur Verfügung:
+        <span className={styles.list} style={{fontWeight: 'bold'}}>Hinweis:</span> Im Laufe der Befragung werden Sie zu verschiedenen emotionalen Zuständen, einschließlich negativer Gefühle und Gedanken befragt. Falls Sie während der Beantwortung der Fragen eine Belastung empfinden, haben Sie jederzeit die Möglichkeit, Ihre Teilnahme an der Studie ohne Angabe von Gründen abzubrechen. Zusätzlich stehen Ihnen bei akuten psychischen Belastungen oder Suizidgedanken rund um die Uhr folgende Hilfsangebote zur Verfügung:
         <br/>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Telefonseelsorge: 0800 / 11 101 11
         <br/>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;•	Ärztlicher (psychiatrischer) Bereitschaftsdienst: 116 117
+        •	Telefonseelsorge: 0800 / 11 101 11
+        <br/>
+        •	Ärztlicher (psychiatrischer) Bereitschaftsdienst: 116 117
         <br/><br/>
-        <span style={{fontWeight: 'bold', color: '#19b394', fontSize: '22px'}}>Datenschutz:</span> Mir ist bekannt, dass bei dieser Studie personenbezogene Daten verarbeitet werden sollen. Die Verarbeitung der Daten erfolgt nach gesetzlichen Bestimmungen und setzt gemäß Art. 6 Abs. 1 lit. a und Art. 9 Abs. 2 lit. a der Datenschutz-Grundverordnung folgende Einwilligungserklärung voraus: Ich willige in die Verarbeitung meiner Daten ein. Mir ist bekannt, dass diese Einwilligung jederzeit schriftlich oder mündlich ohne Angabe von Gründen widerrufen werden kann, ohne dass mir dadurch Nachteile entstehen. Die Rechtmäßigkeit, der bis zum Widerruf erfolgten Datenverarbeitung wird davon nicht berührt. In diesem Fall kann ich entscheiden, ob die von mir erhobenen Daten gelöscht werden sollen oder weiterhin für die Zwecke der Studie verwendet werden dürfen.  Alle Daten werden anonym erhoben und werden streng vertraulich behandelt sowie ausgewertet.
+        <span className={styles.list} style={{fontWeight: 'bold'}}>Datenschutz:</span> Mir ist bekannt, dass bei dieser Studie personenbezogene Daten verarbeitet werden sollen. Die Verarbeitung der Daten erfolgt nach gesetzlichen Bestimmungen und setzt gemäß Art. 6 Abs. 1 lit. a und Art. 9 Abs. 2 lit. a der Datenschutz-Grundverordnung folgende Einwilligungserklärung voraus: Ich willige in die Verarbeitung meiner Daten ein. Mir ist bekannt, dass diese Einwilligung jederzeit schriftlich oder mündlich ohne Angabe von Gründen widerrufen werden kann, ohne dass mir dadurch Nachteile entstehen. Die Rechtmäßigkeit, der bis zum Widerruf erfolgten Datenverarbeitung wird davon nicht berührt. In diesem Fall kann ich entscheiden, ob die von mir erhobenen Daten gelöscht werden sollen oder weiterhin für die Zwecke der Studie verwendet werden dürfen.  Alle Daten werden anonym erhoben und werden streng vertraulich behandelt sowie ausgewertet.
         <br/><br/>
           <br/>
           <input
@@ -71,13 +86,17 @@ export default function IntroductoryPage() {
             onChange={(e) => setIsChecked(e.target.checked)}
             style={{ marginRight: '10px', boxShadow: 'none', outline: 'none'}}
           />
-          <span style={{fontSize: '16px'}}>Ich habe die Informationen zur Studie sowie zum Datenschutz gelesen und stimme zu</span>
+          <span className={styles.list}>Ich habe die Informationen zur Studie sowie zum Datenschutz gelesen und stimme zu</span>
           <br/><br/>
         </p>
+
+        <br/>
+        {showWarning && <p className= {styles.list} style={{ color: 'red' }}>Bitte stimmen Sie zu</p>}
+        <br/>
+
         <Button
           variant="contained"
           onClick={handleProceed}
-          disabled={!isChecked} // Button is disabled unless the checkbox is checked
           style={{ color: 'white', backgroundColor: '#19b394', fontWeight: 'bold', fontSize: '16px', padding: '10px 20px'}}
         > 
           Weiter &#x279C;

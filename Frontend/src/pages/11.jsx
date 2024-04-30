@@ -43,12 +43,11 @@ export default function A11Page() {
     userData.social_influence_item_2 = likertScale[answers.question2];
     userData.social_influence_item_3 = likertScale[answers.question3];
   
-    console.log('Updated userData:', userData);
     // Save updated userData to session storage
     sessionStorage.setItem('userData', JSON.stringify(userData));
   
     // Navigate to the next page
-    navigate('/12');
+    navigate('/trust');
     window.scrollTo(0, 0);
     }
     else {
@@ -66,7 +65,7 @@ export default function A11Page() {
         <div className={styles.question}>
           <h2 style={{fontSize: '16px', fontWeight:'bold', color: '#19b394'}} >Menschen, die mir nahestehen, würden mir die Nutzung einer Smart-Sensing-App für mentale Gesundheit empfehlen</h2> {/* Change this question to whatever you wish */}
           <br />
-          {['Ich stimme überhaupt nicht zu', 'Ich stimme eher nicht zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher zu', 'Ich stimme voll und ganz zu'].map(option => (
+          {['Ich stimme voll und ganz zu', 'Ich stimme eher zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher nicht zu', 'Ich stimme überhaupt nicht zu'].map(option => (
             <label key={option}>
               <input
                 type="radio"
@@ -86,7 +85,7 @@ export default function A11Page() {
         <div className={styles.question}>
           <h2 style={{fontSize: '16px', fontWeight:'bold', color: '#19b394'}} >Mein Hausarzt würde mir empfehlen, eine Smart-Sensing-App für mentale Gesundheit zu nutzen </h2>
           <br />
-          {['Ich stimme überhaupt nicht zu', 'Ich stimme eher nicht zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher zu', 'Ich stimme voll und ganz zu'].map(option => (
+          {['Ich stimme voll und ganz zu', 'Ich stimme eher zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher nicht zu', 'Ich stimme überhaupt nicht zu'].map(option => (
             <label key={option}>
               <input
                 type="radio"
@@ -106,7 +105,7 @@ export default function A11Page() {
         <div className={styles.question}>
           <h2 style={{fontSize: '18px', fontWeight:'bold', color: '#19b394'}} >Menschen, die mein Verhalten beeinflussen, wären der Meinung, dass ich eine Smart-Sensing-App für mentale Gesundheit nutzen sollte</h2>
           <br />
-          {['Ich stimme überhaupt nicht zu', 'Ich stimme eher nicht zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher zu', 'Ich stimme voll und ganz zu'].map(option => (
+          {['Ich stimme voll und ganz zu', 'Ich stimme eher zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher nicht zu', 'Ich stimme überhaupt nicht zu'].map(option => (
             <label key={option}>
               <input
                 type="radio"

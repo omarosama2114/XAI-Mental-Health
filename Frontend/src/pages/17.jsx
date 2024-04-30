@@ -42,12 +42,11 @@ export default function A17Page() {
     userData.erfahrung_mit_app_typen_item_2 = likertScale[answers.question2];
     userData.erfahrung_mit_app_typen_item_3 = likertScale[answers.question3];
   
-    console.log('Updated userData:', userData);
     // Save updated userData to session storage
     sessionStorage.setItem('userData', JSON.stringify(userData));
   
     // Navigate to the next page
-    navigate('/18');
+    navigate('/gesundheitswohlbefinden');
     window.scrollTo(0, 0);
     }
     else {
@@ -66,7 +65,7 @@ export default function A17Page() {
         <div className={styles.question}>
           <h2 style={{fontSize: '16px', fontWeight:'bold', color: '#19b394'}} >Mir war schon vor heute bekannt, dass es Apps für mentale Gesundheit gibt</h2> {/* Change this question to whatever you wish */}
           <br />
-          {['Ich stimme überhaupt nicht zu', 'Ich stimme eher nicht zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher zu', 'Ich stimme voll und ganz zu'].map(option => (
+          {['Ich stimme voll und ganz zu', 'Ich stimme eher zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher nicht zu', 'Ich stimme überhaupt nicht zu'].map(option => (
             <label key={option}>
               <input
                 type="radio"
@@ -86,7 +85,7 @@ export default function A17Page() {
         <div className={styles.question}>
           <h2 style={{fontSize: '16px', fontWeight:'bold', color: '#19b394'}} >Ich habe bereits Apps für mentale Gesundheit ausprobiert</h2>
           <br />
-          {['Ich stimme überhaupt nicht zu', 'Ich stimme eher nicht zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher zu', 'Ich stimme voll und ganz zu'].map(option => (
+          {['Ich stimme voll und ganz zu', 'Ich stimme eher zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher nicht zu', 'Ich stimme überhaupt nicht zu'].map(option => (
             <label key={option}>
               <input
                 type="radio"
@@ -106,7 +105,7 @@ export default function A17Page() {
         <div className={styles.question}>
           <h2 style={{fontSize: '16px', fontWeight:'bold', color: '#19b394'}} >Ich nutze regelmäßig Apps für mentale Gesundheit</h2>
           <br />
-          {['Ich stimme überhaupt nicht zu', 'Ich stimme eher nicht zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher zu', 'Ich stimme voll und ganz zu'].map(option => (
+          {['Ich stimme voll und ganz zu', 'Ich stimme eher zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher nicht zu', 'Ich stimme überhaupt nicht zu'].map(option => (
             <label key={option}>
               <input
                 type="radio"

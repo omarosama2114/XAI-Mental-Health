@@ -43,12 +43,11 @@ export default function B14Page() {
     userData.psychological_openness_item_2 = likertScale[answers.question2];
     userData.psychological_openness_item_3 = likertScale[answers.question3];
   
-    console.log('Updated userData:', userData);
     // Save updated userData to session storage
     sessionStorage.setItem('userData', JSON.stringify(userData));
   
     // Navigate to the next page
-    navigate('/15b');
+    navigate('/indifference_to_stigma_B');
     window.scrollTo(0, 0);
     }
     else {
@@ -65,7 +64,7 @@ export default function B14Page() {
         <div className={styles.question}>
           <h2 style={{fontSize: '16px', fontWeight:'bold', color: '#19b394'}} >Psychische Probleme lösen sich, wie viele andere Dinge auch, in der Regel von selbst</h2> {/* Change this question to whatever you wish */}
           <br />
-          {['Ich stimme überhaupt nicht zu', 'Ich stimme eher nicht zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher zu', 'Ich stimme voll und ganz zu'].map(option => (
+          {['Ich stimme voll und ganz zu', 'Ich stimme eher zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher nicht zu', 'Ich stimme überhaupt nicht zu'].map(option => (
             <label key={option}>
               <input
                 type="radio"
@@ -85,7 +84,7 @@ export default function B14Page() {
         <div className={styles.question}>
           <h2 style={{fontSize: '16px', fontWeight:'bold', color: '#19b394'}} >Es gibt bestimmte psychische Probleme, die nicht außerhalb von meinen engen Bezugspersonen besprochen werden sollten </h2>
           <br />
-          {['Ich stimme überhaupt nicht zu', 'Ich stimme eher nicht zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher zu', 'Ich stimme voll und ganz zu'].map(option => (
+          {['Ich stimme voll und ganz zu', 'Ich stimme eher zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher nicht zu', 'Ich stimme überhaupt nicht zu'].map(option => (
             <label key={option}>
               <input
                 type="radio"
@@ -105,7 +104,7 @@ export default function B14Page() {
         <div className={styles.question}>
           <h2 style={{fontSize: '16px', fontWeight:'bold', color: '#19b394'}} >Es reicht, wenn Menschen sich selbst um ihre psychische Gesundheit kümmern. Professionelle Hilfe zur Prävention in Anspruch zu nehmen, sollte eigentlich nicht nötig sein</h2>
           <br />
-          {['Ich stimme überhaupt nicht zu', 'Ich stimme eher nicht zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher zu', 'Ich stimme voll und ganz zu'].map(option => (
+          {['Ich stimme voll und ganz zu', 'Ich stimme eher zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher nicht zu', 'Ich stimme überhaupt nicht zu'].map(option => (
             <label key={option}>
               <input
                 type="radio"

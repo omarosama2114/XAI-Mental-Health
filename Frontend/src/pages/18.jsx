@@ -40,6 +40,8 @@ export default function A18Page() {
   const handleProceed = () => {
     if(isEveryQuestionAnswered) {
     const userData = JSON.parse(sessionStorage.getItem('userData')) || {};
+
+    console.log(userData);
   
     // Convert answer labels to numerical values and save them under specific keys
     userData.gesundheitswohlbefinden_item_1 = likertScale[answers.question1];
@@ -48,10 +50,9 @@ export default function A18Page() {
     userData.gesundheitswohlbefinden_item_4 = likertScale[answers.question4];
     userData.gesundheitswohlbefinden_item_5 = likertScale[answers.question5]; 
     userData.gesundheitswohlbefinden_sum =  likertScale[answers.question1] + likertScale[answers.question2] + likertScale[answers.question3] + likertScale[answers.question4] + likertScale[answers.question5];
-    
-    console.log('Updated userData:', userData);
+  
     axios.post('http://localhost:8000/submit-survey', userData)
-    .then(() => navigate('/19'))
+    .then(() => navigate('/end_of_survey_A_B'))
     .catch(error => {
       if (error.response) {
         // The request was made and the server responded with a status code

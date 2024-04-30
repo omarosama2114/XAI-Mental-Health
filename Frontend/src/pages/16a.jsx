@@ -43,12 +43,11 @@ export default function A16Page() {
     userData.helpSeeking_propensity_item_2 = likertScale[answers.question2];
     userData.helpSeeking_propensity_item_3 = likertScale[answers.question3];
   
-    console.log('Updated userData:', userData);
     // Save updated userData to session storage
     sessionStorage.setItem('userData', JSON.stringify(userData));
   
     // Navigate to the next page
-    navigate('/17');
+    navigate('/erfahrung_mit_app_typen');
     window.scrollTo(0, 0);
     }
     else {
@@ -66,7 +65,7 @@ export default function A16Page() {
         <div className={styles.question}>
           <h2 style={{fontSize: '16px', fontWeight:'bold', color: '#19b394'}} >Es würde mir relativ leichtfallen, Zeit zu finden, um eine Fachkraft für psychologische Probleme aufzusuchen</h2> {/* Change this question to whatever you wish */}
           <br />
-          {['Ich stimme überhaupt nicht zu', 'Ich stimme eher nicht zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher zu', 'Ich stimme voll und ganz zu'].map(option => (
+          {['Ich stimme voll und ganz zu', 'Ich stimme eher zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher nicht zu', 'Ich stimme überhaupt nicht zu'].map(option => (
             <label key={option}>
               <input
                 type="radio"
@@ -86,7 +85,7 @@ export default function A16Page() {
         <div className={styles.question}>
           <h2 style={{fontSize: '16px', fontWeight:'bold', color: '#19b394'}} >Ich weiß, an wen oder an welche Stellen ich mich wenden müsste, wenn ich psychologische Hilfe in Anspruch nehmen wollen würde</h2>
           <br />
-          {['Ich stimme überhaupt nicht zu', 'Ich stimme eher nicht zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher zu', 'Ich stimme voll und ganz zu'].map(option => (
+          {['Ich stimme voll und ganz zu', 'Ich stimme eher zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher nicht zu', 'Ich stimme überhaupt nicht zu'].map(option => (
             <label key={option}>
               <input
                 type="radio"
@@ -106,7 +105,7 @@ export default function A16Page() {
         <div className={styles.question}>
           <h2 style={{fontSize: '16px', fontWeight:'bold', color: '#19b394'}} >Wenn ich psychische Probleme hätte, könnte ich professionelle Hilfe in Anspruch nehmen, wenn ich es wollen würde</h2>
           <br />
-          {['Ich stimme überhaupt nicht zu', 'Ich stimme eher nicht zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher zu', 'Ich stimme voll und ganz zu'].map(option => (
+          {['Ich stimme voll und ganz zu', 'Ich stimme eher zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher nicht zu', 'Ich stimme überhaupt nicht zu'].map(option => (
             <label key={option}>
               <input
                 type="radio"

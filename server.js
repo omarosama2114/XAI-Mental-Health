@@ -48,6 +48,7 @@ const SurveySchema = new mongoose.Schema({
   trust_item_2: Number,
   trust_item_3: Number,
   attention_check_2: Boolean,
+  FAILED: { type: Boolean, default: false },
   psychological_openness_item_1: Number,
   psychological_openness_item_2: Number,
   psychological_openness_item_3: Number,

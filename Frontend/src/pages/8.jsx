@@ -8,19 +8,6 @@ export default function A8Page() {
     question1: ''
   });
 
-  const likertScale = {
-    'Ich stimme überhaupt nicht zu': 1,
-    'Ich stimme eher nicht zu': 2,
-    'Ich stimme weder zu noch lehne ich ab': 3,
-    'Ich stimme eher zu': 4,
-    'Ich stimme voll und ganz zu': 5
-  };
-
-
-
-  const delta = Math.abs(likertScale[answers.question2] - likertScale[answers.question3]);
-  const qualityCheckIntentionToAct = delta > 2 ? 'low' : 'high';
-
   const handleOptionChange = (e) => {
     const { name, value } = e.target;
     setAnswers(prevAnswers => ({
@@ -44,11 +31,14 @@ export default function A8Page() {
     // Save attention check based on the first question's answer
     userData.attention_check_1 = answers.question1 === 'Apps, die die mentale Gesundheit fördern sollen ';
 
+    if(userData.FAILED === true) {
+      userData.attention_check_1 = false;
+    }
+
     sessionStorage.setItem('userData', JSON.stringify(userData));
-    console.log('Updated userData:', userData);
 
     // Navigate to the next page
-    navigate('/9');
+    navigate('/performance_expectancy');
     window.scrollTo(0, 0);
     }
     else {

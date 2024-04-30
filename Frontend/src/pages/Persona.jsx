@@ -4,8 +4,7 @@ import explanationsData from '../240424_xaimh_output-finalized.json';
 import { useNavigate } from "react-router-dom";
 import styles from '../styles/PersonaPage.module.css';
 import Button from "@mui/material/Button";
-import TextField from "@mui/material/TextField";
-import axios from 'axios';    
+import TextField from "@mui/material/TextField";    
 
 export default function PersonaPage({ showProceedButton = true }) {
   const [explanation, setExplanation] = useState(null);
@@ -17,6 +16,8 @@ export default function PersonaPage({ showProceedButton = true }) {
 
     // Select explanation and add to userData
     let savedExplanation = sessionStorage.getItem('selectedExplanation');
+    
+
     if (savedExplanation) {
       savedExplanation = JSON.parse(savedExplanation);
       userData.explanation_id = savedExplanation.obj_id; 
@@ -63,13 +64,16 @@ export default function PersonaPage({ showProceedButton = true }) {
       </Helmet>
       <br/>
       <div className={styles.container}>
-        <h1 className="text-2xl md:text-4xl font mb-4" style={{ fontSize: '1.4em' }}>
-        Wir möchten Sie nun also bitten, sich in eine Person und deren Situation hineinzuversetzen. Bitte lesen Sie dazu die folgende Personenbeschreibung sorgfältig durch nehmen Sie die Perspektive der Person ein. 
+      {showProceedButton && (
+        <h1 className={styles.subTitle}>
+        Wir möchten Sie nun also bitten, sich in eine Person und deren Situation hineinzuversetzen. Bitte lesen Sie dazu die folgende Personenbeschreibung sorgfältig durch und nehmen Sie die Perspektive der Person ein. 
         <br/> <br/>
         Die Person, um die es jetzt geht, heißt Flo. Flo nutzt eine Smart-Sensing-App für mentale Gesundheit – also eine App, die Smartphone-Daten nutzt, um Informationen zur mentalen Gesundheit von Flo zu liefern.
         <br/> <br/>
         Die App hat folgende Informationen über Flo gesammelt:
         </h1>
+        )}
+        <br/>
         <ul className={styles.list}>
           {[
             { label: 'Stresslevel', value: explanation.Dein_Stresslevel },
@@ -84,7 +88,7 @@ export default function PersonaPage({ showProceedButton = true }) {
           ].map((item, index) => (
             <TextField 
               key={index}
-              label={ '\u00A0'+ item.label + '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0' }
+              label={ '\u00A0'+ item.label + '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0' }
               value={item.value || ''}
               variant="outlined"
               fullWidth
@@ -93,13 +97,13 @@ export default function PersonaPage({ showProceedButton = true }) {
               padding="30px"
               
               InputLabelProps={{
-                style: { color: '#19b394', fontSize: '20px'},
+                style: { color: '#19b394', fontSize: '20px', fontWeight: 'bold'},
                 shrink: true
               }}
 
               inputProps={{
                 spellCheck: 'false',
-                style:{ boxShadow: 'none', color: 'black', cursor: 'default', marginTop: '15px', marginBottom: '15px', marginLeft: '10px'} 
+                style:{ boxShadow: 'none', color: 'black', cursor: 'default', marginTop: '15px', marginBottom: '15px', marginLeft: '10px', fontSize: '16px'} 
               }}
 
               sx={{

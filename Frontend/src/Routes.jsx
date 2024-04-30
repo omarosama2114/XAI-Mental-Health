@@ -8,7 +8,6 @@ import SurveyScreenDepression from "pages/NoExplanation";
 import SurveyScreenDepressionCF from "pages/CounterFactual";
 import SurveyScreenDepressionFI from "pages/FeatureImportance";
 import Persona from "pages/Persona";
-import Admin from "pages/admin";
 import Quiz from "pages/Quiz";
 import Wrong from "pages/Wrong";
 import PreExplanationPage from "pages/Pre-Explanation";
@@ -30,30 +29,31 @@ import B16 from "pages/16b";
 import A17 from "pages/17";
 import A18 from "pages/18";
 import A19 from "pages/19";
+import Termination from "pages/termination";
 
 const ProjectRoutes = () => {
   let element = useRoutes([
     { path: "/", element: <Introductory />},
-    { path: "/6a", element: <A6 />},
-    { path: "/6b", element: <B6 />},
-    { path: "/7", element: <A7 />},
-    { path: "/8", element: <A8 />},
-    { path: "/9", element: <A9 />},
-    { path: "/10", element: <A10 />},
-    { path: "/11", element: <A11 />},
-    { path: "/12", element: <A12 />},
-    { path: "/13", element: <A13 />},
-    { path: "/14a", element: <A14 />},
-    { path: "/14b", element: <B14 />},
-    { path: "/15a", element: <A15 />},
-    { path: "/16a", element: <A16 />},
-    { path: "/15b", element: <B15 />},
-    { path: "/16b", element: <B16 />},
-    { path: "/17", element: <A17 />},
-    { path: "/18", element: <A18 />},
-    { path: "/19", element: <A19 />},
+    { path: "/intention_to_act_A", element: <A6 />},
+    { path: "/intention_to_act_B", element: <B6 />},
+    { path: "/intention_to_use", element: <A7 />},
+    { path: "/attention_check_1", element: <A8 />},
+    { path: "/performance_expectancy", element: <A9 />},
+    { path: "/effort_expectancy", element: <A10 />},
+    { path: "/social_influence", element: <A11 />},
+    { path: "/trust", element: <A12 />},
+    { path: "/attention_check_2", element: <A13 />},
+    { path: "/psychological_openness_A", element: <A14 />},
+    { path: "/psychological_openness_B", element: <B14 />},
+    { path: "/indifference_to_stigma_A", element: <A15 />},
+    { path: "/help_seeking_propensity_A", element: <A16 />},
+    { path: "/indifference_to_stigma_B", element: <B15 />},
+    { path: "/help_seeking_propensity_B", element: <B16 />},
+    { path: "/erfahrung_mit_app_typen", element: <A17 />},
+    { path: "/gesundheitswohlbefinden", element: <A18 />},
+    { path: "/end_of_survey_A_B", element: <A19 />},
+    { path: "/termination", element: <Termination />},
     { path: "/quiz", element: <Quiz />},
-    { path: "/admin", element: <Admin />},
     { path: "/pre", element: <PreExplanationPage />},
     { path: "/persona", element: <Persona />},
     { path: "/wrong", element: <Wrong />},

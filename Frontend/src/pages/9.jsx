@@ -43,12 +43,11 @@ export default function A9Page() {
     userData.performance_expectancy_item_2 = likertScale[answers.question2];
     userData.performance_expectancy_item_3 = likertScale[answers.question3];
   
-    console.log('Updated userData:', userData);
     // Save updated userData to session storage
     sessionStorage.setItem('userData', JSON.stringify(userData));
   
     // Navigate to the next page
-    navigate('/10');
+    navigate('/effort_expectancy');
     window.scrollTo(0, 0);
     }
     else {
@@ -66,7 +65,7 @@ export default function A9Page() {
         <div className={styles.question}>
           <h2 style={{fontSize: '16px', fontWeight:'bold', color: '#19b394'}} >Die Verwendung einer Smart-Sensing-App für mentale Gesundheit könnte positive Auswirkungen auf meine Gesundheit haben</h2> {/* Change this question to whatever you wish */}
           <br />
-          {['Ich stimme überhaupt nicht zu', 'Ich stimme eher nicht zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher zu', 'Ich stimme voll und ganz zu'].map(option => (
+          {['Ich stimme voll und ganz zu', 'Ich stimme eher zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher nicht zu', 'Ich stimme überhaupt nicht zu'].map(option => (
             <label key={option}>
               <input
                 type="radio"
@@ -86,7 +85,7 @@ export default function A9Page() {
         <div className={styles.question}>
           <h2 style={{fontSize: '16px', fontWeight:'bold', color: '#19b394'}} >Die Verwendung einer Smart-Sensing-App für mentale Gesundheit und die gesammelten Daten könnten Ärzten bei einer Diagnose helfen </h2>
           <br />
-          {['Ich stimme überhaupt nicht zu', 'Ich stimme eher nicht zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher zu', 'Ich stimme voll und ganz zu'].map(option => (
+          {['Ich stimme voll und ganz zu', 'Ich stimme eher zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher nicht zu', 'Ich stimme überhaupt nicht zu'].map(option => (
             <label key={option}>
               <input
                 type="radio"
@@ -106,7 +105,7 @@ export default function A9Page() {
         <div className={styles.question}>
           <h2 style={{fontSize: '18px', fontWeight:'bold', color: '#19b394'}} >Insgesamt könnte eine Smart-Sensing-App für mentale Gesundheit helfen, meine Gesundheit zu managen</h2>
           <br />
-          {['Ich stimme überhaupt nicht zu', 'Ich stimme eher nicht zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher zu', 'Ich stimme voll und ganz zu'].map(option => (
+          {['Ich stimme voll und ganz zu', 'Ich stimme eher zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher nicht zu', 'Ich stimme überhaupt nicht zu'].map(option => (
             <label key={option}>
               <input
                 type="radio"

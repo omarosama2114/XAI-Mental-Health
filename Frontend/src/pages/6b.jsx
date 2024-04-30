@@ -37,20 +37,21 @@ export default function B6Page() {
   
   const handleProceed = () => {
     if(isEveryQuestionAnswered) {
-    const delta = Math.abs(likertScale[answers.question2] - likertScale[answers.question3]);
-    const qualityCheckIntentionToAct = delta > 2 ? 'low' : 'high';
+      const delta = Math.abs(likertScale[answers.question2] - likertScale[answers.question3]);
+      const qualityCheckIntentionToAct = delta > 2 ? 'low' : 'high';
+      
+      const userData = JSON.parse(sessionStorage.getItem('userData')) || {};
 
-    console.log('Intention to act:', qualityCheckIntentionToAct);
+      userData.intention_to_act_item_1 = likertScale[answers.question1];
+      userData.intention_to_act_item_2 = likertScale[answers.question2];
+      userData.intention_to_act_item_3 = likertScale[answers.question3];  
 
-    // Example: Save to sessionStorage or send to backend
-    const userData = JSON.parse(sessionStorage.getItem('userData')) || {};
-    userData.quality_check_intention_to_act = qualityCheckIntentionToAct;
-    sessionStorage.setItem('userData', JSON.stringify(userData));
+      userData.quality_check_intention_to_act = qualityCheckIntentionToAct;
 
-    // TODO: Navigate to the next page or perform the next action
-    console.log('Saved userData:', userData);
-    navigate('/7');
-    window.scrollTo(0, 0);
+      sessionStorage.setItem('userData', JSON.stringify(userData));
+
+      navigate('/intention_to_use');
+      window.scrollTo(0, 0);
     }
     else {
       setShowWarning(true);
@@ -67,7 +68,7 @@ export default function B6Page() {
         <div className={styles.question}>
           <h2 style={{fontSize: '16px', fontWeight:'bold', color: '#19b394'}} >Ich könnte mir vorstellen, Präventionsmaßnahmen in Anspruch zu nehmen oder mein Verhalten dahingehend zu ändern, dass ich meine psychische Gesundheit beibehalte</h2> {/* Change this question to whatever you wish */}
           <br />
-          {['Ich stimme überhaupt nicht zu', 'Ich stimme eher nicht zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher zu', 'Ich stimme voll und ganz zu'].map(option => (
+          {['Ich stimme voll und ganz zu', 'Ich stimme eher zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher nicht zu', 'Ich stimme überhaupt nicht zu'].map(option => (
             <label key={option}>
               <input
                 type="radio"
@@ -87,7 +88,7 @@ export default function B6Page() {
         <div className={styles.question}>
           <h2 style={{fontSize: '16px', fontWeight:'bold', color: '#19b394'}} >Ich beabsichtige, Einrichtungen oder Angebote zur Prävention für meine psychische Gesundheit aufzusuchen </h2>
           <br />
-          {['Ich stimme überhaupt nicht zu', 'Ich stimme eher nicht zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher zu', 'Ich stimme voll und ganz zu'].map(option => (
+          {['Ich stimme voll und ganz zu', 'Ich stimme eher zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher nicht zu', 'Ich stimme überhaupt nicht zu'].map(option => (
             <label key={option}>
               <input
                 type="radio"
@@ -107,7 +108,7 @@ export default function B6Page() {
         <div className={styles.question}>
           <h2 style={{fontSize: '16px', fontWeight:'bold', color: '#19b394'}} >Ich werde versuchen, Einrichtungen oder Angebote zur Prävention für meine psychische Gesundheit aufzusuchen</h2>
           <br />
-          {['Ich stimme überhaupt nicht zu', 'Ich stimme eher nicht zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher zu', 'Ich stimme voll und ganz zu'].map(option => (
+          {['Ich stimme voll und ganz zu', 'Ich stimme eher zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher nicht zu', 'Ich stimme überhaupt nicht zu'].map(option => (
             <label key={option}>
               <input
                 type="radio"

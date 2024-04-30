@@ -18,11 +18,12 @@ export default function WrongPage() {
             <title>Welcome - Omar's Application</title>
             <meta name="description" content="Introductory page of the experiment" />
           </Helmet>
-          <div className={styles.container} style={{marginTop: '225px'}}>
-            <h1 className="text-2xl md:text-4xl font-bold mb-4" style={{ fontSize: '2.0em' }}>Das hat leider nicht gestimmt<br/> <br/> </h1>
-            <p className="mb-4 text text-xl md:text-2xl">
+          <div className={styles.container}>
+            <h1 className={styles.title}>Das hat leider nicht gestimmt<br/> <br/> </h1>
+            <p className={styles.list}>
             Für diese Studie ist es extrem wichtig, dass Sie sich gut in die Person Flo hinenversetzen. Daher bitten wir Sie, sich das Profil von Flo erneut in Ruhe anzuschauen.
             </p>
+            <br/>
             <br/>
             <Button
               variant="contained"

@@ -25,9 +25,9 @@ export default function SurveyScreenDepressionFIPage({ explanation }) {
   const handleProceed = () => {
     // Navigate based on the prediction value
     if (explanation.prediction === "depression") {
-      navigate("/6a");
+      navigate("/intention_to_act_A");
     } else {
-      navigate("/6b");
+      navigate("/intention_to_act_B");
     }
   };
 
@@ -67,6 +67,11 @@ export default function SurveyScreenDepressionFIPage({ explanation }) {
         <Text as="p" className="text-center text-base md:text-xl mx-2 my-4">
           {formatFeaturesText()}
         </Text>
+        <Text as="p" className="text-blue_gray-400 text-sm md:text-base text-center mt-auto" style={{marginTop: '20px'}}>
+          Alle angezeigten Ergebnisse sind lediglich Vorhersagen einer KI. Als solche können sie nur Hinweise auf
+          den Gesundheitszustand geben. Sie können keine medizinische Diagnose stellen und ersetzen keinesfalls
+          einen Arztbesuch. Wenn du dich deprimiert fühlst, wende dich an einen Arzt.
+        </Text>
         <Button
           variant="contained"
           onClick={handleProceed}
@@ -74,11 +79,6 @@ export default function SurveyScreenDepressionFIPage({ explanation }) {
         > 
           Weiter &#x279C;
         </Button>
-        <Text as="p" className="text-blue_gray-400 text-sm md:text-base text-center mt-auto">
-          Alle angezeigten Ergebnisse sind lediglich Vorhersagen einer KI. Als solche können sie nur Hinweise auf
-          den Gesundheitszustand geben. Sie können keine medizinische Diagnose stellen und ersetzen keinesfalls
-          einen Arztbesuch. Wenn du dich deprimiert fühlst, wende dich an einen Arzt.
-        </Text>
       </div>
     </>
   );

@@ -37,19 +37,28 @@ export default function A13Page() {
 
     // Save attention check as true if second or third option is selected
     userData.attention_check_2 = likertScale[answers.question1] ===  3 || likertScale[answers.question1] === 4;
-
+    
+    if(userData.FAILED === true) {
+      userData.attention_check_2 = false;
+    }
     sessionStorage.setItem('userData', JSON.stringify(userData));
-    console.log('Updated userData:', userData);
 
     if(userData.attention_check_1 === false && userData.attention_check_2 === false) {
-        navigate('/19');
+        const userData = JSON.parse(sessionStorage.getItem('userData')) || {};
+    
+        userData.FAILED = true;
+
+        sessionStorage.setItem('userData', JSON.stringify(userData));
+        console.log(userData);
+
+        navigate('/termination');
     }
     else {
         if(explanation.prediction === "depression") {
-            navigate('/14a');
+            navigate('/psychological_openness_A');
         }
         else {
-            navigate('/14b');
+            navigate('/psychological_openness_B');
         }
     }
     window.scrollTo(0, 0);
@@ -67,7 +76,7 @@ export default function A13Page() {
         <div className={styles.question}>
           <h2 style={{fontSize: '18px', fontWeight:'bold', color: '#19b394'}} >Bitte bewerten Sie kurz auch folgende Aussage: Wenn man 10 und 20 addiert, erhält man 30</h2> {/* Change this question to whatever you wish */}
           <br />
-          {['Ich stimme überhaupt nicht zu', 'Ich stimme eher nicht zu', 'Ich stimme eher zu', 'Ich stimme voll und ganz zu'].map(option => (
+          {['Ich stimme voll und ganz zu', 'Ich stimme eher zu', 'Ich stimme eher nicht zu', 'Ich stimme überhaupt nicht zu'].map(option => (
             <label key={option}>
               <input
                 type="radio"

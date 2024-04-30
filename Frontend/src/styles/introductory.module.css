@@ -1,18 +1,18 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px;
-    padding-bottom: 35px;
-    font-family: 'Inter', sans-serif;
-    width: 100%;
-    max-width: 1000px;
-    margin: 30px 275px;
-    border-radius: 8px;
-    background-color: #f4f4f4;
-    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for the shadow effect */
-  } 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5vw;  /* Responsive padding */
+  font-family: 'Inter', sans-serif;
+  width: 90%;    /* Responsive width */
+  max-width: 990px;
+  max-height: fit-content;
+  margin: 2vw auto;  /* Responsive margin */
+  border-radius: 8px;
+  background-color: #f4f4f4;
+  transition: box-shadow 0.3s ease-in-out; /* Smooth transition for the shadow effect */
+}
     
   .container:hover {
     box-shadow:
@@ -36,8 +36,38 @@
     
     .title {
       font-size: 24px;
-      color: #333;
+      font-weight: bold;
+      color: black;
       margin-bottom: 20px;
+    }
+
+    .title2 {
+      font-size: 9px;
+      color: black;
+      margin-bottom: 20px;
+    }
+
+    .title3 {
+      font-size: 30px;
+      color: black;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 60px;
+      color: black;
+    }
+
+    .banner {
+      font-size: 45px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .subTitle {
+      font-size: 20px;
+      font-weight: bold;
+      color: #19b394;
     }
     
     .list {
@@ -48,9 +78,17 @@
     
     .listItem {
       font-size: 16px;
+      color: black;
+      line-height: 1.6;
+      padding: 8px 0; /* Padding to space out items */
+    }
+
+    .listItem2 {
+      font-size: 16px;
       color: #666;
       line-height: 1.6;
       padding: 8px 0; /* Padding to space out items */
+      text-align: center;
     }
     
     .button {
@@ -68,3 +106,73 @@
     .button:hover {
       background-color: #139bcf;
     }
+
+    /* Media Queries for further adjustments */
+@media (max-width: 768px) { /* For tablets and below */
+  .title, .styledText {
+    font-size: calc(15px + 1vw); /* Slightly larger scaling factor for smaller devices */
+  }
+
+  .listItem {
+    font-size: calc(12px + 1vw); /* Adjust font size for readability */
+  }
+
+  .subTitle {
+    font-size: calc(16px + 1vw); /* Adjust font size for readability */
+  }
+
+  .title2 {
+    font-size: calc(14px + 1vw); /* Adjust font size for readability */
+  }
+
+  .title3 {
+    font-size: calc(14px + 1vw); /* Adjust font size for readability */
+  }
+
+
+}
+
+@media (max-width: 480px) { /* For mobile phones */
+  .title, .styledText {
+    font-size: calc(14px + 1.5vw); /* Larger scaling factor for very small screens */
+  }
+
+  .listItem {
+    font-size: calc(9px + 1.5vw); /* Larger scaling factor for readability on phones */
+  }
+
+  .listItem2 {
+    font-size: calc(9px + 1.5vw); /* Larger scaling factor for readability on phones */
+  }
+
+  .subTitle {
+    font-size: calc(11px + 1.5vw); /* Larger scaling factor for readability on phones */
+  }
+
+  .title2 {
+    font-size: calc(12px + 1.5vw); /* Larger scaling factor for readability on phones */
+  }
+
+  .title3 {
+    font-size: calc(12px + 1.5vw); /* Larger scaling factor for readability on phones */
+  }
+
+
+}
+
+/* Media Queries */
+@media (max-width: 768px) { /* For tablets and below */
+  .container {
+    padding: 5%;  /* Increase padding */
+    margin: 5% auto; /* Increase margin */
+  }
+}
+
+@media (max-width: 480px) { /* For mobile phones */
+  .container {
+    flex-direction: column;
+    padding: 10%;  /* More padding on smaller screens */
+    margin: 10% auto; /* More margin on smaller screens */
+    width: 100%;   /* Use full width */
+  }
+}

@@ -3,18 +3,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 50px;
-  padding-bottom: 30px;
-  padding-top: 30px;
+  padding: 5vw;  /* Responsive padding */
   font-family: 'Inter', sans-serif;
-  width: 100%;
+  width: 90%;    /* Responsive width */
   max-width: 990px;
   max-height: fit-content;
-  margin: 20px auto;
+  margin: 2vw auto;  /* Responsive margin */
   border-radius: 8px;
   background-color: #f4f4f4;
   transition: box-shadow 0.3s ease-in-out; /* Smooth transition for the shadow effect */
-} 
+}
   
 .container:hover {
   box-shadow:
@@ -48,8 +46,14 @@
   
   .title {
     font-size: 24px;
-    color: #333;
+    color: black;
     margin-bottom: 20px;
+  }
+
+  
+  .subTitle {
+    font-size: 20px;
+    color: black;
   }
   
   .list {
@@ -66,12 +70,27 @@
     padding: 8px 0; /* Padding to space out items */
   }
 
+  .flo {
+    background-color:  #19b394;
+    color: white; 
+  }
+
   .styledText {
     font-size: 21px;
     color: #000000;
     font-weight: bold;
     line-height: 1.6;
     padding: 8px 0; /* Padding to space out items */
+  }
+
+  .props {
+    box-shadow: none;
+    color: black;
+    cursor: default;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    font-size: 16px;
   }
   
   .button {
@@ -96,3 +115,53 @@
   color: #19b394 !important;
   --tw-shadow: none !important;
 }
+
+  /* Media Queries for further adjustments */
+  @media (max-width: 768px) { /* For tablets and below */
+    .title, .styledText {
+      font-size: calc(15px + 1vw); /* Slightly larger scaling factor for smaller devices */
+    }
+  
+    .listItem {
+      font-size: calc(12px + 1vw); /* Adjust font size for readability */
+    }
+  
+    .subTitle {
+      font-size: calc(16px + 1vw); /* Adjust font size for readability */
+    }
+  }
+  
+  @media (max-width: 480px) { /* For mobile phones */
+    .title, .styledText {
+      font-size: calc(14px + 1.5vw); /* Larger scaling factor for very small screens */
+    }
+  
+    .listItem {
+      font-size: calc(12px + 1.5vw); /* Larger scaling factor for readability on phones */
+    }
+  
+    .subTitle {
+      font-size: calc(14px + 1.5vw); /* Larger scaling factor for readability on phones */
+    }
+
+    .flo {
+      margin-left: -7px;
+    }
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) { /* For tablets and below */
+    .container {
+      padding: 5%;  /* Increase padding */
+      margin: 5% auto; /* Increase margin */
+    }
+  }
+  
+  @media (max-width: 480px) { /* For mobile phones */
+    .container {
+      flex-direction: column;
+      padding: 10%;  /* More padding on smaller screens */
+      margin: 10% auto; /* More margin on smaller screens */
+      width: 100%;   /* Use full width */
+    }
+  }
