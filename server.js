@@ -30,8 +30,7 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 // Model
 const SurveySchema = new mongoose.Schema({
   PROLIFIC_PID: String,
-  SESSION_ID: String,
-  STUDY_ID: String,
+  prolific_id_input_user: String,
   explanation_id: String,
   quality_check_intention_to_act: String,
   intention_to_use_item_1:  Number,

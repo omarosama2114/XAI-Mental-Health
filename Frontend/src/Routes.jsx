@@ -3,6 +3,7 @@ import { useRoutes } from "react-router-dom";
 
 import Home from "pages/Home";
 import Introductory from "pages/IntroductoryPage";
+import Prolific from "pages/Prolific_id";
 import NotFound from "pages/NotFound";
 import SurveyScreenDepression from "pages/NoExplanation";
 import SurveyScreenDepressionCF from "pages/CounterFactual";
@@ -33,7 +34,8 @@ import Termination from "pages/termination";
 
 const ProjectRoutes = () => {
   let element = useRoutes([
-    { path: "/", element: <Introductory />},
+    { path: "/", element: <Prolific />},
+    { path: "/intro", element: <Introductory />},
     { path: "/intention_to_act_A", element: <A6 />},
     { path: "/intention_to_act_B", element: <B6 />},
     { path: "/intention_to_use", element: <A7 />},

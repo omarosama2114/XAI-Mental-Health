@@ -25,7 +25,7 @@ export default function PersonaPage({ showProceedButton = true }) {
       savedExplanation = JSON.parse(savedExplanation);
       userData.explanation_id = savedExplanation.obj_id; 
     } else {
-      const randomIndex = Math.floor(Math.random() * explanationsData.length);
+      const randomIndex = Math.floor(Math.random() * healthyExplanations.length);
       savedExplanation = healthyExplanations[randomIndex];
       userData.explanation_id = savedExplanation.obj_id;
       sessionStorage.setItem('selectedExplanation', JSON.stringify(savedExplanation));

@@ -4,35 +4,12 @@ import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet"; // To control the page head elements such as title
 import styles from '../styles/introductory.module.css';
 import { useState } from "react";
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
-import queryString from "query-string";
 
 export default function IntroductoryPage() {
   let navigate = useNavigate();
-  let location = useLocation();
 
   const [isChecked, setIsChecked] = useState(false);
   const [showWarning, setShowWarning] = useState(false);
-
-  useEffect(() => {
-    const params = queryString.parse(location.search);
-    sessionStorage.setItem('userData', JSON.stringify(params));
-
-    const handleBeforeUnload = (event) => {
-      // Most modern browsers have limited support for custom messages in the beforeunload event
-      const message = "All progress will be lost and you will have to start over.";
-      event.preventDefault();
-      event.returnValue = message; // For older browsers and some modern ones
-      return message;
-    };
-
-    window.addEventListener('beforeunload', handleBeforeUnload);
-
-    return () => {
-      window.removeEventListener('beforeunload', handleBeforeUnload);
-    };
-  }, [location]);
 
   const handleProceed = () => {
     if (isChecked) {
