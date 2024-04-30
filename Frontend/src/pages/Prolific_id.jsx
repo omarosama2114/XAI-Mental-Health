@@ -64,18 +64,19 @@ export default function WrongPage() {
             <TextField 
               label={'Prolific ID' + '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0'}
               value={prolificId}
+              onChange={(e) => setProlificId(e.target.value)}
               variant="outlined"
               fullWidth
               margin="normal"
               padding="30px"
               
               InputLabelProps={{
-                style: { color: '#19b394', fontSize: '20px', fontWeight: 'bold'}
+                style: { color: '#19b394', fontSize: '22px'}
               }}
 
               inputProps={{
                 spellCheck: 'false',
-                style:{ boxShadow: 'none', color: 'black', marginTop: '15px', marginBottom: '15px', marginLeft: '10px', fontSize: '16px'} 
+                style:{ boxShadow: 'none', color: 'black', marginTop: '10px', marginBottom: '15px', marginLeft: '10px', fontSize: '16px'} 
               }}
             />
 
