@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { Text, Heading } from "../../components";
 import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
+import styles from "../../styles/introductory.module.css";
 
 
 
@@ -35,25 +36,25 @@ export default function SurveyScreenDepressionCFPage({ explanation }) {
     console.log(explanation.percentages_feature_1_num)
       entries.push(
         <span key="feature1" style={{ color: "#15b1e2", fontWeight: "bold" }}>
-          {replaceUmlauts(explanation.feature_1) + ':'} <span style={{color:'black'}}>{explanation.original_value_1} ({explanation.percentages_feature_1_num >= 0 ? '+' : ''}{Math.round(explanation.percentages_feature_1_num)}%)</span>
+          {replaceUmlauts(explanation.feature_1) + ':'} <span style={{color:'black'}}>{explanation.percentages_feature_1} ({explanation.percentages_feature_1_num >= 0 ? '+' : ''}{Math.round(explanation.percentages_feature_1_num)}%)</span>
         </span>
       );
     if (explanation.feature_2 && explanation.percentages_feature_2 !== undefined)
       entries.push(
         <span key="feature2" style={{ color: "#15b1e2", fontWeight: "bold" }}>
-          {replaceUmlauts(explanation.feature_2) + ':'} <span style={{color:'black'}}>{explanation.original_value_2} ({explanation.percentages_feature_2_num >= 0 ? '+' : ''}{Math.round(explanation.percentages_feature_2_num)}%)</span>
+          {replaceUmlauts(explanation.feature_2) + ':'} <span style={{color:'black'}}>{explanation.percentages_feature_2} ({explanation.percentages_feature_2_num >= 0 ? '+' : ''}{Math.round(explanation.percentages_feature_2_num)}%)</span>
         </span>
       );
     if (explanation.feature_3 && explanation.percentages_feature_3 !== undefined)
       entries.push(
         <span key="feature3" style={{ color: "#15b1e2", fontWeight: "bold" }}>
-          {replaceUmlauts(explanation.feature_3) + ':'} <span style={{color:'black'}}>{explanation.original_value_3} ({explanation.percentages_feature_3_num >= 0 ? '+' : ''}{Math.round(explanation.percentages_feature_3_num)}%)</span>
+          {replaceUmlauts(explanation.feature_3) + ':'} <span style={{color:'black'}}>{explanation.percentages_feature_3} ({explanation.percentages_feature_3_num >= 0 ? '+' : ''}{Math.round(explanation.percentages_feature_3_num)}%)</span>
         </span>
       );
       if (explanation.feature_4 && explanation.percentages_feature_4 !== undefined)
       entries.push(
         <span key="feature4" style={{ color: "#15b1e2", fontWeight: "bold" }}>
-          {replaceUmlauts(explanation.feature_4) + ':'} <span style={{color:'black'}}>{explanation.original_value_4} ({explanation.percentages_feature_4_num >= 0 ? '+' : ''}{Math.round(explanation.percentages_feature_4_num)}%)</span>
+          {replaceUmlauts(explanation.feature_4) + ':'} <span style={{color:'black'}}>{explanation.percentages_feature_4} ({explanation.percentages_feature_4_num >= 0 ? '+' : ''}{Math.round(explanation.percentages_feature_4_num)}%)</span>
         </span>
       );  
 
@@ -81,7 +82,7 @@ export default function SurveyScreenDepressionCFPage({ explanation }) {
         <title>Omar's Application2</title>
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
-      <div className="flex flex-col h-screen bg-white-A700 justify-between p-5">
+      <div className={styles.container} style={{padding:'15px 15px'}}>  
         <Text as="p" className="text-center text-2xl md:text-4xl mb-8">
           Deine KI-Vorhersage
         </Text>
@@ -99,6 +100,9 @@ export default function SurveyScreenDepressionCFPage({ explanation }) {
           den Gesundheitszustand geben. Sie können keine medizinische Diagnose stellen und ersetzen keinesfalls
           einen Arztbesuch. Wenn du dich deprimiert fühlst, wende dich an einen Arzt.
         </Text>
+
+        
+      </div>
         <Button
           variant="contained"
           onClick={handleProceed}
@@ -106,9 +110,6 @@ export default function SurveyScreenDepressionCFPage({ explanation }) {
         > 
           Weiter &#x279C;
         </Button>
-
-        
-      </div>
     </>
   );
 }

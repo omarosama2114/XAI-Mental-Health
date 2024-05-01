@@ -63,7 +63,7 @@ export default function A16Page() {
       <br />
       <form>
         <div className={styles.question}>
-          <h2 style={{fontSize: '16px', fontWeight:'bold', color: '#19b394'}} >Es würde mir relativ leichtfallen, Zeit zu finden, um eine Fachkraft für psychologische Probleme aufzusuchen</h2> {/* Change this question to whatever you wish */}
+          <h2 style={{fontSize: '16px', fontWeight:'bold', color: '#19b394'}} >Es würde mir relativ leicht fallen, Zeit zu finden, um eine Fachkraft für psychologische Probleme aufzusuchen</h2> {/* Change this question to whatever you wish */}
           <br />
           {['Ich stimme voll und ganz zu', 'Ich stimme eher zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher nicht zu', 'Ich stimme überhaupt nicht zu'].map(option => (
             <label key={option}>

@@ -71,7 +71,7 @@ export default function WrongPage() {
               padding="30px"
               
               InputLabelProps={{
-                style: { color: '#19b394', fontSize: '22px'}
+                style: { fontSize: '22px'}
               }}
 
               inputProps={{

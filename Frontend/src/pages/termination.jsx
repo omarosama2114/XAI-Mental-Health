@@ -18,7 +18,7 @@ export default function Termination() {
 
         <br/><br/>
         
-        leider haben Sie zwei mal Fragen falsch beantwortet, die wir verwenden, um festzustellen, wie aufmerksam Sie an unserer Studie teilnehmen. Damit diese Studie valide Ergebnisse für die Wissenschaft liefern kann, ist es wichtig, dass jede(r) Teilnehmer(in) mit voller Aufmerksamkeit dabei ist. Daher müssen wir Sie leider von der Studie ausschließen.
+        leider haben Sie zwei Mal Fragen falsch beantwortet, die wir verwenden, um festzustellen, wie aufmerksam Sie an unserer Studie teilnehmen. Damit diese Studie valide Ergebnisse für die Wissenschaft liefern kann, ist es wichtig, dass jede(r) Teilnehmer(in) mit voller Aufmerksamkeit dabei ist. Daher müssen wir Sie leider von der Studie ausschließen.
 
         Vielen Dank für Ihr Verständnis!
 
@@ -34,7 +34,7 @@ export default function Termination() {
         Institut für Business Analytics<br/>
         Universität Ulm 
         <br/><br/>
-        Kontakt: <span style={{color: 'red'}}>XXX (TBD)</span>
+        Kontakt: maximilian.foerster@uni-ulm.de
         <br/>
  
         </p>

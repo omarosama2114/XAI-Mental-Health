@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate, useLocation, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { Select, MenuItem, Button, InputLabel, FormControl } from '@mui/material';
 import styles from '../styles/PersonaPage.module.css';
 import PersonaPage from './Persona'; // Import PersonaPage component
@@ -8,14 +8,16 @@ const options = ['Stark unterdurchschnittlich', 'Leicht unterdurchschnittlich', 
 
 export default function QuizPage() {
   const navigate = useNavigate();
-  const { state } = useLocation();
-  const [explanation, setExplanation] = useState(state?.explanation);
+  const [explanation, setExplanation] = useState({});
   const [answers, setAnswers] = useState({});
   const [features, setFeatures] = useState([]);
-  const [showPersonaPage, setShowPersonaPage] = useState(false); // State to control the visibility of the PersonaPage
 
   useEffect(() => {
-    if (explanation) {
+    const savedExplanation = sessionStorage.getItem('selectedExplanation');
+    const explanationData = savedExplanation ? JSON.parse(savedExplanation) : null;
+
+    if (explanationData) {
+      setExplanation(explanationData);
       const featureKeys = Object.keys(featureLabels);
       const selectedFeatures = featureKeys.sort(() => 0.5 - Math.random()).slice(0, 3);
       setFeatures(selectedFeatures);
@@ -27,9 +29,9 @@ export default function QuizPage() {
 
       setAnswers(initialAnswers);
     } else {
-      navigate('/persona');
+      navigate('/persona'); // Redirect if no explanation data is found
     }
-  }, [explanation, navigate]);
+  }, [navigate]);
 
   const handleSelectChange = (feature, value) => {
     setAnswers(prevAnswers => ({
@@ -48,20 +50,16 @@ export default function QuizPage() {
     window.scrollTo(0, 0);
   };
 
-  const togglePersonaPage = () => {
-    setShowPersonaPage(prev => !prev);
-  };
-
   const featureLabels = {
-    Dein_Stresslevel: 'Stresslevel',
-    Deine_Schlafqualitaet: 'Schlafqualität',
-    Anzahl_deiner_sozialen_Kontakte: 'Anzahl sozialer Kontakte',
-    Qualitaet_deiner_sozialen_Kontakte: 'Qualität der sozialen Kontakte',
-    Qualitaet_deiner_Ernaehrung: 'Qualität der Ernährung',
-    Deine_sportliche_Aktivitaet: 'Sportliche Aktivität',
-    Zeit_am_Handy: 'Zeit am Handy',
-    Laenge_deiner_Telefonate: 'Länge von Telefonaten',
-    Deine_Mobilitaet: 'Intensität der Mobilität'
+    Dein_Stresslevel: 'Dein Stresslevel',
+    Deine_Schlafqualitaet: 'Deine Schlafqualität',
+    Anzahl_deiner_sozialen_Kontakte: 'Deine Anzahl sozialer Kontakte',
+    Qualitaet_deiner_sozialen_Kontakte: 'Deine Qualität sozialer Kontakte',
+    Qualitaet_deiner_Ernaehrung: 'Deine Qualität der Ernährung',
+    Deine_sportliche_Aktivitaet: 'Deine sportliche Aktivität',
+    Zeit_am_Handy: 'Deine Zeit am Handy',
+    Laenge_deiner_Telefonate: 'Deine Länge der Telefonate',
+    Deine_Mobilitaet: 'Deine Mobilität'
   };
 
   return (
@@ -72,12 +70,12 @@ export default function QuizPage() {
       <br />
       {features.map((feature, index) => (
         <FormControl key={index} fullWidth margin="normal">
-          <InputLabel id={`label-${feature}`} style={{ color: '#19b394', fontSize: '18px' }}>
+          <InputLabel id={`label-${feature}`} style={{ color: '#19b394', fontSize: '20px', fontWeight: 'bold' }}>
             {featureLabels[feature]}
           </InputLabel>
           <Select
             labelId={`label-${feature}`}
-            label={featureLabels[feature] + '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0'}
+            label={featureLabels[feature] + '\u00A0'.repeat(16)}
             value={answers[feature]}
             onChange={(e) => handleSelectChange(feature, e.target.value)}
           >
@@ -89,14 +87,11 @@ export default function QuizPage() {
           <br />
         </FormControl>
       ))}
-      <Button variant="contained" onClick={handleSubmit} style={{ color: 'white', backgroundColor: '#19b394', fontWeight: 'bold', fontSize: '16px', padding: '10px 20px'}}>
+      <Button variant="contained" onClick={handleSubmit} style={{ color: 'white', backgroundColor: '#19b394', fontWeight: 'bold', fontSize: '16px', padding: '10px 20px', marginBottom:'-20px'}}>
         weiter &#x279C;
       </Button>
-      <p style={{ marginTop: '20px' }}>
-        Nicht sicher? Hier können Sie das Profil von Flo noch einmal ansehen: <Button onClick={togglePersonaPage} className={styles.flo}>Profil von Flo</Button>
-      </p>
-      {/* Conditionally render the Persona Page */}
-      {showPersonaPage && <PersonaPage showProceedButton={false} />}
+      {/* Always render the Persona Page */}
+      <PersonaPage showProceedButton={false} />
     </div>
   );
 }

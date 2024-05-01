@@ -35,19 +35,19 @@ export default function PersonaPage({ showProceedButton = true }) {
   }, []);
 
   const handleProceed = () => {
-    navigate('/quiz', { state: { explanation } });
+    navigate('/quiz');
   };
 
   const featureLabels = {
-    Dein_Stresslevel: 'Stresslevel',
-    Deine_Schlafqualitaet: 'Schlafqualität',
-    Anzahl_deiner_sozialen_Kontakte: 'Anzahl sozialer Kontakte',
-    Qualitaet_deiner_sozialen_Kontakte: 'Qualität der sozialen Kontakte',
-    Qualitaet_deiner_Ernaehrung: 'Qualität der Ernährung',
-    Deine_sportliche_Aktivitaet: 'Sportliche Aktivität',
-    Zeit_am_Handy: 'Zeit am Handy',
-    Laenge_deiner_Telefonate: 'Länge von Telefonaten',
-    Deine_Mobilitaet: 'Intensität der Mobilität'
+    Dein_Stresslevel: 'Dein Stresslevel',
+    Deine_Schlafqualitaet: 'Deine Schlafqualität',
+    Anzahl_deiner_sozialen_Kontakte: 'Deine Anzahl sozialer Kontakte',
+    Qualitaet_deiner_sozialen_Kontakte: 'Deine Qualität sozialer Kontakte',
+    Qualitaet_deiner_Ernaehrung: 'Deine Qualität der Ernährung',
+    Deine_sportliche_Aktivitaet: 'Deine sportliche Aktivität',
+    Zeit_am_Handy: 'Deine Zeit am Handy',
+    Laenge_deiner_Telefonate: 'Deine Länge der Telefonate',
+    Deine_Mobilitaet: 'Deine Mobilität'
   };
 
 
@@ -81,19 +81,19 @@ export default function PersonaPage({ showProceedButton = true }) {
         <br/>
         <ul className={styles.list}>
           {[
-            { label: 'Stresslevel', value: explanation.Dein_Stresslevel },
-            { label: 'Schlafqualität', value: explanation.Deine_Schlafqualitaet },
-            { label: 'Anzahl sozialer Kontakte'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0', value: explanation.Anzahl_deiner_sozialen_Kontakte },
-            { label: 'Qualität der sozialen Kontakte' + '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0', value: explanation.Qualitaet_deiner_sozialen_Kontakte },
-            { label: 'Qualität der Ernährung'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0', value: explanation.Qualitaet_deiner_Ernaehrung },
-            { label: 'Sportliche Aktivität'+ '\u00A0'+ '\u00A0', value: explanation.Deine_sportliche_Aktivitaet },
-            { label: 'Zeit am Handy', value: explanation.Zeit_am_Handy },
-            { label: 'Länge von Telefonaten'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0', value: explanation.Laenge_deiner_Telefonate },
-            { label: 'Intensität der Mobilität'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0', value: explanation.Deine_Mobilitaet }
+            { label: 'Dein Stresslevel', value: explanation.Dein_Stresslevel },
+            { label: 'Deine Schlafqualität', value: explanation.Deine_Schlafqualitaet },
+            { label: 'Deine Anzahl sozialer Kontakte'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0', value: explanation.Anzahl_deiner_sozialen_Kontakte },
+            { label: 'Deine Qualität sozialer Kontakte' + '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0', value: explanation.Qualitaet_deiner_sozialen_Kontakte },
+            { label: 'Deine Qualität der Ernährung'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0', value: explanation.Qualitaet_deiner_Ernaehrung },
+            { label: 'Deine sportliche Aktivität'+ '\u00A0'+ '\u00A0', value: explanation.Deine_sportliche_Aktivitaet },
+            { label: 'Deine Zeit am Handy', value: explanation.Zeit_am_Handy },
+            { label: 'Deine Länge der Telefonate'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0', value: explanation.Laenge_deiner_Telefonate },
+            { label: 'Deine Mobilität'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0', value: explanation.Deine_Mobilitaet }
           ].map((item, index) => (
             <TextField 
               key={index}
-              label={ '\u00A0'+ item.label + '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0'+ '\u00A0' }
+              label={ '\u00A0'+ item.label + '\u00A0' .repeat(12) }
               value={item.value || ''}
               variant="outlined"
               fullWidth

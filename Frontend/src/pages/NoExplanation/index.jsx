@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { Text, Heading } from "../../components";
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
+import styles from "../../styles/introductory.module.css";
 
 
 export default function SurveyScreenDepressionPage( { explanation }) {
@@ -24,7 +25,7 @@ export default function SurveyScreenDepressionPage( { explanation }) {
         <title>No Explanation</title>
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
-      <div className="flex flex-col h-screen bg-white-A700 p-5 justify-between">
+      <div className={styles.container} style={{padding:'15px 15px'}}>
         <Text as="p" className="text-center text-2xl md:text-4xl mb-8">
           Deine KI-Vorhersage
         </Text>
@@ -41,14 +42,14 @@ export default function SurveyScreenDepressionPage( { explanation }) {
           den Gesundheitszustand geben. Sie können keine medizinische Diagnose stellen und ersetzen keinesfalls
           einen Arztbesuch. Wenn du dich deprimiert fühlst, wende dich an einen Arzt.
         </Text>
+      </div>
         <Button
           variant="contained"
           onClick={handleProceed}
-          style={{ color: 'white', backgroundColor: '#19b394', fontWeight: 'bold', fontSize: '16px', padding: '10px 20px', width: '10%', marginLeft: '45%', marginTop: '300px'}}
+          style={{ color: 'white', backgroundColor: '#19b394', fontWeight: 'bold', fontSize: '16px', padding: '10px 20px', width: '10%', marginLeft: '45%'}}
         > 
           Weiter &#x279C;
         </Button>
-      </div>
     </>
   );
 }

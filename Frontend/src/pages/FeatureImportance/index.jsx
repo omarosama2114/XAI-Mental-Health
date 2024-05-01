@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 import { Text, Heading } from "../../components";
 import Button from "@mui/material/Button";
 import { useNavigate } from "react-router-dom";
+import styles from "../../styles/introductory.module.css";
 
 
 // Assume 'explanation' is passed as a prop to this component
@@ -52,7 +53,7 @@ export default function SurveyScreenDepressionFIPage({ explanation }) {
         <title>Omar's Application2</title>
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
-      <div className="flex flex-col h-screen bg-white-A700 justify-between p-5">
+      <div className={styles.container}  style={{padding:'15px 15px'}}>
         <Text as="p" className="text-center text-2xl md:text-4xl mb-8">
           Deine KI-Vorhersage
         </Text>
@@ -72,6 +73,7 @@ export default function SurveyScreenDepressionFIPage({ explanation }) {
           den Gesundheitszustand geben. Sie können keine medizinische Diagnose stellen und ersetzen keinesfalls
           einen Arztbesuch. Wenn du dich deprimiert fühlst, wende dich an einen Arzt.
         </Text>
+      </div>
         <Button
           variant="contained"
           onClick={handleProceed}
@@ -79,7 +81,6 @@ export default function SurveyScreenDepressionFIPage({ explanation }) {
         > 
           Weiter &#x279C;
         </Button>
-      </div>
     </>
   );
 }

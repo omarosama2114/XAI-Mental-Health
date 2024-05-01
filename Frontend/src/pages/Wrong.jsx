@@ -8,7 +8,7 @@ export default function WrongPage() {
     let navigate = useNavigate();
   
     const handleProceed = () => {
-        navigate("/persona");
+        navigate("/quiz");
         window.scrollTo(0, 0);
     };
 
