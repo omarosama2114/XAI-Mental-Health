@@ -49,7 +49,6 @@ export default function A13Page() {
         userData.FAILED = true;
 
         sessionStorage.setItem('userData', JSON.stringify(userData));
-        console.log(userData);
 
         navigate('/termination');
     }

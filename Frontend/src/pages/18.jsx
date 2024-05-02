@@ -40,8 +40,6 @@ export default function A18Page() {
   const handleProceed = () => {
     if(isEveryQuestionAnswered) {
     const userData = JSON.parse(sessionStorage.getItem('userData')) || {};
-
-    console.log(userData);
   
     // Convert answer labels to numerical values and save them under specific keys
     userData.gesundheitswohlbefinden_item_1 = likertScale[answers.question1];

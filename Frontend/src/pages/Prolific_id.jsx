@@ -22,7 +22,6 @@ export default function WrongPage() {
         userData.prolific_id_input_user = prolificId;
 
         sessionStorage.setItem('userData', JSON.stringify(userData));
-        console.log('userData: ', userData);
     }, [prolificId]); // Only run this effect if prolificId changes.
 
     useEffect(() => {

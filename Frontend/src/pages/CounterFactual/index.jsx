@@ -33,7 +33,6 @@ export default function SurveyScreenDepressionCFPage({ explanation }) {
   const formatCounterfactualText = () => {
     const entries = [];
     if (explanation.feature_1 && explanation.percentages_feature_1 !== undefined)
-    console.log(explanation.percentages_feature_1_num)
       entries.push(
         <span key="feature1" style={{ color: "#15b1e2", fontWeight: "bold" }}>
           {replaceUmlauts(explanation.feature_1) + ':'} <span style={{color:'black'}}>{explanation.percentages_feature_1} ({explanation.percentages_feature_1_num >= 0 ? '+' : ''}{Math.round(explanation.percentages_feature_1_num)}%)</span>

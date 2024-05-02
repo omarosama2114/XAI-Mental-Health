@@ -44,8 +44,6 @@ export default function A10Page() {
   
     // Save updated userData to session storage
     sessionStorage.setItem('userData', JSON.stringify(userData));
-
-    console.log(userData);
   
     // Navigate to the next page
     navigate('/social_influence');
