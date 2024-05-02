@@ -37,7 +37,7 @@ useEffect(() => {
   return (
     <>
       <Helmet>
-        <title>Omar's Application2</title>
+        <title>Smart-Sensing-Apps für mentale Gesundheit</title>
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
       <div className="flex flex-col h-screen bg-white-A700 justify-between p-5">

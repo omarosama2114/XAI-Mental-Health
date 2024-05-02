@@ -63,7 +63,7 @@ export default function PersonaPage({ showProceedButton = true }) {
   return (
     <>
       <Helmet>
-        <title>Persona Introduction - Omar's Application</title>
+        <title>Smart-Sensing-Apps für mentale Gesundheit</title>
       </Helmet>
       <br/>
       <div className={styles.container}>

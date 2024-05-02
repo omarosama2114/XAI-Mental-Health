@@ -22,7 +22,7 @@ export default function SurveyScreenDepressionPage( { explanation }) {
   return (
     <>
       <Helmet>
-        <title>No Explanation</title>
+        <title>Smart-Sensing-Apps für mentale Gesundheit</title>
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
       <div className={styles.container} style={{padding:'15px 15px'}}>

@@ -79,7 +79,7 @@ export default function SurveyScreenDepressionCFPage({ explanation }) {
   return (
     <>
       <Helmet>
-        <title>Omar's Application2</title>
+        <title>Smart-Sensing-Apps für mentale Gesundheit</title>
         <meta name="description" content="Web site created using create-react-app" />
       </Helmet>
       <div className={styles.container} style={{padding:'15px 15px'}}>  
