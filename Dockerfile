@@ -17,4 +17,4 @@ COPY . .
 ENV NODE_ENV production
 
 # Define the entry point command with the default port
-ENTRYPOINT ["node", "server.js", "--port", "8000"]
+ENTRYPOINT ["node", "server.js", "--port", "8080"]
