@@ -6,7 +6,6 @@ import styles from '../styles/introductory.module.css';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import queryString from 'query-string';
-import { set } from 'mongoose';
 
 
 export default function WrongPage() {
