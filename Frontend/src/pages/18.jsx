@@ -49,7 +49,7 @@ export default function A18Page() {
     userData.gesundheitswohlbefinden_item_5 = likertScale[answers.question5]; 
     userData.gesundheitswohlbefinden_sum =  likertScale[answers.question1] + likertScale[answers.question2] + likertScale[answers.question3] + likertScale[answers.question4] + likertScale[answers.question5];
   
-    axios.post('http://localhost:8000/submit-survey', userData)
+    axios.post('http://134.60.156.225/api/submit-survey', userData)
     .then(() => navigate('/end_of_survey_A_B'))
     .catch(error => {
       if (error.response) {
