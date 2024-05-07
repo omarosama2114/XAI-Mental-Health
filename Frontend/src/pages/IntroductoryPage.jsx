@@ -35,13 +35,13 @@ export default function IntroductoryPage() {
         <br/>
 
         <span className={styles.subTitle}>Worum geht es? <br/></span>
-        So genannte Smart-Sensing-Apps nutzen Künstliche Intelligenz (KI), um auf Basis von Sensordaten von Smartphones, Smart Watches und anderen Geräten ihren Usern Informationen und Ratschläge zu liefern. Zu den Daten gehören u.a. die Schlafdauer und Schlafqualität, die sportliche Aktivität, die Zeit am Bildschirm oder wieviel man unterwegs ist (Mobilität). In unserem Fall geht es um eine App, mit deren Hilfe User erfahren, ob ihre Daten darauf hindeuten, dass sie ein Risiko haben, an einer Depression zu erkranken. 
+        So genannte Smart-Sensing-Apps nutzen Künstliche Intelligenz (KI), um ihren Usern auf Basis von Sensordaten von Smartphones und anderen Geräten Informationen und Ratschläge zu liefern. Zu den Daten gehören u.a. die Schlafdauer und -qualität, die sportliche Aktivität, die Zeit am Bildschirm oder wieviel man unterwegs ist (Mobilität). In unserem Fall geht es um eine App, die mithilfe von Künstlicher Intelligenz (KI) auswertet, ob die Sensordaten auf ein erhöhtes Depressionsrisiko hindeuten. 
         <br/>
         <br/>
 
 
         <span className={styles.subTitle}>Was muss ich tun? <br/></span>
-        Sie werden gleich gebeten, sich in ein hypothetisches Szenario hineinzuversetzen. Dazu wird Ihnen zunächst eine Person präsentiert, die die App nutzt. Dann sehen Sie ein Beispiel, was die App für diese Person anzeigt. Schauen Sie sich die Präsentation der Person und das Beispiel bitte genau an. Anschließend bitten wir Sie, dazu Fragen zu beantworten.
+        Sie werden gleich gebeten, sich in ein hypothetisches Szenario hineinzuversetzen. Zunächst werden Ihnen beispielhafte Informationen auf Basis von Sensordaten präsentiert. Dann sehen Sie eine KI-Auswertung auf Basis dieser Daten. Schauen Sie sich die beispielhaften Informationen und die KI-Auswertung bitte genau an. Anschließend bitten wir Sie, dazu Fragen zu beantworten.
         <br/>
         <br/>
         <br/>
@@ -54,7 +54,7 @@ export default function IntroductoryPage() {
         <br/>
         •	Ärztlicher (psychiatrischer) Bereitschaftsdienst: 116 117
         <br/><br/>
-        <span className={styles.list} style={{fontWeight: 'bold'}}>Datenschutz:</span> Mir ist bekannt, dass bei dieser Studie personenbezogene Daten verarbeitet werden sollen. Die Verarbeitung der Daten erfolgt nach gesetzlichen Bestimmungen und setzt gemäß Art. 6 Abs. 1 lit. a und Art. 9 Abs. 2 lit. a der Datenschutz-Grundverordnung folgende Einwilligungserklärung voraus: Ich willige in die Verarbeitung meiner Daten ein. Mir ist bekannt, dass diese Einwilligung jederzeit schriftlich oder mündlich ohne Angabe von Gründen widerrufen werden kann, ohne dass mir dadurch Nachteile entstehen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Datenverarbeitung wird davon nicht berührt. In diesem Fall kann ich entscheiden, ob die von mir erhobenen Daten gelöscht werden sollen oder weiterhin für die Zwecke der Studie verwendet werden dürfen.  Alle Daten werden anonym erhoben und werden streng vertraulich behandelt sowie ausgewertet.
+        <span className={styles.list} style={{fontWeight: 'bold'}}>Datenschutz:</span> Alle Daten werden anonym erhoben und ausschließlich für wissenschaftliche Zwecke ausgewertet.
         <br/><br/>
           <br/>
           <input

@@ -69,14 +69,14 @@ export default function PersonaPage({ showProceedButton = true }) {
       <div className={styles.container}>
       {showProceedButton && (
         <h1 className={styles.subTitle}>
-        Wir möchten Sie nun also bitten, sich in eine Person und deren Situation hineinzuversetzen. Bitte lesen Sie dazu die folgende Personenbeschreibung sorgfältig durch und nehmen Sie die Perspektive der Person ein. 
+        Versetzen Sie sich nun in das hypothetische Szenario. Stellen Sie sich vor, Sie nutzen eine Smart-Sensing-App für mentale Gesundheit – also eine App, die Sensordaten von Ihrem Smartphone nutzt, um Informationen zu Ihrer mentalen Gesundheit zu liefern.  
         <br/> <br/>
-        Die Person, um die es jetzt geht, heißt Flo. Flo nutzt eine Smart-Sensing-App für mentale Gesundheit – also eine App, die Smartphone-Daten nutzt, um Informationen zur mentalen Gesundheit von Flo zu liefern.
+        Bitte merken Sie sich die folgenden Informationen, damit Sie die Studie erfolgreich fortsetzen können.
         <br/> <br/> <br/>
         </h1>
         )}
         <h1 className={styles.subTitle}>
-        Die App hat folgende Informationen über Flo gesammelt:
+        Stellen Sie sich vor, die App hätte folgende Informationen über Sie gesammelt.  
         </h1>
         <br/>
         <ul className={styles.list}>

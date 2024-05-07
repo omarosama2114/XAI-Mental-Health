@@ -65,7 +65,7 @@ export default function QuizPage() {
   return (
     <div className={styles.container} style={{marginTop: '90px'}}>
       <h1 className={styles.subTitle} style={{ fontSize: '1.4em' }}>
-        Sie haben eben Flo kennengelernt. Wie ausgeprägt sind die folgenden Eigenschaften bei Flo?
+      Sie haben ein hypothetisches Szenario kennengelernt. Wie ausgeprägt sind die folgenden Informationen in diesem Szenario?
       </h1>
       <br />
       {features.map((feature, index) => (

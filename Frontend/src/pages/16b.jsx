@@ -58,9 +58,6 @@ export default function B16Page() {
 
   return (
     <div className={styles.container}>
-      <h1 style={{fontSize: '18px', fontWeight:'bold'}}>Jetzt bitten wir Sie, noch einige allgemeine Fragen zum Thema mentale Gesundheit zu beantworten</h1>
-      <br />
-      <br />
       <form>
         <div className={styles.question}>
           <h2 style={{fontSize: '16px', fontWeight:'bold', color: '#19b394'}} >Es würde mir relativ leicht fallen, Zeit zu finden, um Präventionsangebote für meine mentale Gesundheit zu finden</h2> {/* Change this question to whatever you wish */}

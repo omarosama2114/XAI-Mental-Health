@@ -21,7 +21,11 @@ export default function PreExplanationPage() {
           </Helmet>
           <div className={styles.container}>
             <p className="mb-4 text text-xl md:text-2xl">
-            Die Person Flo, die Sie eben kennengelernt haben, nutzt eine Smart-Sensing-App für mentale Gesundheit, die mithilfe von Künstlicher Intelligenz (KI) Anzeichen einer Depression erkennen kann.<br/> <br/> Sie stützt sich dabei auf verschiedene Smartphone-Daten. <br/><br/>Gleich wird Ihnen das Ergebnis der KI-Auswertung für Flo gezeigt. Nehmen Sie sich bitte Zeit, dieses genau anzuschauen.
+            Sie befinden sich in einem hypothetischen Szenario, in dem Sie eine Smart-Sensing-App für mentale Gesundheit nutzen: Eine Künstlicher Intelligenz (KI) wertet nun die Informationen aus den Sensordaten von Smartphones aus um ein Depressionsrisiko vorherzusagen. 
+
+            <br/> <br/>
+
+            Gleich wird Ihnen das Ergebnis der KI-Auswertung gezeigt. Nehmen Sie sich bitte Zeit, dieses genau anzuschauen.
             </p>
             <br/>
             <Button

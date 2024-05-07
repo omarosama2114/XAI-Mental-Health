@@ -73,7 +73,7 @@ export default function A13Page() {
     <div className={styles.container} style={{marginTop: '200px'}}>
       <form>
         <div className={styles.question}>
-          <h2 style={{fontSize: '18px', fontWeight:'bold', color: '#19b394'}} >Bitte bewerten Sie kurz auch folgende Aussage: Wenn man 10 und 20 addiert, erhält man 30</h2> {/* Change this question to whatever you wish */}
+          <h2 style={{fontSize: '18px', fontWeight:'bold', color: '#19b394'}} >Bitte bewerten Sie die folgende Aussage: Wenn man 10 und 20 addiert, erhält man 30</h2> {/* Change this question to whatever you wish */}
           <br />
           {['Ich stimme voll und ganz zu', 'Ich stimme eher zu', 'Ich stimme eher nicht zu', 'Ich stimme überhaupt nicht zu'].map(option => (
             <label key={option}>

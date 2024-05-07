@@ -58,7 +58,7 @@ export default function A9Page() {
 
   return (
     <div className={styles.container}>
-      <h1 style={{fontSize: '18px', fontWeight:'bold'}}>Jetzt bitten wir Sie, einige Statements zu der App zu bewerten, die Sie gerade gesehen haben</h1>
+      <h1 style={{fontSize: '18px'}}>Sie haben in dieser Studie Auszüge aus einer <span style={{fontWeight: 'bold'}}>Smart-Sensing-App für mentale Gesundheit</span> kennengelernt: Auf Basis von <span style={{fontStyle: 'italic'}}>Sensordaten von Smartphones ermittelt eine Künstlicher Intelligenz (KI)</span> das Depressionsrisiko. Jetzt bitten wir Sie, einige Aussagen zu dieser App zu bewerten</h1>
       <br />
       <br />
       <form>
@@ -83,7 +83,7 @@ export default function A9Page() {
         <br />
         
         <div className={styles.question}>
-          <h2 style={{fontSize: '16px', fontWeight:'bold', color: '#19b394'}} >Die Verwendung einer Smart-Sensing-App für mentale Gesundheit und die gesammelten Daten könnten Ärzten bei einer Diagnose helfen </h2>
+          <h2 style={{fontSize: '16px', fontWeight:'bold', color: '#19b394'}} >Die Verwendung einer Smart-Sensing-App für mentale Gesundheit und die gesammelten Daten könnten Fachpersonal (z.B. Ärzt:innen) bei einer Diagnose helfen </h2>
           <br />
           {['Ich stimme voll und ganz zu', 'Ich stimme eher zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher nicht zu', 'Ich stimme überhaupt nicht zu'].map(option => (
             <label key={option}>

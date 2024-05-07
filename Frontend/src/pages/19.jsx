@@ -15,7 +15,7 @@ export default function IntroductoryPage() {
       <div className={styles.container}>
         <p className="mb-4 text text-xl md:text-2xl">
         
-        Sie haben nun alle Teile der Studie durchlaufen. Wir danken Ihnen herzlich für Ihre wertvollen Antworten. Alle Daten wurden anonym erhoben und werden streng vertraulich behandelt sowie ausgewertet. Rückschlüsse auf Ihre Person sind nicht möglich.       
+        Sie haben nun alle Teile der Studie durchlaufen. Wir danken Ihnen herzlich für Ihre wertvollen Antworten. Alle Daten wurden anonym erhoben und werden nur für wissenschaftliche Zwecke ausgewertet. Rückschlüsse auf Ihre Person sind nicht möglich.       
 
         <br/>
         
@@ -35,7 +35,7 @@ export default function IntroductoryPage() {
         Institut für Business Analytics<br/>
         Universität Ulm 
         <br/><br/>
-        Kontakt: <span style={{color: 'red'}}>XXX (TBD)</span>
+        Kontakt: maximilian.foerster@uni-ulm.de
         <br/>
  
         </p>

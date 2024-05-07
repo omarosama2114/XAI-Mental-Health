@@ -61,7 +61,7 @@ export default function A6Page() {
 
   return (
     <div className={styles.container}>
-      <h1 style={{fontSize: '18px', fontWeight:'bold'}}>Wie würden Sie an Flos Stelle auf das Ergebnis reagieren, das Ihnen die App eben angezeigt hat?</h1>
+      <h1 style={{fontSize: '18px', fontWeight:'bold'}}>Wie würden Sie in dem hypothetischen Szenario auf das Ergebnis der KI-Auswertung reagieren?</h1>
       <br />
       <br />
       <form>
@@ -86,7 +86,7 @@ export default function A6Page() {
         <br />
         
         <div className={styles.question}>
-          <h2 style={{fontSize: '16px', fontWeight:'bold', color: '#19b394'}} >Ich würde in der Zukunft Einrichtungen aufsuchen, die sich um meine psychische Gesundheit </h2>
+          <h2 style={{fontSize: '16px', fontWeight:'bold', color: '#19b394'}} >Ich würde in der Zukunft Angebote aufsuchen, die sich um meine psychische Gesundheit sorgen können. </h2>
           <br />
           {['Ich stimme voll und ganz zu', 'Ich stimme eher zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher nicht zu', 'Ich stimme überhaupt nicht zu'].map(option => (
             <label key={option}>

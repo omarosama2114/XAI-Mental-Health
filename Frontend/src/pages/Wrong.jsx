@@ -21,7 +21,7 @@ export default function WrongPage() {
           <div className={styles.container}>
             <h1 className={styles.title}>Das hat leider nicht gestimmt<br/> <br/> </h1>
             <p className={styles.list}>
-            Für diese Studie ist es extrem wichtig, dass Sie sich gut in die Person Flo hinenversetzen. Daher bitten wir Sie, sich das Profil von Flo erneut in Ruhe anzuschauen.
+            Für diese Studie ist es extrem wichtig, dass Sie sich gut in das hypothetische Szenario hinenversetzen. Daher bitten wir Sie, sich das Szenario erneut in Ruhe anzuschauen.
             </p>
             <br/>
             <br/>

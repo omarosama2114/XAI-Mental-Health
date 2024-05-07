@@ -58,9 +58,6 @@ export default function A11Page() {
 
   return (
     <div className={styles.container}>
-      <h1 style={{fontSize: '18px', fontWeight:'bold'}}>Jetzt bitten wir Sie, einige Statements zu der App zu bewerten, die Sie gerade gesehen haben</h1>
-      <br />
-      <br />
       <form>
         <div className={styles.question}>
           <h2 style={{fontSize: '16px', fontWeight:'bold', color: '#19b394'}} >Menschen, die mir nahestehen, würden mir die Nutzung einer Smart-Sensing-App für mentale Gesundheit empfehlen</h2> {/* Change this question to whatever you wish */}
@@ -83,7 +80,7 @@ export default function A11Page() {
         <br />
         
         <div className={styles.question}>
-          <h2 style={{fontSize: '16px', fontWeight:'bold', color: '#19b394'}} >Mein Hausarzt würde mir empfehlen, eine Smart-Sensing-App für mentale Gesundheit zu nutzen </h2>
+          <h2 style={{fontSize: '16px', fontWeight:'bold', color: '#19b394'}} >Mein Hausarzt/meine Hausärztin würde mir empfehlen, eine Smart-Sensing-App für mentale Gesundheit zu nutzen </h2>
           <br />
           {['Ich stimme voll und ganz zu', 'Ich stimme eher zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher nicht zu', 'Ich stimme überhaupt nicht zu'].map(option => (
             <label key={option}>

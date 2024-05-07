@@ -59,9 +59,6 @@ export default function B15Page() {
 
   return (
     <div className={styles.container}>
-      <h1 style={{fontSize: '18px', fontWeight:'bold'}}>Jetzt bitten wir Sie, noch einige allgemeine Fragen zum Thema mentale Gesundheit zu beantworten</h1>
-      <br />
-      <br />
       <form>
         <div className={styles.question}>
           <h2 style={{fontSize: '16px', fontWeight:'bold', color: '#19b394'}} >Präventionen durchzuführen, um nicht psychisch krank zu werden, ist mit einer gewissen Scham verbunden</h2> {/* Change this question to whatever you wish */}

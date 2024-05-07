@@ -58,12 +58,9 @@ export default function A12Page() {
 
   return (
     <div className={styles.container}>
-      <h1 style={{fontSize: '18px', fontWeight:'bold'}}>Jetzt bitten wir Sie, einige Statements zu der App zu bewerten, die Sie gerade gesehen haben</h1>
-      <br />
-      <br />
       <form>
         <div className={styles.question}>
-          <h2 style={{fontSize: '16px', fontWeight:'bold', color: '#19b394'}} >Ich habe Vertrauen in eine Smart-Sensing-App für mentale Gesundheit. Ich habe das Gefühl, dass sie sehr gut funktionieren würde</h2> {/* Change this question to whatever you wish */}
+          <h2 style={{fontSize: '16px', fontWeight:'bold', color: '#19b394'}} >Ich habe Vertrauen in eine Smart-Sensing-App für mentale Gesundheit. Ich habe das Gefühl, dass sie mir helfen würde eine Depression zu erkennen</h2> {/* Change this question to whatever you wish */}
           <br />
           {['Ich stimme voll und ganz zu', 'Ich stimme eher zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher nicht zu', 'Ich stimme überhaupt nicht zu'].map(option => (
             <label key={option}>
@@ -103,7 +100,7 @@ export default function A12Page() {
         <br />  
         
         <div className={styles.question}>
-          <h2 style={{fontSize: '18px', fontWeight:'bold', color: '#19b394'}} >Ich würde mich sicher fühlen, wenn ich mich auf eine Smart-Sensing-App für mentale Gesundheit verlassen würde. Ich würde die richtigen Antworten erhalten</h2>
+          <h2 style={{fontSize: '18px', fontWeight:'bold', color: '#19b394'}} >Ich würde mich sicher fühlen, wenn ich eine Smart-Sensing-App nutzen würde. Ich würde die richtigen Antworten erhalten</h2>
           <br />
           {['Ich stimme voll und ganz zu', 'Ich stimme eher zu', 'Ich stimme weder zu noch lehne ich ab', 'Ich stimme eher nicht zu', 'Ich stimme überhaupt nicht zu'].map(option => (
             <label key={option}>
