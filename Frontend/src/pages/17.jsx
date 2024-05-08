@@ -32,6 +32,9 @@ export default function A17Page() {
   // Check if all questions are answered to enable the button
   const isEveryQuestionAnswered = Object.values(answers).every(answer => answer !== '');  
 
+  const userData = JSON.parse(sessionStorage.getItem('userData')) || {};
+  
+
   let navigate = useNavigate();
 
   const handleProceed = () => {
@@ -48,7 +51,9 @@ export default function A17Page() {
 
 
     axios.post('http://134.60.156.225/api/submit-survey', userData)
-    .then(() => navigate('/end_of_survey_A_B'))
+    .then(() => {
+      navigate('/end_of_survey_A_B');
+    })
     .catch(error => {
       if (error.response) {
         // The request was made and the server responded with a status code
@@ -150,6 +155,7 @@ export default function A17Page() {
         
         <Button
           variant="contained"
+          disabled={userData.submitted}
           onClick={handleProceed}
           style={{ color: 'white', backgroundColor: '#19b394', fontWeight: 'bold', fontSize: '16px', padding: '10px 20px'}}
         > 

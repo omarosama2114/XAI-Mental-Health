@@ -6,6 +6,13 @@ import styles from '../styles/introductory.module.css';
 
 
 export default function IntroductoryPage() {
+
+  const userData = JSON.parse(sessionStorage.getItem('userData')) || {};
+
+  userData.submitted = true;
+
+  sessionStorage.setItem('userData', JSON.stringify(userData));
+  
   return (
     <>
       <Helmet>
