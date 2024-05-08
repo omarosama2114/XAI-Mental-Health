@@ -35,33 +35,33 @@ export default function SurveyScreenDepressionCFPage({ explanation }) {
     if (explanation.feature_1 && explanation.percentages_feature_1 !== undefined)
       entries.push(
         <span key="feature1" style={{ color: "#15b1e2", fontWeight: "bold" }}>
-          {replaceUmlauts(explanation.feature_1) + ':'} <span style={{color:'black'}}>{explanation.percentages_feature_1} ({explanation.percentages_feature_1_num >= 0 ? '+' : ''}{Math.round(explanation.percentages_feature_1_num)}%)</span>
+          {replaceUmlauts(explanation.feature_1) + ':'} <span style={{color:'black'}}> {'Um'} {explanation.percentages_feature_1_num >= 0 ? '+' : ''}{Math.round(explanation.percentages_feature_1_num)}% {explanation.percentages_feature_1_num >= 0 ? 'steigern' : 'verringern'}</span>
         </span>
       );
     if (explanation.feature_2 && explanation.percentages_feature_2 !== undefined)
       entries.push(
         <span key="feature2" style={{ color: "#15b1e2", fontWeight: "bold" }}>
-          {replaceUmlauts(explanation.feature_2) + ':'} <span style={{color:'black'}}>{explanation.percentages_feature_2} ({explanation.percentages_feature_2_num >= 0 ? '+' : ''}{Math.round(explanation.percentages_feature_2_num)}%)</span>
+          {replaceUmlauts(explanation.feature_2) + ':'} <span style={{color:'black'}}> {'Um'} {explanation.percentages_feature_2_num >= 0 ? '+' : ''}{Math.round(explanation.percentages_feature_2_num)}% {explanation.percentages_feature_2_num >= 0 ? 'steigern' : 'verringern'}</span>
         </span>
       );
     if (explanation.feature_3 && explanation.percentages_feature_3 !== undefined)
       entries.push(
         <span key="feature3" style={{ color: "#15b1e2", fontWeight: "bold" }}>
-          {replaceUmlauts(explanation.feature_3) + ':'} <span style={{color:'black'}}>{explanation.percentages_feature_3} ({explanation.percentages_feature_3_num >= 0 ? '+' : ''}{Math.round(explanation.percentages_feature_3_num)}%)</span>
+          {replaceUmlauts(explanation.feature_3) + ':'} <span style={{color:'black'}}> {'Um'} {explanation.percentages_feature_3_num >= 0 ? '+' : ''}{Math.round(explanation.percentages_feature_3_num)}% {explanation.percentages_feature_3_num >= 0 ? 'steigern' : 'verringern'}</span>
         </span>
       );
       if (explanation.feature_4 && explanation.percentages_feature_4 !== undefined)
       entries.push(
         <span key="feature4" style={{ color: "#15b1e2", fontWeight: "bold" }}>
-          {replaceUmlauts(explanation.feature_4) + ':'} <span style={{color:'black'}}>{explanation.percentages_feature_4} ({explanation.percentages_feature_4_num >= 0 ? '+' : ''}{Math.round(explanation.percentages_feature_4_num)}%)</span>
+          {replaceUmlauts(explanation.feature_4) + ':'} <span style={{color:'black'}}> {'Um'} {explanation.percentages_feature_4_num >= 0 ? '+' : ''}{Math.round(explanation.percentages_feature_4_num)}% {explanation.percentages_feature_4_num >= 0 ? 'steigern' : 'verringern'}</span>
         </span>
       );  
 
     return entries.length > 0 ? (
       <Text as="p" className="text-center text-base md:text-xl mx-2 my-4" style={{ fontSize: '1.5em' }}>
         {explanation.prediction === "depression" ? 
-          "Die folgenden Veränderungen hätten zur Vorhersage eines niedrigen Depressionsrisikos geführt:" : 
-          "Die folgenden Veränderungen hätten zur Vorhersage eines erhöhten Depressionsrisikos geführt:"}
+          "Die folgenden Veränderungen hätten zur Vorhersage eines niedrigen Depressionsrisikos durch die KI geführt:" : 
+          "Die folgenden Veränderungen hätten zur Vorhersage eines erhöhten Depressionsrisikos durch die KI geführt:"}
         {entries.map((entry, index) => (
           <React.Fragment key={index}>
             <br />

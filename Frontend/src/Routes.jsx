@@ -28,7 +28,6 @@ import A16 from "pages/16a";
 import B15 from "pages/15b";
 import B16 from "pages/16b";
 import A17 from "pages/17";
-import A18 from "pages/18";
 import A19 from "pages/19";
 import Termination from "pages/termination";
 
@@ -52,7 +51,6 @@ const ProjectRoutes = () => {
     { path: "/indifference_to_stigma_B", element: <B15 />},
     { path: "/help_seeking_propensity_B", element: <B16 />},
     { path: "/erfahrung_mit_app_typen", element: <A17 />},
-    { path: "/gesundheitswohlbefinden", element: <A18 />},
     { path: "/end_of_survey_A_B", element: <A19 />},
     { path: "/termination", element: <Termination />},
     { path: "/quiz", element: <Quiz />},

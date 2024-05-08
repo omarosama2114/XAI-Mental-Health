@@ -4,7 +4,17 @@ import { Select, MenuItem, Button, InputLabel, FormControl } from '@mui/material
 import styles from '../styles/PersonaPage.module.css';
 import PersonaPage from './Persona'; // Import PersonaPage component
 
-const options = ['Stark unterdurchschnittlich', 'Leicht unterdurchschnittlich', 'Durchschnittlich', 'Leicht überdurchschnittlich', 'Stark überdurchschnittlich'];
+// Updated mapping for the options
+const optionsMapping = {
+  'Stark unterdurchschnittlich': 'Sehr gering',
+  'Leicht unterdurchschnittlich': 'Gering',
+  'Durchschnittlich': 'Durchschnittlich',
+  'Leicht überdurchschnittlich': 'Hoch',
+  'Stark überdurchschnittlich': 'Sehr hoch'
+};
+
+// Create an array of new values based on the mapping
+const options = Object.values(optionsMapping);
 
 export default function QuizPage() {
   const navigate = useNavigate();
@@ -24,7 +34,7 @@ export default function QuizPage() {
 
       const initialAnswers = selectedFeatures.reduce((acc, feature) => ({
         ...acc,
-        [feature]: 'med'
+        [feature]: 'Durchschnittlich' // default value to match the middle option
       }), {});
 
       setAnswers(initialAnswers);
@@ -34,9 +44,11 @@ export default function QuizPage() {
   }, [navigate]);
 
   const handleSelectChange = (feature, value) => {
+    // Map the value back to the original before setting it
+    const originalValue = Object.keys(optionsMapping).find(key => optionsMapping[key] === value);
     setAnswers(prevAnswers => ({
       ...prevAnswers,
-      [feature]: value
+      [feature]: originalValue
     }));
   };
 
@@ -76,7 +88,7 @@ export default function QuizPage() {
           <Select
             labelId={`label-${feature}`}
             label={featureLabels[feature] + '\u00A0'.repeat(16)}
-            value={answers[feature]}
+            value={optionsMapping[answers[feature]]} // Display mapped value
             onChange={(e) => handleSelectChange(feature, e.target.value)}
           >
             {options.map((option, idx) => (
@@ -88,7 +100,7 @@ export default function QuizPage() {
         </FormControl>
       ))}
       <Button variant="contained" onClick={handleSubmit} style={{ color: 'white', backgroundColor: '#19b394', fontWeight: 'bold', fontSize: '16px', padding: '10px 20px', marginBottom:'-20px'}}>
-        weiter &#x279C;
+        Weiter &#x279C;
       </Button>
       {/* Always render the Persona Page */}
       <PersonaPage showProceedButton={false} />

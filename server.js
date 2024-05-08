@@ -59,13 +59,7 @@ const SurveySchema = new mongoose.Schema({
   helpSeeking_propensity_item_3: Number,
   erfahrung_mit_app_typen_item_1: Number,
   erfahrung_mit_app_typen_item_2: Number,
-  erfahrung_mit_app_typen_item_3: Number,
-  gesundheitswohlbefinden_item_1: Number,
-  gesundheitswohlbefinden_item_2: Number,
-  gesundheitswohlbefinden_item_3: Number,
-  gesundheitswohlbefinden_item_4: Number,
-  gesundheitswohlbefinden_item_5: Number,
-  gesundheitswohlbefinden_sum: Number  
+  erfahrung_mit_app_typen_item_3: Number 
 });
 
 const Survey = mongoose.model('Survey', SurveySchema);
