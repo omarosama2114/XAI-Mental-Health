@@ -22,7 +22,13 @@ Docker containers are used to encapsulate the project's environment, ensuring th
 
 ### Sample Persona
 
-(screenshots/dashboard.png)
+![Sample Application User Persona](screenshots/Persona.png)
+
+### Sample Explanation
+![Sample XAI generated Exaplantion Screen](screenshots/Explanation.png)
+
+### Survey Page
+![Sample survey page](screenshots/Survey.png)
 
 ### Installation Instructions
 
