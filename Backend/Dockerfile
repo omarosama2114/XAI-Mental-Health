@@ -16,5 +16,8 @@ COPY . .
 # Define environment variable
 ENV NODE_ENV production
 
+# Expose the backend port
+EXPOSE 8080
+
 # Define the entry point command with the default port
 ENTRYPOINT ["node", "server.js", "--port", "8080"]
