@@ -18,6 +18,12 @@ XAI-Mental-Health utilizes the MERN stack, complemented by Next.js for improved 
 ### Docker
 Docker containers are used to encapsulate the project's environment, ensuring that it runs uniformly across all machines.
 
+## Screenshots
+
+### Sample Persona
+
+(screenshots/dashboard.png)
+
 ### Installation Instructions
 
 Clone the repository and set up both frontend and backend services using Docker:
