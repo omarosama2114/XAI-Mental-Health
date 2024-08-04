@@ -3,6 +3,8 @@
 
 XAI-Mental-Health is a pioneering project developed for the Institute of Business Analytics at Ulm University. This survey website tests various XAI (Explainable Artificial Intelligence) explanation methods in the context of mental health. Its purpose is to explore how different explanations can affect user understanding and trust in AI-driven mental health evaluations.
 
+Link: https://mental-health.erklaerbare-ki.de/
+
 ## Frameworks and Technologies Used
 
 XAI-Mental-Health utilizes the MERN stack, complemented by Next.js for improved SSR capabilities, and Docker for environment consistency.
@@ -29,17 +31,3 @@ Docker containers are used to encapsulate the project's environment, ensuring th
 
 ### Survey Page
 ![Sample survey page](screenshots/Survey.png)
-
-### Installation Instructions
-
-Clone the repository and set up both frontend and backend services using Docker:
-
-```bash
-# Clone the repository
-git clone https://github.com/ulm-university/XAI-Mental-Health.git
-
-# Navigate to the project directory
-cd XAI-Mental-Health
-
-# Run Docker Compose to set up the entire stack
-docker-compose up --build
