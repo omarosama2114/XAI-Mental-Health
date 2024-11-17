@@ -1,7 +1,7 @@
 # XAI-Mental-Health
 ## Motivation
 
-XAI-Mental-Health is a pioneering project developed for the Institute of Business Analytics at Ulm University. This survey website tests various XAI (Explainable Artificial Intelligence) explanation methods in the context of mental health. Its purpose is to explore how different explanations can affect user understanding and trust in AI-driven mental health evaluations.
+XAI-Mental-Health is a pioneering project I developed for the Institute of Business Analytics at Ulm University. This survey website tests various XAI (Explainable Artificial Intelligence) explanation methods in the context of mental health. Its purpose is to explore how different explanations can affect user understanding and trust in AI-driven mental health evaluations.
 
 Link: https://mental-health.erklaerbare-ki.de/
 
